@@ -1,0 +1,82 @@
+.header-main-container{
+    width: 100vw;
+    height: 15vh;
+    border: solid 3px rgb(0,150,0);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh;
+}
+.name-container{
+    font-size: clamp(8px, 1.5vw, 14px);
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: none 3px white;
+}
+.char-name-textarea{
+    width: 60vw;
+    height: 14vh;
+    text-align: center;
+    border: none 3px white;
+    font-size: clamp(8px,5vh,24px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container{
+    left: 1vw;
+    height: 13vh;
+    aspect-ratio: 1/1;
+    border: solid 5px rgb(0,150,0);
+    border-radius: 100px;
+    margin-right: 1vh;
+}
+.logo-container:hover{
+    background-color: rgb(0, 50, 0);
+}
+.d20-logo{
+    margin: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: 80%;
+    animation: spinlogo 10s linear infinite;
+}
+@keyframes spinlogo {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+.class-container{
+    height: 13vh;
+    aspect-ratio: 1/1;
+    border: solid 5px rgb(0,150,0);
+    border-radius: 100px;
+    margin-left: 1vh;
+}
+.class-container:hover{
+    background-color: rgb(0, 50, 0);   
+}
+.class-logo{
+    margin: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 90%;
+}

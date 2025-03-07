@@ -1,0 +1,17 @@
+.main-stats-container-container{
+    border: solid 3px #009600;
+    border-radius: 20px;
+    width: 98vw;
+    margin: 2vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.main-stats-container{
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
