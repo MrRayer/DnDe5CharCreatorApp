@@ -10,13 +10,17 @@
   line-height: 1.5;
   font-weight: 400;
   color: rgb(0, 150, 0);
-  background-color: #242424;
+  background-color: #121212;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   width: 100%;
+}
+::selection{
+  background-color: #009600;
+  color: #121212;
 }
 
 a {
@@ -64,8 +68,19 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+input{
+  background-color: #121212;
+  border: none;
+  border-bottom: solid 3px #009600;
+  color: #009600;
+  font-family: FalloutJH;
+  resize: none;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow-y: auto;
+}
 .textarea{
-  background-color: #242424;
+  background-color: #121212;
   border: none;
   border-bottom: solid 3px #009600;
   color: #009600;
@@ -80,5 +95,5 @@ button:focus-visible {
 }
 .textarea::selection{
   background-color: #009600;
-  color: #242424;
+  color: #121212;
 }

@@ -1,32 +1,47 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import "./calculatedStats.css"
 import { StatsContext } from "../../../context/statsContext"
 
 export default function CalculatedStats(){
-    const { charStats } = useContext(StatsContext);
-    const HP = 10 + (Math.floor((charStats["Constitution"] - 10) / 2) * charStats["Level"]) + ((charStats["Level"] - 1) * 6);
-    const ACN = 10 + Math.floor((charStats["Dexterity"] - 10) / 2);
-    const AC = ACN + charStats["ACA"] + charStats["ACS"];
+    const { charIdentity, charEquipment, calcStat } = useContext(StatsContext);
+    const HP = 10 + (Math.floor((calcStat(2) - 10) / 2) * charIdentity["Level"]) + ((charIdentity["Level"] - 1) * 6);
+    const [currentHP,setCurrentHP] = useState(HP);
+    let timer;
+    const addCurrentHP = () => {
+        if (currentHP < HP){
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                setCurrentHP(currentHP + 1);
+            }, 100);
+        }
+    };
+    const minusCurrentHP = () => {
+        if (currentHP > 0){
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                setCurrentHP(currentHP - 1);
+            }, 100);
+        }
+    };
+    const ACN = 10 + Math.floor((calcStat(1) - 10) / 2);
+    const AC = ACN + charEquipment["ACA"] + charEquipment["ACS"];
     const Initiative = () => {
-        const Ini = Math.floor((charStats["Dexterity"] - 10) / 2);
+        const Ini = Math.floor((calcStat(1) - 10) / 2);
         if (Ini > 0) return `+${Ini}`;
         else return Ini;
     }
-    const NatP = 12 + Math.floor((charStats["Wisdom"] - 10) / 2) + Math.floor(charStats["Level"] / 4);
+    const NatP = 12 + Math.floor((calcStat(4) - 10) / 2) + Math.floor(charIdentity["Level"] / 4);
     return(
         <div className="calculated-stats-main-container">
             <div className="HP-container">
                 <h1 className="HP-title">HP</h1>
                 <div className="current-HP-container">
-                    <div
-                    className="textarea current-HP-text"
-                    contentEditable="true"
-                    role="textbox"
-                    spellCheck="false">
-                        {HP}
-                    </div>
-                    <h1>/</h1>
                     <h1 className="max-HP">{HP}</h1>
+                    <div className="curernt-HP">{currentHP}</div>
+                </div>
+                <div className="HP-buttons-container">
+                    <div className="HP-button HP-button-minus" onClick={()=>{minusCurrentHP()}}>-</div>
+                    <div className="HP-button" onClick={()=>{addCurrentHP()}}>+</div>
                 </div>
             </div>
             <div className="AC-container">
@@ -43,11 +58,11 @@ export default function CalculatedStats(){
                     </div>
                     <div className="AC-arm-container">
                         <h1>Armadura</h1>
-                        <div className="AC">{charStats["ACA"]}</div>
+                        <div className="AC">{charEquipment["ACA"]}</div>
                     </div>
                     <div className="AC-shield-container">
                         <h1>Escudo</h1>
-                        <div className="AC">{charStats["ACS"]}</div>
+                        <div className="AC">{charEquipment["ACS"]}</div>
                     </div>
                 </div>
             </div> 
@@ -57,8 +72,8 @@ export default function CalculatedStats(){
                     <div className="AC">{Initiative()}</div>
                 </div>
                 <div className="per-container">
-                    <h1>Natural</h1>
-                    <h1>Perception</h1>
+                    <h1>Percepcion</h1>
+                    <h1>Pasiva</h1>
                     <div className="AC">{NatP}</div>
                 </div>
             </div>

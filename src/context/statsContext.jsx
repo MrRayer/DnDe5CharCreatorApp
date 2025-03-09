@@ -2,59 +2,90 @@ import React, { createContext, useState } from "react";
 
 export const StatsContext = createContext();
 export function StatsProvider({ children }) {
-    const [charStats, setCharStats] = useState({
-            // Basic Identity
-            "Name": "Nombre del personaje",
-            "Race": "Human",
-            "Class": "Warrior",
-            "Level": 1,
-            "Experience": 0,
-            "Background": "",
-            "Alignment": "Neutral",
-            // Race/Class Details
-            "Languages": ["Common"],
-            // Ability Scores
-            "Strength": 8,
-            "Dexterity": 8,
-            "Constitution": 8,
-            "Intelligence": 8,
-            "Wisdom": 8,
-            "Charisma": 8,
-            "Remaining": 27,
-            // Equipment Bonuses
-            "ACA": 0,
-            "ACS": 0
+    const [charIdentity, setCharIdentity] = useState({
+        Name: "Nombre del personaje",
+        Race: "none",
+        Subrace: "none",
+        Class: "none",
+        Subclass:"none",
+        Level: 1,
+        Experience: 0,
+        Background: "",
+        Alignment: "Neutral",
+        Languages: ["Common"]
+    });
+    const [charAbilityScores, setCharAbilityScores] = useState({
+        stats: [8,8,8,8,8,8],
+        Remaining: 27,
+        extraStats:[0,0,0,0,0,0]
+    });
+    const [charEquipment, setCharEquipment] = useState({
+            ACA: 0,
+            ACS: 0
     });
     const addAbility = (ability) => {
-        setCharStats(prevStats => {
-            const newStats = { ...prevStats };
-            let cost = 1;
-            const currentValue = newStats[ability];    
-            if (currentValue < 13) cost = 1;
-            else if (currentValue < 15) cost = 2;
-            else if (currentValue < 16) cost = 3;
-            else return prevStats;
-            if (newStats.Remaining < cost) return prevStats;
-            newStats[ability] += 1;
-            newStats.Remaining -= cost;    
-            return newStats;
-        });
-    }
-    const subtractAbility = (ability) => {
-        setCharStats(prevStats => {
-            const newStats = { ...prevStats };
-            const currentValue = newStats[ability];    
-            if (currentValue <= 8) return prevStats;    
-            let refund = 1;
-            if (currentValue > 15) refund = 3;
-            else if (currentValue > 13) refund = 2;    
-            newStats[ability] -= 1;
-            newStats.Remaining += refund;    
-            return newStats;
+        setCharAbilityScores(prevStats => {
+            const { stats, extraStats, Remaining } = prevStats;
+            const currentValue = stats[ability];
+            const extra = extraStats[ability];
+            const totalValue = currentValue + extra;
+            const cost = totalValue < 13 ? 1 : totalValue < 15 ? 2 : totalValue < 16 ? 3 : null;
+            if (cost === null || Remaining < cost) return prevStats;
+            return {
+                ...prevStats,
+                stats: stats.map((val, index) => index === ability ? val + 1 : val),
+                Remaining: Remaining - cost
+            };
         });
     };
+    const subtractAbility = (ability) => {
+        setCharAbilityScores(prevStats => {
+            const { stats, extraStats, Remaining } = prevStats;
+            const currentValue = stats[ability];
+            const extra = extraStats[ability];
+            const totalValue = currentValue + extra;
+            const refund = totalValue > 15 ? 3 : totalValue > 13 ? 2 : currentValue > 8 ? 1 : null;
+            if (refund === null) return prevStats;
+            return {
+                ...prevStats,
+                stats: stats.map((val, index) => index === ability ? val - 1 : val),
+                Remaining: Remaining + refund                
+            }
+        });
+    };
+    const setRaceSubrace = (Stat, Value, _extraStats) => {
+        setCharIdentity(prevIdentity => ({
+            ...prevIdentity,
+            [Stat]: Value
+        }));
+        if (Stat === "Race") {
+            setCharAbilityScores({
+                stats: [8,8,8,8,8,8],
+                Remaining: 27,
+                extraStats:_extraStats
+            });
+        }
+        else setCharAbilityScores(prevStats => {
+            return {
+                ...prevStats,
+                extraStats: prevStats.extraStats.map((val, index) => val + _extraStats[index])
+            };
+        });
+    };
+    const setClass = (selected) => {
+        setCharIdentity(prevId => ({...prevId, Class: selected}))
+    }
+    const calcStat = (stat) => {return charAbilityScores["stats"][stat]+charAbilityScores["extraStats"][stat]}
     return (
-        <StatsContext.Provider value={{ charStats, addAbility, subtractAbility }}>
+        <StatsContext.Provider value={{
+                charIdentity,
+                charAbilityScores, 
+                charEquipment,
+                setRaceSubrace,
+                calcStat,
+                addAbility,
+                subtractAbility,
+                setClass}}>
             {children}
         </StatsContext.Provider>
     );

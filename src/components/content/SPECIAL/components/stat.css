@@ -1,12 +1,10 @@
 .stat-container{
-    font-size: clamp(5px,1vw,10px);
+    font-size: 5px;
     border: solid 3px #009600;
-    background-color: #242424;
+    background-color: #121212;
     border-radius: 15px;
     margin: 0.25vw;
-    height: 14vw;
-    max-height: 115px;
-    min-height: 70px;
+    height: 22vw;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -22,7 +20,7 @@
 .stat-number-container{
     display: flex;
     flex-direction: row;
-    background-color: #242424;
+    background-color: #121212;
     z-index: 20;
     align-items: center;
 }
@@ -36,18 +34,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1.5vw;
-    width: 1.5vw;
-    min-height: 15px;
-    min-width: 15px;
+    height: 20px;
+    width: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
 }
 .stat-button:hover{
-    color: #242424;
+    color: rgba(0,0,0,0);
     background-color: #009600;
     cursor: pointer;
 }
 .stat-number{
     border: solid 3px #009600;
     border-radius: 10px;
-    width: 5vw;
+    width: 35px;
+    font-size: 14px;
 }

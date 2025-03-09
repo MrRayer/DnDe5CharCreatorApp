@@ -1,9 +1,12 @@
+import { GlobalsProvider } from "./globalsContext";
 import { StatsProvider } from "./statsContext";
 
 export default function AppProviders({children}){
     return(
-        <StatsProvider>
-            {children}
-        </StatsProvider>
+        <GlobalsProvider>
+            <StatsProvider>
+                {children}
+            </StatsProvider>
+        </GlobalsProvider>
     )
 }
