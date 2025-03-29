@@ -1,0 +1,8 @@
+{
+    "Parent": "Mediano",
+    "Subrace": "Pies ligeros",
+    "extraStats": [0,0,0,0,0,1],
+    "abilities": [
+        "naturallyStealthy"
+    ]
+}

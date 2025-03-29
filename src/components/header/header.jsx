@@ -1,9 +1,11 @@
 import "./header.css"
 import { useContext } from "react"
 import { StatsContext } from "../../context/statsContext"
+import { GlobalsContext } from "../../context/globalsContext";
 
 export default function Header() {
     const { charIdentity } = useContext(StatsContext);
+    const { setPopupName, setShaderFlag } = useContext(GlobalsContext);
     return(
         <div className="header-main-container">
             <div className="logo-container"><img className="d20-logo" src="/img/d20green.png" alt="App Logo"/></div>
@@ -18,7 +20,9 @@ export default function Header() {
                     spellCheck="false"
                 />
             </div>
-            <div className="class-container"><img className="class-logo" src="/img/ftrgreen.png" alt="App Logo"/></div>
+            <div className="class-container" onClick={() => {setPopupName("GlobalSelector");setShaderFlag(true)}}>
+                <img className="class-logo" src="/img/ftrgreen.png" alt="App Logo"/>
+                </div>
         </div>
     );
 }

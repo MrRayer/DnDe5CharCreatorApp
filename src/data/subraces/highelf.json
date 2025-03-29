@@ -1,0 +1,8 @@
+{
+    "Parent": "Elfo",
+    "Subrace": "Alto Elfo",
+    "extraStats": [0,0,0,1,0,0],
+    "cantripChoice": {"ammount": 1, "class": "wizard"},
+    "languageChoice": 1,
+    "weaponProf": ["Espada larga","Espada corta","Arco largo","Arco corto"]
+}

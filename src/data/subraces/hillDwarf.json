@@ -1,0 +1,6 @@
+{
+    "Parent": "Enano",
+    "Subrace": "Enano de las colinas",
+    "extraStats": [0,0,0,0,1,0],
+    "extraHp": 1
+}

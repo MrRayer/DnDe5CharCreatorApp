@@ -1,0 +1,12 @@
+{
+    "Race": "Enano",
+    "extraStats": [0,0,2,0,0,0],
+    "languages": ["Comun","enano"],
+    "abilities": [
+        "darkvision",
+        "dwarvenResilience",
+        "toolProficiency",
+        "stonecunning"
+    ],
+    "weaponProf": ["Hacha de batalla","Hacha de mano","Martillo arrojadizo","Martillo de guerra"]
+}

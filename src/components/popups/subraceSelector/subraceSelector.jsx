@@ -5,21 +5,27 @@ import Subraces from "../../../data/subraces";
 import { GlobalsContext } from "../../../context/globalsContext";
 import GetStatName from "../../../logic/getStatName";
 
-export default function SubraceSelector(){
+export default function SubraceSelector() {
     const { setRaceSubrace, charIdentity } = useContext(StatsContext);
     const { setShaderFlag } = useContext(GlobalsContext);
+
     return (
         <div className="subrace-selector-container">
-            {Subraces.map(Subrace => (
-                Subrace["Parent"] === charIdentity["Race"] && (
-                    <div key={Subrace.Subrace} className="subrace-conainer" onClick={()=>{setRaceSubrace("Subrace",Subrace.Subrace,Subrace.extraStats);setShaderFlag(false)}}>
-                        <h1 className="subrace-title">{Subrace.Subrace}</h1>
-                        {Object.entries(Subrace.extraStats).map(([stat, value]) =>
-                            value > 0 ? (<p key={GetStatName(stat)}>{GetStatName(stat)}: +{value}</p>) : null
-                        )}
-                    </div>
-                )
+            {Subraces.filter(subrace => subrace.Parent === charIdentity.Race).map(subrace => (
+                <div 
+                    key={subrace.Subrace} 
+                    className="subrace-container" 
+                    onClick={() => {
+                        setRaceSubrace("Subrace", subrace.Subrace, subrace.extraStats);
+                        setShaderFlag(false);
+                    }}
+                >
+                    <h1 className="subrace-title">{subrace.Subrace}</h1>
+                    {subrace.extraStats.map((value, index) =>
+                        value > 0 ? <p key={index}>{GetStatName(index)}: +{value}</p> : null
+                    )}
+                </div>
             ))}
         </div>
-    )
+    );
 }

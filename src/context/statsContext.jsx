@@ -14,15 +14,23 @@ export function StatsProvider({ children }) {
         Alignment: "Neutral",
         Languages: ["Common"]
     });
+
+    const [charResources, setCharResources] = useState({
+        max: [1,1,0,0,0,0,0,0,0,0,0],
+        current: [1,1,0,0,0,0,0,0,0,0,0]
+    });
+
     const [charAbilityScores, setCharAbilityScores] = useState({
         stats: [8,8,8,8,8,8],
         Remaining: 27,
         extraStats:[0,0,0,0,0,0]
     });
+
     const [charEquipment, setCharEquipment] = useState({
             ACA: 0,
             ACS: 0
     });
+
     const addAbility = (ability) => {
         setCharAbilityScores(prevStats => {
             const { stats, extraStats, Remaining } = prevStats;
@@ -38,6 +46,7 @@ export function StatsProvider({ children }) {
             };
         });
     };
+
     const subtractAbility = (ability) => {
         setCharAbilityScores(prevStats => {
             const { stats, extraStats, Remaining } = prevStats;
@@ -53,6 +62,7 @@ export function StatsProvider({ children }) {
             }
         });
     };
+
     const setRaceSubrace = (Stat, Value, _extraStats) => {
         setCharIdentity(prevIdentity => ({
             ...prevIdentity,
@@ -72,20 +82,32 @@ export function StatsProvider({ children }) {
             };
         });
     };
+
     const setClass = (selected) => {
         setCharIdentity(prevId => ({...prevId, Class: selected}))
     }
+
+    const resetResources = () =>{
+        setCharResources(prevResources => ({
+            ...prevResources,
+            current: [...prevResources.max]
+        }));
+    }
+
     const calcStat = (stat) => {return charAbilityScores["stats"][stat]+charAbilityScores["extraStats"][stat]}
     return (
         <StatsContext.Provider value={{
                 charIdentity,
                 charAbilityScores, 
                 charEquipment,
+                charResources,
                 setRaceSubrace,
                 calcStat,
                 addAbility,
                 subtractAbility,
-                setClass}}>
+                setClass,
+                setCharResources,
+                resetResources}}>
             {children}
         </StatsContext.Provider>
     );

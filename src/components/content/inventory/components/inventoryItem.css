@@ -1,0 +1,35 @@
+.inventory-item-container{
+    border: solid 3px #009600;
+    border-radius: 20px;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+.inventory-item-name{
+    font-size: 20px;
+    width: 100%;
+    border-bottom: solid 3px #009600;
+    margin: 0;
+    padding: 2vw;
+}
+.inventory-item-description{
+    font-size: 15px;
+    width: 100%;
+    margin: 0;
+    padding: 2vw;
+}
+.inventory-item-quantity{
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 2vw;
+}
+.inventory-item-quantity-container{
+    display: flex;
+    flex-direction: row;
+}
+.inventory-item-quantity-button{
+    background-color: #121212;
+    color: #009600;
+    border-radius: 20px;
+}
