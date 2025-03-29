@@ -8,7 +8,7 @@ export default function Header() {
     const { setPopupName, setShaderFlag } = useContext(GlobalsContext);
     return(
         <div className="header-main-container">
-            <div className="logo-container"><img className="d20-logo" src="/img/d20green.png" alt="App Logo"/></div>
+            <div className="logo-container"><img className="d20-logo" src={`${import.meta.env.BASE_URL}img/d20green.png`} alt="App Logo"/></div>
             <div className="name-container">
                 <textarea
                     className="char-name-textarea"
@@ -21,7 +21,7 @@ export default function Header() {
                 />
             </div>
             <div className="class-container" onClick={() => {setPopupName("GlobalSelector");setShaderFlag(true)}}>
-                <img className="class-logo" src="/img/ftrgreen.png" alt="App Logo"/>
+                <img className="class-logo" src={`${import.meta.env.BASE_URL}/img/ftrgreen.png`} alt="App Logo"/>
                 </div>
         </div>
     );
