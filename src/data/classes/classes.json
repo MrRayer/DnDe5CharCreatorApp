@@ -1,0 +1,476 @@
+{
+    "barbarian" : {
+        "name" : "Barbaro",
+        "hitDie" : 7,
+        "armorProf" : ["Ligera","Media","Escudos"],
+        "weaponProf" : ["Armas simples","Armas marciales"],
+        "toolProf" : [],
+        "resources" : [1,1,0,0,0,0,0,0,0,0,0],
+        "skillChoice" : 2,
+        "abilities" : [
+            "rage", "unarmoredDefense"
+        ],
+        "startingInventory" : [
+            {
+                "name" : "Gran hacha",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Hacha",
+                "description" : "",
+                "quantity" : 2
+            },
+            {
+                "name" : "Equipo de explorardor",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Javalina",
+                "description" : "Lanza corta arrojadiza",
+                "quantity" : 4
+            }
+        ]
+    },
+    "bard" : {
+        "name" : "Bardo",
+        "hitDie" : 5,
+        "armorProf" : ["Ligera"],
+        "weaponProf" : ["Armas simples","Ballesta de mano", "Espada larga", "Estoque", "Espada corta"],
+        "toolProf" : ["Instrumentos musicales"],
+        "resources" : [1,1,2,0,0,0,0,0,0,0,0],
+        "skillChoice" : 3,
+        "cantripChoice" : 2,
+        "spellChoice" : 4,
+        "abilities" : [
+            "bardicInspiration"
+        ],
+        "startingInventory" : [
+            {
+                "name" : "Estoque",
+                "description" : "Fina espada de duelo",
+                "quantity" : 1
+            },
+            {
+                "name" : "Equipo de diplomatico",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Instrumento musical",
+                "description" : "a eleccion",
+                "quantity" : 1
+            },
+            {
+                "name" : "Armadura de cuero",
+                "description" : "Armadura para el torso",
+                "quantity" : 1
+            },
+            {
+                "name" : "Daga",
+                "description" : "Pequeña daga de cuero",
+                "quantity" : 1
+            }
+        ]
+    },
+    "warlock" : {
+        "name" : "Brujo",
+        "hitDie" : 5,
+        "armorProf" : ["Ligera"],
+        "weaponProf" : ["Armas simples"],
+        "toolProf" : [],
+        "resources" : [1,1,1,0,0,0,0,0,0,0,0],
+        "skillChoice" : 2,
+        "cantripChoice" : 2,
+        "spellChoice" : 2,
+        "abilities" : [],
+        "startingInventory" : [
+            {
+                "name" : "Ballesta ligera",
+                "description" : "Usa birotes",
+                "quantity" : 1
+            },
+            {
+                "name" : "Birotes",
+                "description" : "Municion para ballesta ligera",
+                "quantity" : 20
+            },
+            {
+                "name" : "Bolsa de componentes de conjuros",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Equipo de erudito",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Daga",
+                "description" : "Pequeña daga de hierro",
+                "quantity" : 2
+            },
+            {
+                "name" : "Armadura de cuero",
+                "description" : "Armadura para el torso",
+                "quantity" : 1
+            }
+        ]
+    },
+    "cleric" : {
+        "name" : "Clerigo",
+        "hitDie" : 5,
+        "armorProf" : ["Ligera","Armadura media","Escudos"],
+        "weaponProf" : ["Armas simples"],
+        "toolProf" : [],
+        "resources" : [1,1,2,0,0,0,0,0,0,0,0],
+        "skillChoice" : 2,
+        "cantripChoice" : 3,
+        "abilities" : [],
+        "startingInventory" : [
+            {
+                "name" : "Maza",
+                "description" : "Corto alcanze, daño contundente",
+                "quantity" : 1
+            },
+            {
+                "name" : "Cota de escamas",
+                "description" : "Armadura para el torso",
+                "quantity" : 1
+            },
+            {
+                "name" : "Ballesta ligera",
+                "description" : "Usa birotes",
+                "quantity" : 1
+            },
+            {
+                "name" : "Birotes",
+                "description" : "Municion para ballesta ligera",
+                "quantity" : 20
+            },
+            {
+                "name" : "Equipo de sacerdote",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Escudo",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Simbolo sagrado",
+                "description" : "",
+                "quantity" : 1
+            }
+        ]
+    },
+    "druid" : {
+        "name" : "Druida",
+        "hitDie" : 5,
+        "armorProf" : ["Ligera","Armadura media","Escudos"],
+        "weaponProf" : ["Bastones","Cimitarras","Clavas","Dagas","Dardos","Hoces","Hondas","Lanzas","Mazas"],
+        "toolProf" : ["Herbolisteria"],
+        "resources" : [1,1,2,0,0,0,0,0,0,0,0],
+        "skillChoice" : 2,
+        "cantripChoice" : 2,
+        "abilities" : [],
+        "startingInventory" : [
+            {
+                "name" : "Cimitarra",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Escudo de madera",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Armadura de cuero",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Equipo de explorardor",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Foco druidico",
+                "description" : "",
+                "quantity" : 1
+            }
+        ]
+    },
+    "explorer" : {
+        "name" : "Explorer",
+        "hitDie" : 6,
+        "armorProf" : ["Ligera","Armadura media","Escudos"],
+        "weaponProf" : ["Armas simples","Armas marciales"],
+        "toolProf" : [],
+        "resources" : [1,1,0,0,0,0,0,0,0,0,0],
+        "skillChoice" : 2,
+        "cantripChoice" : 0,
+        "abilities" : [],
+        "startingInventory" : [
+            {
+                "name" : "Espadas cortas",
+                "description" : "",
+                "quantity" : 2
+            },
+            {
+                "name" : "Cota de escamas",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Equipo de explorardor",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Arco largo",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Flechas",
+                "description" : "",
+                "quantity" : 20
+            }
+        ]
+    },
+    "warrior" : {
+        "name" : "Guerrero",
+        "hitDie" : 6,
+        "armorProf" : ["Ligera","Media","Pesada","Escudos"],
+        "weaponProf" : ["Armas simples","Armas marciales"],
+        "toolProf" : [],
+        "resources" : [1,1,0,0,0,0,0,0,0,0,0],
+        "skillChoice" : 2,
+        "abilities" : ["newEnergies"],
+        "startingInventory" : [
+            {
+                "name" : "Ballesta ligera",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Birotes",
+                "description" : "",
+                "quantity" : 20
+            },
+            {
+                "name" : "Cota de escamas",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Espada larga",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Escudo",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Equipo para dungeon",
+                "description" : "",
+                "quantity" : 1
+            }
+        ]
+    },
+    "sorcerer" : {
+        "name" : "Hechicero",
+        "hitDie" : 4,
+        "armorProf" : [],
+        "weaponProf" : ["Dagas","Dardos","Hondas","Bastones","Ballestas ligeras"],
+        "toolProf" : [],
+        "resources" : [1,1,2,0,0,0,0,0,0,0,0],
+        "skillChoice" : 2,
+        "cantripChoice" : 4,
+        "spellChoice" : 2,
+        "abilities" : [],
+        "startingInventory" : [
+            {
+                "name" : "Ballesta ligera",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Birotes",
+                "description" : "",
+                "quantity" : 20
+            },
+            {
+                "name" : "Bolsa de componentes de conjuros",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Equipo para dungeon",
+                "description" : "",
+                "quantity" : 1
+            }
+        ]
+    },
+    "wizard" : {
+        "name" : "Mago",
+        "hitDie" : 4,
+        "armorProf" : [],
+        "weaponProf" : ["Dagas","Dardos","Hondas","Bastones","Ballestas ligeras"],
+        "toolProf" : [],
+        "resources" : [1,1,2,0,0,0,0,0,0,0,0],
+        "skillChoice" : 2,
+        "cantripChoice" : 3,
+        "spellChoice" : 2,
+        "abilities" : [],
+        "startingInventory" : [
+            {
+                "name" : "Baston",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Bolsa de componentes de conjuros",
+                "description" : "",
+                "quantity" : 20
+            },
+            {
+                "name" : "Equipo de erudito",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Libro de conjuros",
+                "description" : "",
+                "quantity" : 1
+            }
+        ]
+    },
+    "monk" : {
+        "name" : "Monje",
+        "hitDie" : 5,
+        "armorProf" : [],
+        "weaponProf" : ["Armas simples","Espadas cortas"],
+        "toolProf" : ["Herramientas de artesano"],
+        "resources" : [1,1,0,0,0,0,0,0,0,0,0],
+        "skillChoice" : 2,
+        "abilities" : [
+            "unarmoredMonkDefense","martialArts"
+        ],
+        "startingInventory" : [
+            {
+                "name" : "Espada corta",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Equipo de dungeon",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Dardo",
+                "description" : "",
+                "quantity" : 10
+            }
+        ]
+    },
+    "paladin" : {
+        "name" : "Paladin",
+        "hitDie" : 6,
+        "armorProf" : ["Ligera","Media","Pesada","Escudos"],
+        "weaponProf" : ["Armas simples","Armas marciales"],
+        "toolProf" : [],
+        "resources" : [1,1,0,0,0,0,0,0,0,0,0],
+        "skillChoice" : 2,
+        "abilities" : [
+            "divineSense","handImposition"
+        ],
+        "startingInventory" : [
+            {
+                "name" : "Espada larga",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Escudo",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Javalina",
+                "description" : "",
+                "quantity" : 5
+            },
+            {
+                "name" : "Equipo de sacerdote",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Cota de malla",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Simbolo sagrado",
+                "description" : "",
+                "quantity" : 1
+            }
+        ]
+    },
+    "rogue" : {
+        "name" : "Picaro",
+        "hitDie" : 5,
+        "armorProf" : ["Ligera"],
+        "weaponProf" : ["Armas simples","Ballesta de mano","Espada larga","Estoque","Espada corta"],
+        "toolProf" : ["Herramientas de ladron"],
+        "resources" : [1,1,0,0,0,0,0,0,0,0,0],
+        "skillChoice" : 4,
+        "abilities" : ["expertise","stealthAtack"],
+        "languages" : ["Jerga de ladrones"],
+        "startingInventory" : [
+            {
+                "name" : "Estoque",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Arco pequeño",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Flechas",
+                "description" : "",
+                "quantity" : 20
+            },
+            {
+                "name" : "Equipo de ladron",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Armadura de cuero",
+                "description" : "",
+                "quantity" : 1
+            },
+            {
+                "name" : "Daga",
+                "description" : "",
+                "quantity" : 2
+            },
+            {
+                "name" : "Herramientas de ladron",
+                "description" : "",
+                "quantity" : 1
+            }
+        ]
+    }
+}
