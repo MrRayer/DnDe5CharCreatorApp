@@ -1,0 +1,20 @@
+{
+    "archfey" : {
+        "parent" : "Brujo",
+        "name" : "Pacto de la Archihada",
+        "description" : "",
+        "abilities" : ["feyPresence"]
+    },
+    "devil" : {
+        "parent" : "Brujo",
+        "name" : "Pacto del demonio",
+        "description" : "",
+        "abilities" : ["darkOneBlessing"]
+    },
+    "greatOldOne" : {
+        "parent" : "Brujo",
+        "name" : "Pacto del Gran Antiguo",
+        "description" : "",
+        "abilities" : ["awakenedMind"]
+    }
+}

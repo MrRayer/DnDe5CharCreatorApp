@@ -1,0 +1,368 @@
+{
+    "animalFriendship" : {
+        "name" : "Amistad con los animales",
+        "classes" : ["Bardo","Druida","Explorador"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "featherFall" : {
+        "name" : "Caida de pluma",
+        "classes" : ["Bardo","Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "comprehendLanguages" : {
+        "name" : "Comprender idiomas",
+        "classes" : ["Bardo","Brujo","Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "cureWounds" : {
+        "name" : "Curar heridas",
+        "classes" : ["Bardo","Clerigo","Druida","Explorador","Paladin"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "detectMagic" : {
+        "name" : "Detectar magia",
+        "classes" : ["Bardo","Clerigo","Druida","Explorador","Hechicero","Mago","Paladin"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "disguiseSelf" : {
+        "name" : "Disfrazarse",
+        "classes" : ["Bardo","Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "sleep" : {
+        "name" : "Dormir",
+        "classes" : ["Bardo","Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "illusoryScript" : {
+        "name" : "Escritura ilusoria",
+        "classes" : ["Bardo","Brujo","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "fearieFire" : {
+        "name" : "Fuego feerico",
+        "classes" : ["Bardo","Druida"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "speakWithAnimals" : {
+        "name" : "Hablar con los animales",
+        "classes" : ["Bardo","Druida","Explorador"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "charmPerson" : {
+        "name" : "Hechizar persona",
+        "classes" : ["Bardo","Brujo","Druida","Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "heroism" : {
+        "name" : "Heroismo",
+        "classes" : ["Bardo","Paladin"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "identify" : {
+        "name" : "Identificar",
+        "classes" : ["Bardo","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "silentImage" : {
+        "name" : "Imagen silenciosa",
+        "classes" : ["Bardo","Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "thunderwave" : {
+        "name" : "Onda atronadora",
+        "classes" : ["Bardo","Druida","Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "healingWord" : {
+        "name" : "Palabra sanadora",
+        "classes" : ["Bardo","Clerigo","Druida"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "bane" : {
+        "name" : "Perdicion",
+        "classes" : ["Bardo","Clerigo"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "unseenServant" : {
+        "name" : "Sirviente invisible",
+        "classes" : ["Bardo","Brujo","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "disonantWhispers" : {
+        "name" : "Susurros disonantes",
+        "classes" : ["Bardo"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "tashasHideousLaughter" : {
+        "name" : "Terribles carcajadas de Tasha",
+        "classes" : ["Bardo","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "longstrider" : {
+        "name" : "Zancada prodigiosa",
+        "classes" : ["Bardo","Druida","Explorador","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "armorOfAgathys" : {
+        "name" : "Armadura de Agathys",
+        "classes" : ["Brujo"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "armsOfHadar" : {
+        "name" : "brazos de Hadar",
+        "classes" : ["Brujo"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "hex" : {
+        "name" : "Mal de ojo",
+        "classes" : ["Brujo"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "protectionFromGoodAndEvil" : {
+        "name" : "Proteccion contra el bien y el mal",
+        "classes" : ["Brujo","Clerigo","Mago","Paladin"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "hellishRebuke" : {
+        "name" : "Represion infernal",
+        "classes" : ["Brujo"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "expeditiousRetreat" : {
+        "name" : "Retirada expeditiva",
+        "classes" : ["Brujo","Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "witchBolt" : {
+        "name" : "Virote encantado",
+        "classes" : ["Brujo","Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "bless" : {
+        "name" : "Bendecir",
+        "classes" : ["Clerigo","Paladin"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "createOrDestroyWater" : {
+        "name" : "Crear o destruir agua",
+        "classes" : ["Clerigo","Druida"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "detectGoodAndEvil" : {
+        "name" : "Detectar el bien y el mal",
+        "classes" : ["Clerigo","Paladin"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "detectPoisonAndDisease" : {
+        "name" : "Detectar veneno y enfermedad",
+        "classes" : ["Clerigo","Druida","Explorador","Paladin"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "shieldOfFaith" : {
+        "name" : "Escudo de la fe",
+        "classes" : ["Clerigo","Paladin"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "inflictWound" : {
+        "name" : "Infligir heridas",
+        "classes" : ["Clerigo"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "command" : {
+        "name" : "Orden imperiosa",
+        "classes" : ["Clerigo","Paladin"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "purifyFoodAndDrink" : {
+        "name" : "Purificar comida y bebida",
+        "classes" : ["Clerigo","Druida","Paladin"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "guidingBolt" : {
+        "name" : "Rayo guiador",
+        "classes" : ["Clerigo"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "sanctuary" : {
+        "name" : "Santuario",
+        "classes" : ["Clerigo"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "goodberry" : {
+        "name" : "Buenas bayas",
+        "classes" : ["Druida","Explorador"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "entangle" : {
+        "name" : "Enmarañar",
+        "classes" : ["Druida"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "fogCloud" : {
+        "name" : "Nube brumosa",
+        "classes" : ["Druida","Explorador","Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "jump" : {
+        "name" : "Salto",
+        "classes" : ["Druida","Explorador","Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "alarm" : {
+        "name" : "Alarma",
+        "classes" : ["Explorador","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "ensnaringStrike" : {
+        "name" : "Impacto enmarañador",
+        "classes" : ["Explorador"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "huntersMark" : {
+        "name" : "Marca del cazador",
+        "classes" : ["Explorador"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "hailOfThorns" : {
+        "name" : "Rafaga de espinas",
+        "classes" : ["Explorador"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "mageArmor" : {
+        "name" : "Armadura de mago",
+        "classes" : ["Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "shield" : {
+        "name" : "Escudo",
+        "classes" : ["Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "burningHands" : {
+        "name" : "Manos ardientes",
+        "classes" : ["Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "chromaticOrb" : {
+        "name" : "Orbe cromatico",
+        "classes" : ["Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "magicMissile" : {
+        "name" : "Proyectil magico",
+        "classes" : ["Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "rayOfSickness" : {
+        "name" : "Rayo de dolencia",
+        "classes" : ["Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "colorSpray" : {
+        "name" : "Rociada de color",
+        "classes" : ["Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "falseLife" : {
+        "name" : "Vida falsa",
+        "classes" : ["Hechicero","Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "tensersFloatingDisk" : {
+        "name" : "Disco flotante de Tenser",
+        "classes" : ["Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "findFamiliar" : {
+        "name" : "Encontrar familiar",
+        "classes" : ["Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "grease" : {
+        "name" : "Grasa",
+        "classes" : ["Mago"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "divineFavor" : {
+        "name" : "Favor divino",
+        "classes" : ["Paladin"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "searingSmite" : {
+        "name" : "Golpe abrasador",
+        "classes" : ["Paladin"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "wrathfulSmite" : {
+        "name" : "Golpe iracundo",
+        "classes" : ["Paladin"],
+        "type" : "lvl1",
+        "description" : ""
+    },
+    "thunderousSmite" : {
+        "name" : "Golpe estruendoso",
+        "classes" : ["Paladin"],
+        "type" : "lvl1",
+        "description" : ""
+    }
+}

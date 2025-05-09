@@ -1,0 +1,34 @@
+{    
+    "name" : "Hechicero",
+    "hitDie" : 4,
+    "armorProf" : [],
+    "weaponProf" : ["Dagas","Dardos","Hondas","Bastones","Ballestas ligeras"],
+    "toolProf" : [],
+    "resources" : [1,1,2,0,0,0,0,0,0,0,0],
+    "skillChoice" : 2,
+    "cantripChoice" : 4,
+    "spellChoice" : 2,
+    "abilities" : [],
+    "startingInventory" : [
+        {
+            "name" : "Ballesta ligera",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Birotes",
+            "description" : "",
+            "quantity" : 20
+        },
+        {
+            "name" : "Bolsa de componentes de conjuros",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Equipo para dungeon",
+            "description" : "",
+            "quantity" : 1
+        }
+    ]
+}

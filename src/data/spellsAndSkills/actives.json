@@ -108,5 +108,17 @@
         "type" : "active",
         "range": "NA",
         "description" : "agrega 1D6 al daño de tu arma si tienes ventaja contra tu objetivo"
+    },
+    "blessingsOfTrickery" : {
+        "name" : "Bendicion de sigilo",
+        "type" : "active",
+        "range": "0m",
+        "description" : "Toca a un aliado con tu accion para darle ventaja en las tiradas de sigilo."
+    },
+    "feyPresence" : {
+        "name" : "Presencia feerica",
+        "type" : "active",
+        "range": "3m",
+        "description" : "Toda criatura en el rango centrada en ti hace una tirada de salvacion de sabiduria o queda asustada o encantada hasta el proximo turno."
     }
 }

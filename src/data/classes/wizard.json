@@ -1,0 +1,34 @@
+{    
+    "name" : "Mago",
+    "hitDie" : 4,
+    "armorProf" : [],
+    "weaponProf" : ["Dagas","Dardos","Hondas","Bastones","Ballestas ligeras"],
+    "toolProf" : [],
+    "resources" : [1,1,2,0,0,0,0,0,0,0,0],
+    "skillChoice" : 2,
+    "cantripChoice" : 3,
+    "spellChoice" : 2,
+    "abilities" : [],
+    "startingInventory" : [
+        {
+            "name" : "Baston",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Bolsa de componentes de conjuros",
+            "description" : "",
+            "quantity" : 20
+        },
+        {
+            "name" : "Equipo de erudito",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Libro de conjuros",
+            "description" : "",
+            "quantity" : 1
+        }
+    ]
+}

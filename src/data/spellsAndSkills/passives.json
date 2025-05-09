@@ -183,5 +183,45 @@
         "name" : "Experto",
         "type" : "passive",
         "description" : "Elije 2 habilidades para duplicar el bonificador de competencia"
+    },
+    "warPriest" : {
+        "name" : "Guerrero sagrado",
+        "type" : "passive",
+        "description" : "Puedes realizar un ataque como accion adicional luego de atacar tantas veces al dia como tu mod de sabiduria (minimo 1)"
+    },
+    "wardingFlare" : {
+        "name" : "Fulgor protector",
+        "type" : "passive",
+        "description" : "Cuando un enemigo a 9m o menos de distancia te ataque puedes usar tu reaccion para darle desventaja a la tirada de ataque. Puedes usarlo un numero de veces igual a tu modificador de sabiduria."
+    },
+    "wrathOftheStorm" : {
+        "name" : "Ira de la tormenta",
+        "type" : "passive",
+        "description" : "Cuando un enemigo a 1.5m o menos de distancia te ataque puedes usar tu reaccion para hacerle 2D8 de daño de trueno si falla una tirada de salvacion de destreza o la mitad si no."
+    },
+    "lifeDisiple" : {
+        "name" : "Discípulo de la vida",
+        "type" : "passive",
+        "description" : "Cuando uses un hechizo de curacion puedes agregar 2 + nivel de conjuro al total de curacion"
+    },
+    "wildMagicSurge" : {
+        "name" : "Oleada de magia salvaje",
+        "type" : "passive",
+        "description" : "Cuando uses un hechizo de nivel 1 o superior lanza un D20. Si obtienes un 1, lanza en la tabla de magia salvaje"
+    },
+    "tidesOfChaos" : {
+        "name" : "Mareas de caos",
+        "type" : "passive",
+        "description" : "Una vez por descanso largo gana ventaja en una tirada de attaque o salvacion."
+    },
+    "darkOneBlessing" : {
+        "name" : "Bendicion del oscuro",
+        "type" : "passive",
+        "description" : "Al reducir los puntos de vida de un enemigo a 0, ganas puntos temporales igual a tu mod de carisma + tu nivel de brujo (minimo 1)"
+    },
+    "awakenedMind" : {
+        "name" : "Mente despierta",
+        "type" : "passive",
+        "description" : "Puedes comunicarte telepaticamente con cualquier criatura a 9m de distancia sin importar el idioma"
     }
 }
