@@ -45,6 +45,11 @@
     padding: 1vw;
     width: 50%;
     margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
 }
 .res-button-add{
     border-left: solid 3px #009600;

@@ -1,14 +1,13 @@
 {    
     "name" : "Brujo",
+    "baseHP" : 8,
     "hitDie" : 5,
     "armorProf" : ["Ligera"],
     "weaponProf" : ["Armas simples"],
-    "toolProf" : [],
     "resources" : [1,1,1,0,0,0,0,0,0,0,0],
     "skillChoice" : 2,
     "cantripChoice" : 2,
-    "spellChoice" : 2,
-    "abilities" : [],
+    "spell1Choice" : 2,
     "startingInventory" : [
         {
             "name" : "Ballesta ligera",

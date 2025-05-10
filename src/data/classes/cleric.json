@@ -1,13 +1,12 @@
 {    
     "name" : "Clerigo",
+    "baseHP" : 8,
     "hitDie" : 5,
     "armorProf" : ["Ligera","Armadura media","Escudos"],
     "weaponProf" : ["Armas simples"],
-    "toolProf" : [],
     "resources" : [1,1,2,0,0,0,0,0,0,0,0],
     "skillChoice" : 2,
     "cantripChoice" : 3,
-    "abilities" : [],
     "spells" : ["cureWounds","detectMagic","healingWord","bane","protectionFromGoodAndEvil","bless","createOrDestroyWater",
     "detectGoodAndEvil","detectPoisonAndDisease","shieldOfFaith","inflictWound","command","purifyFoodAndDrink","guidingBolt",
     "sanctuary"

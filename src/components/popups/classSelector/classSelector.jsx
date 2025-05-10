@@ -10,8 +10,8 @@ export default function ClassSelector(){
     return (
         <div className="race-selector-container">
             {Classes.map(Class => (
-                <div key={Class["Class"]} className="class-conainer" onClick={()=>{setClass(Class["Class"]);setShaderFlag(false);}}>
-                    <h1 className="class-title">{Class["Class"]}</h1>
+                <div key={Class.name} className="class-container" onClick={()=>{setClass(Class);setShaderFlag(false);}}>
+                    <h1 className="class-title">{Class.name}</h1>
                 </div>
             ))}
         </div>

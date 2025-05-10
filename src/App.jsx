@@ -1,11 +1,8 @@
 import { useContext, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/header/header'
 import MainStats from './components/content/SPECIAL/mainStats'
 import CalculatedStats from './components/content/calculatedStats/calculatedStats'
-import AppProviders from './context/appProviders'
 import RaceContainer from './components/content/race/raceContainer'
 import { GlobalsContext } from './context/globalsContext'
 import RaceSelector from './components/popups/raceSelector/raceSelector'
@@ -16,6 +13,7 @@ import Resources from './components/content/resources/resources'
 import Inventory from './components/content/inventory/inventory'
 import Equipment from './components/content/equipment/equipment'
 import AddInventoryItem from './components/popups/addInventoryItem/addInventoryItem'
+import DieRoll from './components/popups/dieRoll/dieRoll'
 
 function App() {
   const { shaderFlag,setShaderFlag,popupName,contentFlag } = useContext(GlobalsContext);
@@ -30,6 +28,7 @@ function App() {
             {popupName === "ClassSelector" && (<ClassSelector/>)}
             {popupName === "GlobalSelector" && (<GlobalSelector/>)}
             {popupName === "addInventoryItem" && (<AddInventoryItem/>)}
+            {popupName === "dieRoll" && (<DieRoll/>)}
           </div>
         </div>
       )}

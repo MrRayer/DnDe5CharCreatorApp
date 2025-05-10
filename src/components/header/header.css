@@ -68,14 +68,14 @@
       transform: rotate(360deg);
     }
 }
-.class-container{
+.class-logo-container{
     width: 20vw;
     height: 20vw;
     border: solid 5px rgb(0,150,0);
     border-radius: 100px;
     margin-left: 1vh;
 }
-.class-container:hover{
+.class-logo-container:hover{
     background-color: rgb(0, 50, 0);   
 }
 .class-logo{

@@ -12,7 +12,14 @@ export function StatsProvider({ children }) {
         Experience: 0,
         Background: "",
         Alignment: "Neutral",
-        Languages: ["Common"]
+        languages: ["Common"],
+        baseHP : 1,
+        hitDie : 1,
+        armorProf : [],
+        weaponProf : [],
+        toolProf : [],
+        abilities : [],
+        spells : [],
     });
 
     const [charResources, setCharResources] = useState({
@@ -27,8 +34,16 @@ export function StatsProvider({ children }) {
     });
 
     const [charEquipment, setCharEquipment] = useState({
-            ACA: 0,
-            ACS: 0
+        ACA: 0,
+        ACS: 0
+    });
+
+    const [charChoices, setCharChoices] = useState({
+        skillChoice: 0,
+        toolChoice: 0,
+        languageChoice: 0,
+        cantripChoice: 0,
+        spell1Choice: 0,
     });
 
     const addAbility = (ability) => {
@@ -84,7 +99,29 @@ export function StatsProvider({ children }) {
     };
 
     const setClass = (selected) => {
-        setCharIdentity(prevId => ({...prevId, Class: selected}))
+        setCharIdentity(prevId => ({...prevId,
+            Class: selected.name,
+            baseHP: selected.baseHP,
+            hitDie: selected.hitDie,
+            armorProf: [...prevId.armorProf, ...(selected.armorProf || [])],
+            weaponProf: [...prevId.weaponProf, ...(selected.weaponProf || [])],
+            toolProf: [...prevId.toolProf, ...(selected.toolProf || [])],
+            languages: [...prevId.languages, ...(selected.languages || [])],
+            abilities: [...prevId.abilities, ...(selected.abilities || [])],
+            spells: [...prevId.spells, ...(selected.spells || [])],
+        }));
+        setCharResources(prevRes => ({...prevRes,
+            max: selected.resources,
+            current: selected.resources
+        }));
+        setCharChoices(prevChoices => ({
+            ...prevChoices,
+            skillChoice: prevChoices.skillChoice + (selected.skillChoice || 0),
+            toolChoice: prevChoices.toolChoice + (selected.toolChoice || 0),
+            languageChoice: prevChoices.languageChoice + (selected.languageChoice || 0),
+            cantripChoice: prevChoices.cantripChoice + (selected.cantripChoice || 0),
+            spell1Choice: prevChoices.spell1Choice + (selected.spell1Choice || 0),
+        }));
     }
 
     const resetResources = () =>{
@@ -94,7 +131,7 @@ export function StatsProvider({ children }) {
         }));
     }
 
-    const calcStat = (stat) => {return charAbilityScores["stats"][stat]+charAbilityScores["extraStats"][stat]}
+    const calcStat = (stat) => {return charAbilityScores.stats[stat]+charAbilityScores.extraStats[stat]}
     return (
         <StatsContext.Provider value={{
                 charIdentity,

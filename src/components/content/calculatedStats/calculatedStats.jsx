@@ -4,7 +4,7 @@ import { StatsContext } from "../../../context/statsContext"
 
 export default function CalculatedStats(){
     const { charIdentity, charEquipment, calcStat } = useContext(StatsContext);
-    const HP = 10 + (Math.floor((calcStat(2) - 10) / 2) * charIdentity["Level"]) + ((charIdentity["Level"] - 1) * 6);
+    const HP = charIdentity.baseHP + (Math.floor((calcStat(2) - 10) / 2)) + ((charIdentity.Level - 1) * charIdentity.hitDie);
     const [currentHP,setCurrentHP] = useState(HP);
     let timer;
     const addCurrentHP = () => {

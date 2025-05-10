@@ -1,5 +1,6 @@
 {    
     "name" : "Bardo",
+    "baseHP" : 8,
     "hitDie" : 5,
     "armorProf" : ["Ligera"],
     "weaponProf" : ["Armas simples","Ballesta de mano", "Espada larga", "Estoque", "Espada corta"],
@@ -7,11 +8,10 @@
     "resources" : [1,1,2,0,0,0,0,0,0,0,0],
     "skillChoice" : 3,
     "cantripChoice" : 2,
-    "spellChoice" : 4,
+    "spell1Choice" : 4,
     "abilities" : [
         "bardicInspiration"
     ],
-    "spells" : [],
     "startingInventory" : [
         {
             "name" : "Estoque",

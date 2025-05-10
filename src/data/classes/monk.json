@@ -1,7 +1,7 @@
 {    
     "name" : "Monje",
+    "baseHP" : 8,
     "hitDie" : 5,
-    "armorProf" : [],
     "weaponProf" : ["Armas simples","Espadas cortas"],
     "toolProf" : ["Herramientas de artesano"],
     "resources" : [1,1,0,0,0,0,0,0,0,0,0],

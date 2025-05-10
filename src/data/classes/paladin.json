@@ -1,9 +1,9 @@
 {    
     "name" : "Paladin",
+    "baseHP" : 10,
     "hitDie" : 6,
     "armorProf" : ["Ligera","Media","Pesada","Escudos"],
     "weaponProf" : ["Armas simples","Armas marciales"],
-    "toolProf" : [],
     "resources" : [1,1,0,0,0,0,0,0,0,0,0],
     "skillChoice" : 2,
     "abilities" : [
