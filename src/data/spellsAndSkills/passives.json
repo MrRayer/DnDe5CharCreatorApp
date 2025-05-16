@@ -1,0 +1,227 @@
+{
+    "darkvision" : {
+        "name" : "Vision en la oscuridad",
+        "type" : "passive",
+        "description" : "Puedes ver hasta 18m en la oscuridad"
+    },
+    "dwarvenResilience" : {
+        "name" : "Resistencia enana",
+        "type" : "passive",
+        "description" : "Ventaja y Resistencia contra el veneno"
+    },
+    "toolProficiency" : {
+        "name" : "Competencia con herramientas",
+        "type" : "passive",
+        "description" : "Ganas competencia con herramientas de artesano"
+    },
+    "stonecunning" : {
+        "name" : "Afinidad con la piedra",
+        "type" : "passive",
+        "description" : "x2 al modificador de historia al tratarse de piedras"
+    },
+    "keenSenses" : {
+        "name" : "Sentidos agudos",
+        "type" : "passive",
+        "description" : "Eres competente con la habilidad de percepcion"
+    },
+    "feyAncestry" : {
+        "name" : "Ascendencia Feerica",
+        "type" : "passive",
+        "description" : "Ventaja contra encantamientos y inmune a ser dormido mediante magia"
+    },
+    "trance" : {
+        "name" : "Trance",
+        "type" : "passive",
+        "description" : "Solo necesitas descansar la mitad del tiempo y meditas en lugar de dormir"
+    },
+    "lucky" : {
+        "name" : "Suertudo",
+        "type" : "passive",
+        "description" : "Al obtener un 1 en tirada de ataque, habilidad o salvacion pudes volver a tirar"
+    },
+    "brave" : {
+        "name" : "Valiente",
+        "type" : "passive",
+        "description" : "Tienes ventaja en tiradas de salvacion contra ser asustado"
+    },
+    "halflingNimbleness" : {
+        "name" : "Agilidad mediana",
+        "type" : "passive",
+        "description" : "Puedes moverte atravez de cualquier criatura mas grande que tu"
+    },
+    "gnomeCunning" : {
+        "name" : "Astucia gnomica",
+        "type" : "passive",
+        "description" : "Ventaja en tiradas de salvacion de inteligencia, sabiduria o carisma contra la magia"
+    },
+    "menacing" : {
+        "name" : "Amenazante",
+        "type" : "passive",
+        "description" : "Competente en intimidar"
+    },
+    "relentlessEndurance" : {
+        "name" : "Resistencia incansable",
+        "type" : "passive",
+        "description" : "Una vez por descanso largo gana 1HP al llegar a 0HP"
+    },
+    "savageAttacker" : {
+        "name" : "Ataques salvajes",
+        "type" : "passive",
+        "description" : "Vuelve a lanzar el dado de daño al realizar un critico y agregalo al daño"
+    },
+    "hellishResistance" : {
+        "name" : "Resistencia infernal",
+        "type" : "passive",
+        "description" : "Resistente al daño de fuego"
+    },
+    "maskOfTheWild" : {
+        "name" : "Mascara de la espesura",
+        "type" : "passive",
+        "description" : "Puedes esconderte en la lluvia, nieve, niebla, pequeños arbustos y otros fenomenos naturales"
+    },
+    "superiorDarkvision" : {
+        "name" : "Vision en la oscuridad mejorada",
+        "type" : "passive",
+        "description" : "Puedes ver en la oscuridad hasta 36.5m"
+    },
+    "sunlightSensitivity" : {
+        "name" : "Sencibilidad a la luz del sol",
+        "type" : "passive",
+        "description" : "Desventaja en tiradas de ataque y percepcion cuando tu objetivo esta bajo la luz del sol"
+    },
+    "naturallyStealthy" : {
+        "name" : "Sigiloso por naturaleza",
+        "type" : "passive",
+        "description" : "Puedes esconderte en cualquier lugar siempre que no estes a la vista de tu enemigo"
+    },
+    "stoutResilience" : {
+        "name" : "Resistencia fornida",
+        "type" : "passive",
+        "description" : "Ventaja y Resistencia contra el veneno"
+    },
+    "blackResistance" : {
+        "name" : "Resistencia del dragon negro",
+        "type" : "passive",
+        "description" : "Resistencia al acido"
+    },
+    "blueResistance" : {
+        "name" : "Resistencia del dragon azul",
+        "type" : "passive",
+        "description" : "Resistencia al relampago"
+    },
+    "brassResistance" : {
+        "name" : "Resistencia del dragon de laton",
+        "type" : "passive",
+        "description" : "Resistencia al fuego"
+    },
+    "bronzeResistance" : {
+        "name" : "Resistencia del dragon de bronce",
+        "type" : "passive",
+        "description" : "Resistencia al relampago"
+    },
+    "copperResistance" : {
+        "name" : "Resistencia del dragon de cobre",
+        "type" : "passive",
+        "description" : "Resistencia al acido"
+    },
+    "goldResistance" : {
+        "name" : "Resistencia del dragon de oro",
+        "type" : "passive",
+        "description" : "Resistencia al fuego"
+    },
+    "greenResistance" : {
+        "name" : "Resistencia del dragon verde",
+        "type" : "passive",
+        "description" : "Resistencia al veneno"
+    },
+    "redResistance" : {
+        "name" : "Resistencia del dragon rojo",
+        "type" : "passive",
+        "description" : "Resistencia al fuego"
+    },
+    "silverResistance" : {
+        "name" : "Resistencia del dragon de plata",
+        "type" : "passive",
+        "description" : "Resistencia al frio"
+    },
+    "whiteResistance" : {
+        "name" : "Resistencia del dragon blanco",
+        "type" : "passive",
+        "description" : "Resistencia al frio"
+    },
+    "artificersLore" : {
+        "name" : "Conocimiento de artifice",
+        "type" : "passive",
+        "description" : "x2 al modificador de competencia de historia en objetos magicos, tecnologicos o alquimicos"
+    },
+    "tinker" : {
+        "name" : "Hojalatero",
+        "type" : "passive",
+        "description" : "Puedes crear un jugete de cuerda, encendedor o caja musical, maximo de 3 al mismo tiempo, duran 24h y pueden desmantelarse para recuperar los materiales"
+    },
+    "unarmoredDefense" : {
+        "name" : "Defensa sin armadura",
+        "type" : "passive",
+        "description" : "Mientras no lleves armadura tu clase de armadura sera 10+ mod de destreza + mod de constitucion"
+    },
+    "unarmoredMonkDefense" : {
+        "name" : "Defensa sin armadura",
+        "type" : "passive",
+        "description" : "Mientras no lleves armadura tu clase de armadura sera 10+ mod de destreza + mod de sabiduria"
+    },
+    "martialArts" : {
+        "name" : "Artes marciales",
+        "type" : "passive",
+        "description" : "Utilizable con armas de monje o puños. Puedes usar tu destreza en lugar de fuerza para atacar, puedes usar 1D4 un lugar de tu dado de daño y luego de atacar puedes volver a atacar con tu accion adicional."
+    },
+    "divineSense" : {
+        "name" : "Sentido divino",
+        "type" : "passive",
+        "description" : "Hasta el final del siguiente turno conoces la ubicacion de seres sobrenaturales, lugares y objetos consagrados y profanados. Puedes usarlo 1 + mod de carisma por descanso."
+    },
+    "expertise" : {
+        "name" : "Experto",
+        "type" : "passive",
+        "description" : "Elije 2 habilidades para duplicar el bonificador de competencia"
+    },
+    "warPriest" : {
+        "name" : "Guerrero sagrado",
+        "type" : "passive",
+        "description" : "Puedes realizar un ataque como accion adicional luego de atacar tantas veces al dia como tu mod de sabiduria (minimo 1)"
+    },
+    "wardingFlare" : {
+        "name" : "Fulgor protector",
+        "type" : "passive",
+        "description" : "Cuando un enemigo a 9m o menos de distancia te ataque puedes usar tu reaccion para darle desventaja a la tirada de ataque. Puedes usarlo un numero de veces igual a tu modificador de sabiduria."
+    },
+    "wrathOftheStorm" : {
+        "name" : "Ira de la tormenta",
+        "type" : "passive",
+        "description" : "Cuando un enemigo a 1.5m o menos de distancia te ataque puedes usar tu reaccion para hacerle 2D8 de daño de trueno si falla una tirada de salvacion de destreza o la mitad si no."
+    },
+    "lifeDisiple" : {
+        "name" : "Discípulo de la vida",
+        "type" : "passive",
+        "description" : "Cuando uses un hechizo de curacion puedes agregar 2 + nivel de conjuro al total de curacion"
+    },
+    "wildMagicSurge" : {
+        "name" : "Oleada de magia salvaje",
+        "type" : "passive",
+        "description" : "Cuando uses un hechizo de nivel 1 o superior lanza un D20. Si obtienes un 1, lanza en la tabla de magia salvaje"
+    },
+    "tidesOfChaos" : {
+        "name" : "Mareas de caos",
+        "type" : "passive",
+        "description" : "Una vez por descanso largo gana ventaja en una tirada de attaque o salvacion."
+    },
+    "darkOneBlessing" : {
+        "name" : "Bendicion del oscuro",
+        "type" : "passive",
+        "description" : "Al reducir los puntos de vida de un enemigo a 0, ganas puntos temporales igual a tu mod de carisma + tu nivel de brujo (minimo 1)"
+    },
+    "awakenedMind" : {
+        "name" : "Mente despierta",
+        "type" : "passive",
+        "description" : "Puedes comunicarte telepaticamente con cualquier criatura a 9m de distancia sin importar el idioma"
+    }
+}

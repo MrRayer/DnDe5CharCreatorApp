@@ -1,0 +1,49 @@
+{    
+    "name" : "Picaro",
+    "baseHP" : 8,
+    "hitDie" : 5,
+    "armorProf" : ["Ligera"],
+    "weaponProf" : ["Armas simples","Ballesta de mano","Espada larga","Estoque","Espada corta"],
+    "toolProf" : ["Herramientas de ladron"],
+    "resources" : [1,1,0,0,0,0,0,0,0,0,0],
+    "skillChoice" : 4,
+    "abilities" : ["expertise","stealthAtack"],
+    "languages" : ["Jerga de ladrones"],
+    "startingInventory" : [
+        {
+            "name" : "Estoque",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Arco pequeño",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Flechas",
+            "description" : "",
+            "quantity" : 20
+        },
+        {
+            "name" : "Equipo de ladron",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Armadura de cuero",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Daga",
+            "description" : "",
+            "quantity" : 2
+        },
+        {
+            "name" : "Herramientas de ladron",
+            "description" : "",
+            "quantity" : 1
+        }
+    ]
+}

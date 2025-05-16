@@ -1,0 +1,12 @@
+{
+    "Race": "Semielfo",
+    "extraStats": [0,0,0,0,0,2],
+    "statChoice": {"ammount":2,"increase":1},
+    "languages": ["Comun","Elfico"],
+    "langChoice": 1,
+    "profChoice": 2,
+    "abilities": [
+        "darkvision",
+        "feyAncestry"
+    ]
+}

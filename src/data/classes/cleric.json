@@ -1,0 +1,51 @@
+{    
+    "name" : "Clerigo",
+    "baseHP" : 8,
+    "hitDie" : 5,
+    "armorProf" : ["Ligera","Armadura media","Escudos"],
+    "weaponProf" : ["Armas simples"],
+    "resources" : [1,1,2,0,0,0,0,0,0,0,0],
+    "skillChoice" : 2,
+    "cantripChoice" : 3,
+    "spells" : ["cureWounds","detectMagic","healingWord","bane","protectionFromGoodAndEvil","bless","createOrDestroyWater",
+    "detectGoodAndEvil","detectPoisonAndDisease","shieldOfFaith","inflictWound","command","purifyFoodAndDrink","guidingBolt",
+    "sanctuary"
+],
+    "startingInventory" : [
+        {
+            "name" : "Maza",
+            "description" : "Corto alcanze, daño contundente",
+            "quantity" : 1
+        },
+        {
+            "name" : "Cota de escamas",
+            "description" : "Armadura para el torso",
+            "quantity" : 1
+        },
+        {
+            "name" : "Ballesta ligera",
+            "description" : "Usa birotes",
+            "quantity" : 1
+        },
+        {
+            "name" : "Birotes",
+            "description" : "Municion para ballesta ligera",
+            "quantity" : 20
+        },
+        {
+            "name" : "Equipo de sacerdote",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Escudo",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Simbolo sagrado",
+            "description" : "",
+            "quantity" : 1
+        }
+    ]
+}

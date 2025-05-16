@@ -1,0 +1,9 @@
+{
+    "Parent": "Draconido",
+    "Subrace": "Dragon Rojo",
+    "extraStats": [0,0,0,0,0,0],
+    "abilities":[
+        "redBreath",
+        "redResistance"
+    ]
+}

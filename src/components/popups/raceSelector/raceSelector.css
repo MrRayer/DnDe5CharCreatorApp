@@ -1,0 +1,10 @@
+.race-item-container{
+    border: solid 3px #009600;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 2vw;
+    margin-right: 25vw;
+}
+.race-title{
+    font-size: 20px;
+}

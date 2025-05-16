@@ -1,0 +1,20 @@
+.inventory-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    height: 78%;
+    border: solid 3px #009600;
+    border-radius: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.inventory-title{
+    font-size: 30px;
+    height: 3%;
+}
+.inventory-add-button{
+    color: #009600;
+    background-color: #121212;
+    border-bottom: solid 3px #009600;
+    border-radius: 0;
+}

@@ -1,0 +1,34 @@
+{
+    "name" : "Barbaro",
+    "baseHP" : 12,
+    "hitDie" : 7,
+    "armorProf" : ["Ligera","Media","Escudos"],
+    "weaponProf" : ["Armas simples","Armas marciales"],
+    "resources" : [1,1,0,0,0,0,0,0,0,0,0],
+    "skillChoice" : 2,
+    "abilities" : [
+        "rage", "unarmoredDefense"
+    ],
+    "startingInventory" : [
+        {
+            "name" : "Gran hacha",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Hacha",
+            "description" : "",
+            "quantity" : 2
+        },
+        {
+            "name" : "Equipo de explorardor",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Javalina",
+            "description" : "Lanza corta arrojadiza",
+            "quantity" : 4
+        }
+    ]
+}

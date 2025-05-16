@@ -1,0 +1,42 @@
+{    
+    "name" : "Bardo",
+    "baseHP" : 8,
+    "hitDie" : 5,
+    "armorProf" : ["Ligera"],
+    "weaponProf" : ["Armas simples","Ballesta de mano", "Espada larga", "Estoque", "Espada corta"],
+    "toolProf" : ["Instrumentos musicales"],
+    "resources" : [1,1,2,0,0,0,0,0,0,0,0],
+    "skillChoice" : 3,
+    "cantripChoice" : 2,
+    "spell1Choice" : 4,
+    "abilities" : [
+        "bardicInspiration"
+    ],
+    "startingInventory" : [
+        {
+            "name" : "Estoque",
+            "description" : "Fina espada de duelo",
+            "quantity" : 1
+        },
+        {
+            "name" : "Equipo de diplomatico",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Instrumento musical",
+            "description" : "a eleccion",
+            "quantity" : 1
+        },
+        {
+            "name" : "Armadura de cuero",
+            "description" : "Armadura para el torso",
+            "quantity" : 1
+        },
+        {
+            "name" : "Daga",
+            "description" : "Pequeña daga de cuero",
+            "quantity" : 1
+        }
+    ]
+}

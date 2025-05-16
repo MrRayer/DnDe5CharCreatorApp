@@ -1,0 +1,37 @@
+{    
+    "name" : "Explorer",
+    "baseHP" : 10,
+    "hitDie" : 6,
+    "armorProf" : ["Ligera","Armadura media","Escudos"],
+    "weaponProf" : ["Armas simples","Armas marciales"],
+    "resources" : [1,1,0,0,0,0,0,0,0,0,0],
+    "skillChoice" : 2,
+    "cantripChoice" : 0,
+    "startingInventory" : [
+        {
+            "name" : "Espadas cortas",
+            "description" : "",
+            "quantity" : 2
+        },
+        {
+            "name" : "Cota de escamas",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Equipo de explorardor",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Arco largo",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Flechas",
+            "description" : "",
+            "quantity" : 20
+        }
+    ]
+}

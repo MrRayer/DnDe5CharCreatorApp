@@ -1,0 +1,47 @@
+{    
+    "name" : "Paladin",
+    "baseHP" : 10,
+    "hitDie" : 6,
+    "armorProf" : ["Ligera","Media","Pesada","Escudos"],
+    "weaponProf" : ["Armas simples","Armas marciales"],
+    "resources" : [1,1,0,0,0,0,0,0,0,0,0],
+    "skillChoice" : 2,
+    "abilities" : [
+        "divineSense","handImposition"
+    ],
+    "spells" : ["cureWounds","detectMagic","heroism","protectionFromGoodAndEvil","bless","detectGoodAndEvil","detectPoisonAndDisease",
+        "shieldOfFaith","command","purifyFoodAndDrink","divineFavor","searingSmite","wrathfulSmite","thunderousSmite"
+    ],
+    "startingInventory" : [
+        {
+            "name" : "Espada larga",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Escudo",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Javalina",
+            "description" : "",
+            "quantity" : 5
+        },
+        {
+            "name" : "Equipo de sacerdote",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Cota de malla",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Simbolo sagrado",
+            "description" : "",
+            "quantity" : 1
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "Parent": "Mediano",
+    "Subrace": "Fornido",
+    "extraStats": [0,0,1,0,0,0],
+    "abilities": [
+        "stoutResilience"
+    ]
+}

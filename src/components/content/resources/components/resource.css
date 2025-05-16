@@ -1,0 +1,56 @@
+.resource-container{
+    border: solid 3px #009600;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(4px,1vw,6px);
+    justify-content: center;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+.resource-label{
+    border-bottom: solid 3px #009600;
+    padding: 2vw;
+    margin: 0;
+    height: 45px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.resource-numbers-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    border-bottom: solid 3px #009600;
+}
+.resource-max{
+    border-left: solid 3px #009600;
+    padding: 1vw;
+    width: 50%;
+    margin: 0;
+}
+.resource-current{
+    padding: 1vw;
+    width: 50%;
+    margin: 0;
+}
+.resource-control-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px
+}
+.res-button{    
+    padding: 1vw;
+    width: 50%;
+    margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+}
+.res-button-add{
+    border-left: solid 3px #009600;
+}

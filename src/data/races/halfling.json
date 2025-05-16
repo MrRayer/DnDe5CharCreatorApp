@@ -1,0 +1,10 @@
+{
+    "Race": "Mediano",
+    "extraStats": [0,2,0,0,0,0],
+    "languages": ["Comun","Mediano"],
+    "abilities": [
+        "lucky",
+        "brave",
+        "halflingNimbleness"
+    ]
+}

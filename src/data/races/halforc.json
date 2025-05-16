@@ -1,0 +1,11 @@
+{
+    "Race": "Semiorco",
+    "extraStats": [2,0,1,0,0,0],
+    "languages": ["Comun","Orco"],
+    "abilities": [
+        "darkvision",
+        "menacing",
+        "relentlessEndurance",
+        "savageAttacker"
+    ]
+}

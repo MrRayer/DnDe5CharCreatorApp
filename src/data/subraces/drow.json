@@ -1,0 +1,22 @@
+{
+    "Parent": "Elfo",
+    "Subrace": "Drow",
+    "extraStats": [0,0,0,0,0,1],
+    "weaponProf": ["Estoque","Espada corta","Ballesta de mano"],
+    "abilities": [
+        "superiorDarkvision",
+        "sunlightSensitivity",
+        "dancingLights"
+    ],
+    "futureAbilities": [
+        {
+            "unlockLvl": 3,
+            "name": "faerieFire",
+            "modIndex": 5
+        },{
+            "unlockLvl": 5,
+            "name": "Oscuridad",
+            "modIndex": 5
+        }
+    ]
+}

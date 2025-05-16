@@ -1,0 +1,20 @@
+.add-item-title{
+    font-size: 30px;
+}
+.add-item-container{
+    margin: 1vw;
+}
+.add-item-label{
+    margin: 2vw;
+    font-size: 20px;
+}
+.add-item-input{
+    margin: 2vw;
+}
+.add-item-button{
+    color: #009600;
+    background-color: #121212;
+    border: solid 3px #009600;
+    border-radius: 20px;
+    margin-top: 5vw;
+}

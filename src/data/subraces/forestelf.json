@@ -1,0 +1,9 @@
+{
+    "Parent": "Elfo",
+    "Subrace": "Elfo del bosque",
+    "extraStats": [0,0,0,0,1,0],
+    "weaponProf": ["Espada larga","Espada corta","Arco largo","Arco corto"],
+    "abilities": [
+        "maskOfTheWild"
+    ]
+}

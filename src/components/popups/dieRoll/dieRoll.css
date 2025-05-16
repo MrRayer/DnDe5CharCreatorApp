@@ -1,0 +1,43 @@
+.dieroll-container{
+    height: 100%;
+}
+.die-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin: 2vw;
+    padding-right: 25vw;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 65%;
+}
+.result-container{
+    border-top: solid 5px #009600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin: 2vw;
+}
+.single-result-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin: 5px;
+    border: solid 5px #009600;
+    border-radius: 20px;
+    width: 130px;
+}
+.result-text{
+    border-top: solid 5px #009600;
+    width: 100%;
+    padding-top: 15px;
+}

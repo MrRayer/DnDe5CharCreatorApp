@@ -1,0 +1,29 @@
+{    
+    "name" : "Monje",
+    "baseHP" : 8,
+    "hitDie" : 5,
+    "weaponProf" : ["Armas simples","Espadas cortas"],
+    "toolProf" : ["Herramientas de artesano"],
+    "resources" : [1,1,0,0,0,0,0,0,0,0,0],
+    "skillChoice" : 2,
+    "abilities" : [
+        "unarmoredMonkDefense","martialArts"
+    ],
+    "startingInventory" : [
+        {
+            "name" : "Espada corta",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Equipo de dungeon",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Dardo",
+            "description" : "",
+            "quantity" : 10
+        }
+    ]
+}

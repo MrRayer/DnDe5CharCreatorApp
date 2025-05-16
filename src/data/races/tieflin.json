@@ -1,0 +1,21 @@
+{
+    "Race": "Tiflin",
+    "extraStats": [0,0,0,1,0,2],
+    "languages": ["Comun","Infernal"],
+    "abilities": [
+        "darkvision",
+        "hellishResistance",
+        "thaumaturgy"
+    ],
+    "futureAbilities": [
+        {
+            "unlockLvl": 3,
+            "name": "hellishRebuke",
+            "modIndex": 5
+        },{
+            "unlockLvl": 5,
+            "name": "darkness",
+            "modIndex": 5
+        }
+    ]
+}

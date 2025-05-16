@@ -1,0 +1,9 @@
+{
+    "Parent": "Gnomo",
+    "Subrace": "Gnomo de la Roca",
+    "extraStats": [0,0,1,0,0,0],
+    "abilities":[
+        "artificersLore",
+        "tinker"
+    ]
+}

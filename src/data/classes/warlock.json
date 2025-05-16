@@ -1,0 +1,43 @@
+{    
+    "name" : "Brujo",
+    "baseHP" : 8,
+    "hitDie" : 5,
+    "armorProf" : ["Ligera"],
+    "weaponProf" : ["Armas simples"],
+    "resources" : [1,1,1,0,0,0,0,0,0,0,0],
+    "skillChoice" : 2,
+    "cantripChoice" : 2,
+    "spell1Choice" : 2,
+    "startingInventory" : [
+        {
+            "name" : "Ballesta ligera",
+            "description" : "Usa birotes",
+            "quantity" : 1
+        },
+        {
+            "name" : "Birotes",
+            "description" : "Municion para ballesta ligera",
+            "quantity" : 20
+        },
+        {
+            "name" : "Bolsa de componentes de conjuros",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Equipo de erudito",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Daga",
+            "description" : "Pequeña daga de hierro",
+            "quantity" : 2
+        },
+        {
+            "name" : "Armadura de cuero",
+            "description" : "Armadura para el torso",
+            "quantity" : 1
+        }
+    ]
+}

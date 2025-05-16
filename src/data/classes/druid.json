@@ -1,0 +1,42 @@
+{    
+    "name" : "Druida",
+    "baseHP" : 8,
+    "hitDie" : 5,
+    "armorProf" : ["Ligera","Armadura media","Escudos"],
+    "weaponProf" : ["Bastones","Cimitarras","Clavas","Dagas","Dardos","Hoces","Hondas","Lanzas","Mazas"],
+    "toolProf" : ["Herbolisteria"],
+    "resources" : [1,1,2,0,0,0,0,0,0,0,0],
+    "skillChoice" : 2,
+    "cantripChoice" : 2,
+    "spells" : ["animalFriendship","cureWounds","detectMagic","fearieFire","speakWithAnimals","charmPerson","thunderwave",
+        "healingWord","longstrider","createOrDestroyWater","detectPoisonAndDisease","purifyFoodAndDrink","goodberry",
+        "entangle","fogCloud","jump"
+    ],
+    "startingInventory" : [
+        {
+            "name" : "Cimitarra",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Escudo de madera",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Armadura de cuero",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Equipo de explorardor",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Foco druidico",
+            "description" : "",
+            "quantity" : 1
+        }
+    ]
+}

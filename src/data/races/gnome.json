@@ -1,0 +1,9 @@
+{
+    "Race": "Gnomo",
+    "extraStats": [0,0,0,2,0,0],
+    "languages": ["Comun","Gnomico"],
+    "abilities": [
+        "darkvision",
+        "gnomeCunning"
+    ]
+}

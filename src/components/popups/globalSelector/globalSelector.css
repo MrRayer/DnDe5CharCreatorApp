@@ -1,0 +1,9 @@
+.global-item-container{
+    border: solid 3px #009600;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 2vw;
+    padding: 2vw;
+    margin-right: 25vw;
+    font-size: 20px;
+}

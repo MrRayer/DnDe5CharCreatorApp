@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'FalloutJH';
+  src: url('/fonts/JH_FALLOUT.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-family: FalloutJH, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgb(0, 150, 0);
+  background-color: #121212;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+}
+::selection{
+  background-color: #009600;
+  color: #121212;
+}
+
+a {
+  font-weight: 500;
+  color: rgb(0, 150, 0);
+  text-decoration: inherit;
+}
+a:hover {
+  color: rgb(0, 180, 0);
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+input{
+  background-color: #121212;
+  border: none;
+  border-bottom: solid 3px #009600;
+  color: #009600;
+  font-family: FalloutJH;
+  resize: none;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow-y: auto;
+}
+.textarea{
+  background-color: #121212;
+  border: none;
+  border-bottom: solid 3px #009600;
+  color: #009600;
+  font-family: FalloutJH;
+  resize: none;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow-y: auto;
+}
+.textarea:focus,input:focus-visible{
+  outline:none;
+}
+.textarea::selection{
+  background-color: #009600;
+  color: #121212;
+}

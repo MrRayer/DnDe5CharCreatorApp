@@ -1,0 +1,12 @@
+.ability-type-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px #009600;
+    border-radius: 5px;
+    margin: 2px;
+}
+.ability-type-button-text{
+    font-size: 15px;
+    padding: 5px;
+}

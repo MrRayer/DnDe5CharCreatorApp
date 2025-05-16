@@ -1,0 +1,11 @@
+{
+    "Race": "Elfo",
+    "extraStats": [0,2,0,0,0,0],
+    "languages": ["Comun","Elfico"],
+    "abilities": [
+        "darkvision",
+        "keenSenses",
+        "feyAncestry",
+        "trance"
+    ]
+}

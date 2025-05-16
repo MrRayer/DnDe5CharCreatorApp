@@ -1,0 +1,32 @@
+.abilities-and-spells-main-container{
+    height: 85%;
+}
+.abilities-and-spells-title{
+    height: 3%;
+    font-size: 20px;
+}
+.abilities-and-spells-type-selector-container{
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    overflow-y: hidden;
+}
+.abilities-and-spells-list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border: solid 3px #009600;
+    height: 90%;
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 0;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 5px;
+    padding-right: 50px;
+}

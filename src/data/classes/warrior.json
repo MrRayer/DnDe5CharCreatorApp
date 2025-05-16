@@ -1,0 +1,42 @@
+{    
+    "name" : "Guerrero",
+    "baseHP" : 10,
+    "hitDie" : 6,
+    "armorProf" : ["Ligera","Media","Pesada","Escudos"],
+    "weaponProf" : ["Armas simples","Armas marciales"],
+    "resources" : [1,1,0,0,0,0,0,0,0,0,0],
+    "skillChoice" : 2,
+    "abilities" : ["newEnergies"],
+    "startingInventory" : [
+        {
+            "name" : "Ballesta ligera",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Birotes",
+            "description" : "",
+            "quantity" : 20
+        },
+        {
+            "name" : "Cota de escamas",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Espada larga",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Escudo",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Equipo para dungeon",
+            "description" : "",
+            "quantity" : 1
+        }
+    ]
+}

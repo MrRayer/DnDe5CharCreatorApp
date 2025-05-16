@@ -1,0 +1,53 @@
+{
+    "knowledge" : {
+        "parent" : "Clerigo",
+        "name" : "Dominio del Conocimiento",
+        "description" : "",
+        "languageChoice" : 2,
+        "specificSkillChoice" : [{"ammount":2,"skills":["arcane","history","nature","religion"]}]
+    },
+    "war" : {
+        "parent" : "Clerigo",
+        "name" : "Dominio de la Guerra",
+        "description" : "",
+        "abilities" : ["warPriest"],
+        "weaponProf" : ["Armas marciales"],
+        "armorProf" : ["Pesada"]
+    },
+    "light" : {
+        "parent" : "Clerigo",
+        "name" : "Dominio de la Luz",
+        "description" : "",
+        "abilities" : ["wardingFlare"],
+        "spells" : ["light"]
+    },
+    "nature" : {
+        "parent" : "Clerigo",
+        "name" : "Dominio de la Naturaleza",
+        "description" : "",
+        "armorProf" : ["Pesada"],
+        "outsideSpellChoices" : [{"type":"cantrip","parent":"Druida","ammount":1}],
+        "specificSkillChoice" : [{"ammount":1,"skills":["animalHandling","Survival","Nature"]}]
+    },
+    "tempest" : {
+        "parent" : "Clerigo",
+        "name" : "Dominio de la Tormenta",
+        "description" : "",
+        "abilities" : ["wrathOftheStorm"],
+        "weaponProf" : ["Armas marciales"],
+        "armorProf" : ["Pesada"]
+    },
+    "trickery" : {
+        "parent" : "Clerigo",
+        "name" : "Dominio de la Trampa",
+        "description" : "",
+        "abilities" : ["blessingsOfTrickery"]
+    },
+    "life" : {
+        "parent" : "Clerigo",
+        "name" : "Dominio de la Vida",
+        "description" : "",
+        "abilities" : ["lifeDisiple"],
+        "armorProf" : ["Pesada"]
+    }
+}

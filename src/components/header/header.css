@@ -1,0 +1,88 @@
+.header-main-container{
+    width: 100vw;
+    height: 12%;
+    border: solid 3px rgb(0,150,0);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    padding-bottom: 0;
+}
+.name-container{
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.char-name-textarea{
+    background-color: #121212;
+    border: none;
+    color: #009600;
+    font-family: FalloutJH;
+    width: 50vw;
+    height: 20vw;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    resize: none;
+}
+.logo-container{
+    width: 20vw;
+    height: 20vw;
+    border: solid 5px rgb(0,150,0);
+    border-radius: 100px;
+    margin-right: 1vw;
+}
+.logo-container:hover{
+    background-color: rgb(0, 50, 0);
+}
+.d20-logo{
+    margin: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: 80%;
+    animation: spinlogo 10s linear infinite;
+}
+@keyframes spinlogo {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+.class-logo-container{
+    width: 20vw;
+    height: 20vw;
+    border: solid 5px rgb(0,150,0);
+    border-radius: 100px;
+    margin-left: 1vh;
+}
+.class-logo-container:hover{
+    background-color: rgb(0, 50, 0);   
+}
+.class-logo{
+    margin: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 90%;
+    scale: 0.8;
+}

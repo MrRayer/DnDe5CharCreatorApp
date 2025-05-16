@@ -1,0 +1,213 @@
+{
+    "friends" : {
+        "name": "Amigos",
+        "classes":["Bardo","Brujo","Hechicero","Mago"],
+        "Type": "cantrip",
+        "range": "0m",
+        "description": "Ventaja en carisma contra la criatura afectada por 1 minuto"
+    },
+    "visiousMockery" : {
+        "name": "Burla cruel",
+        "classes":["Bardo"],
+        "type": "cantrip",
+        "damage": "1D4",
+        "range": "18m",
+        "description": "El objetivo realiza una tira de salvacion de sabiduria, en caso de fallar recibe desventaja en su proximo ataque y recibe daño psiquico"
+    },
+    "bladeWard" :{
+        "name": "Cuchilla protectora",
+        "classes":["Bardo","Brujo","Hechicero","Mago"],
+        "type": "cantrip",
+        "range": "0m",
+        "description": "Trazas una runa de proteccion obteniendo por 1 turno resistencia al daño cortante, perforante o contundente"
+    },
+    "trueStrike": {
+        "name": "Golpe Certero",
+        "classes":["Bardo","Brujo","Hechicero","Mago"],
+        "type": "cantrip",
+        "range": "12m",
+        "concentration": true,
+        "description": "Concentracion. Hasta el final del proximo turno obtienes ventaja atacando al receptor del truco."
+    },
+    "minorIllusion": {
+        "name": "Ilusion menor",
+        "classes":["Bardo","Brujo","Hechicero","Mago"],
+        "type": "cantrip",
+        "range": "9m",
+        "description": "Crea una figura o sonido. Si es examinada, realiza una tirada de salvacion de inteligencia para mantenerla"
+    },
+    "light": {
+        "name": "Luz",
+        "classes":["Bardo","Clerigo","Hechicero","Mago"],
+        "type": "cantrip",
+        "range": "0m",
+        "description": "Toca un objeto para hacerlo brillar por 1h"
+    },
+    "dancingLights": {
+        "name": "Luces danzantes",
+        "classes":["Bardo","Hechicero","Mago"],
+        "type": "cantrip",
+        "concentration": true,
+        "range": "36m",
+        "description": "Creas hasta 4 luces con una separacion maxima de 6m que iluminan un radio de 3m, puedes moverlas con tu accion adicional."
+    },
+    "mageHand": {
+        "name": "Mano de mago",
+        "classes":["Bardo","Brujo","Hechicero","Mago"],
+        "type": "cantrip",
+        "range": "9m",
+        "description": "Conjura una mano magica que interactua con el entorno en un rango alrrededor del mago que puede moverse usando la accion. La mano tiene un peso maximo de 4kg."
+    },
+    "message": {
+        "name": "Mensaje",
+        "classes":["Bardo","Hechicero","Mago"],
+        "type": "cantrip",
+        "range": "36m",
+        "description": "Susurro magico que solo puede se escuchado por el objetivo, este puede responder de la misma manera al conjurante."
+    },
+    "prestidigitation": {
+        "name": "Prestidigitacion",
+        "classes":["Bardo","Brujo","Hechicero","Mago"],
+        "type": "cantrip",
+        "range": "3m",
+        "description": "Truco que crea un efecto sensorial inofensivo, enciende o apaga velas, limpia o mancha objetos, helar, calentar o dar sabor a un material, realizar un dibujo en una superficie o crear hasta 3 objetos del tamaño de una mano hasta el fin del siguiente turno."
+    },
+    "mending": {
+        "name": "Remendar",
+        "classes":["Bardo","Clerigo","Druida","Hechicero","Mago"],
+        "type": "cantrip",
+        "range": "0m",
+        "description": "Repara una ropa o objeto sencillo. No puede reparar magia."
+    },
+    "eldritchBlast": {
+        "name": "Impacto Eldritch",
+        "classes":["Brujo"],
+        "type": "cantrip",
+        "damage": "1D10",
+        "range": "36m",
+        "description": "Lanza un rayo de energia a tu objetivo infligiendo daño por fuerza."
+    },
+    "poisonSpray": {
+        "name": "Rociar veneno",
+        "classes":["Brujo","Druida","Hechicero","Mago"],
+        "type": "cantrip",
+        "damage": "1D12",
+        "range": "3m",
+        "description": "Proyectas una nuve de gas, el objetivo realiza una tirada de salvacion de constitucion o sufre daño por veneno"
+    },
+    "chillTouch": {
+        "name": "Toque gelido",
+        "classes":["Brujo","Hechicero","Mago"],
+        "type": "cantrip",
+        "damage": "1D8",
+        "range": "36m",
+        "description": "Conjuras una mano gelida que toca al objetivo causando daño helado."
+    },
+    "sacredFlame": {
+        "name": "Llama sagrada",
+        "classes":["Clerigo"],
+        "type": "cantrip",
+        "damage": "1D8",
+        "range": "18m",
+        "description": "Una luz desciende sobre el objetivo causando daño radiante si el objetivo no supera una tirada de salvacion de destreza."
+    },
+    "resistance": {
+        "name": "Resistencia",
+        "classes":["Clerigo","Druida"],
+        "type": "cantrip",
+        "concentration":true,
+        "range": "0m",
+        "description": "Luego de realizar una tirada de salvacion puede agregarle 1D4 a esa tirada, al agregarlo el truco finaliza."
+    },
+    "guidance": {
+        "name": "Guia",
+        "classes":["Clerigo","Druida"],
+        "type": "cantrip",
+        "concentration":true,
+        "range": "0m",
+        "description": "Luego de realizar una prueba de caracteristica puedes agregar 1D4 a esa tirada, al agregarlo el truco finaliza."
+    },
+    "spareTheDying": {
+        "name": "Salvar a los caidos",
+        "classes":["Clerigo"],
+        "type": "cantrip",
+        "range": "0m",
+        "description": "Estabiliza una criatura moribunda."
+    },
+    "thaumaturgy": {
+        "name": "Taumaturgia",
+        "classes":["Clerigo"],
+        "type": "cantrip",
+        "range": "9m",
+        "description": "Realiza una pequeña maravilla: Aumenta tu voz, manipula pequeñas llamas, causa pequeños temblores, genera un ruido dentro del alcanze del truco, abre o cierra una puerta sin cerradura o altera la apariencia de tus ojos. Maximo 3 efectos."
+    },
+    "produceFlame": {
+        "name": "Crear llama",
+        "classes":["Druida"],
+        "type": "cantrip",
+        "range": "0m",
+        "description": "Crea en la palma de la mano una pequeña llama que ilumina 6m."
+    },
+    "throwProduceFlame": {
+        "name": "tirar llama",
+        "classes":["Druida"],
+        "type": "cantrip",
+        "damage": "1D8",
+        "range": "9m",
+        "description": "Lanza la pequeña llama en tus manos hacia un enemigo causando daño de fuego."
+    },
+    "shillelagh": {
+        "name": "Shillelagh",
+        "classes":["Druida"],
+        "type": "cantrip",
+        "range": "0m",
+        "description": "Imbue el un garrote o baston con el poder de la naturaleza transformandola en un arma magica que es modificada por tu caracteristica de conjuros y usa 1D8 para atacar hasta finalizado el conjuro."
+    },
+    "thornWhip": {
+        "name": "Latigo de espinas",
+        "classes":["Druida"],
+        "type": "cantrip",
+        "damage": "1D6",
+        "range": "9m",
+        "description": "Azotas a tu enemigo con una liana espinoza causando daño perforante y acercandolo 3m si es pequeño"
+    },
+    "druidcraft": {
+        "name": "Magia druidica",
+        "classes":["Druida"],
+        "type": "cantrip",
+        "range": "9m",
+        "description": "Los espiritus de la naturaleza crean un pequeño efecto natural en tu entorno"
+    },
+    "shockingGasp": {
+        "name": "Toque electrico",
+        "classes":["Hechicero","Mago"],
+        "type": "cantrip",
+        "damage": "1D8",
+        "range": "0m",
+        "description": "Conjuras un relampago en tu mano dañando a tu objetivo con daño electrico y dejandolo incapaz de reaccionar por un turno."
+    },
+    "rayOfFrost": {
+        "name": "Rayo gelido",
+        "classes":["Hechicero","Mago"],
+        "type": "cantrip",
+        "damage": "1D8",
+        "range": "18m",
+        "description": "Conjuras un rayo de luz gelida que daña a tu objetivo con daño gelido y reduce su velocidad en 3m por un turno."
+    },
+    "fireBolt": {
+        "name": "Perno de fuego",
+        "classes":["Hechicero","Mago"],
+        "type": "cantrip",
+        "damage": "1D10",
+        "range": "36m",
+        "description": "Lanza una pequeña bola de fuego al objetivo causando daño de fuego."
+    },
+    "acidSplash": {
+        "name": "Salpicar acido",
+        "classes":["Hechicero","Mago"],
+        "type": "cantrip",
+        "damage": "1D6",
+        "range": "18m",
+        "description": "Arroja una burbuja de acido que crea un area de 1.5m de radio. En esta area las criaturas realizan una tirada de salvacion de destreza o sufren daño acido."
+    }
+}

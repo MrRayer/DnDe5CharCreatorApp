@@ -1,0 +1,10 @@
+.single-die-container{
+    font-size: 8px;
+    cursor: pointer;
+    border: solid 3px #009600;
+    border-radius: 20px;
+    margin: 2px;
+    display: flex;
+    padding: 5px;
+    width: auto;
+}

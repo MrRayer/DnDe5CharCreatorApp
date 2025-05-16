@@ -1,0 +1,124 @@
+{    
+    "blackBreath" : {
+        "name" : "Aliento del dragon negro",
+        "type" : "active",
+        "damage": "2D6",
+        "range": "9m linea",
+        "DC" : "8+lvlmod+destmod",
+        "description" : "Los objetivos en el area hacen una tirada de destreza, sufriendo la mitad del daño de acido si no la supera"
+    },
+    "blueBreath" : {
+        "name" : "Aliento del dragon azul",
+        "type" : "active",
+        "damage": "2D6",
+        "range": "9m linea",
+        "DC" : "8+lvlmod+destmod",
+        "description" : "Los objetivos en el area hacen una tirada de destreza, sufriendo la mitad del daño de relampago si no la supera"
+    },
+    "brassBreath" : {
+        "name" : "Aliento del dragon de laton",
+        "type" : "active",
+        "damage": "2D6",
+        "range": "9m linea",
+        "DC" : "8+lvlmod+destmod",
+        "description" : "Los objetivos en el area hacen una tirada de destreza, sufriendo la mitad del daño de fuego si no la supera"
+    },
+    "bronzeBreath" : {
+        "name" : "Aliento del dragon de bronce",
+        "type" : "active",
+        "damage": "2D6",
+        "range": "9m linea",
+        "DC" : "8+lvlmod+destmod",
+        "description" : "Los objetivos en el area hacen una tirada de destreza, sufriendo la mitad del daño de relampago si no la supera"
+    },
+    "copperBreath" : {
+        "name" : "Aliento del dragon de cobre",
+        "type" : "active",
+        "damage": "2D6",
+        "range": "9m linea",
+        "DC" : "8+lvlmod+destmod",
+        "description" : "Los objetivos en el area hacen una tirada de destreza, sufriendo la mitad del daño de acido si no la supera"
+    },
+    "goldBreath" : {
+        "name" : "Aliento del dragon de oro",
+        "type" : "active",
+        "damage": "2D6",
+        "range": "4.5m cono",
+        "DC" : "8+lvlmod+destmod",
+        "description" : "Los objetivos en el area hacen una tirada de destreza, sufriendo la mitad del daño de fuego si no la supera"
+    },
+    "greenBreath" : {
+        "name" : "Aliento del dragon verde",
+        "type" : "active",
+        "damage": "2D6",
+        "range": "4.5m cono",
+        "DC" : "8+lvlmod+destmod",
+        "description" : "Los objetivos en el area hacen una tirada de destreza, sufriendo la mitad del daño de veneno si no la supera"
+    },
+    "redBreath" : {
+        "name" : "Aliento del dragon rojo",
+        "type" : "active",
+        "damage": "2D6",
+        "range": "4.5m cono",
+        "DC" : "8+lvlmod+constmod",
+        "description" : "Los objetivos en el area hacen una tirada de constitucion, sufriendo la mitad del daño de fuego si no la supera"
+    },
+    "silverBreath" : {
+        "name" : "Aliento del dragon de plata",
+        "type" : "active",
+        "damage": "2D6",
+        "range": "4.5m cono",
+        "DC" : "8+lvlmod+constmod",
+        "description" : "Los objetivos en el area hacen una tirada de constitucion, sufriendo la mitad del daño de frio si no la supera"
+    },
+    "whiteBreath" : {
+        "name" : "Aliento del dragon blanco",
+        "type" : "active",
+        "damage": "2D6",
+        "range": "4.5m cono",
+        "DC" : "8+lvlmod+constmod",
+        "description" : "Los objetivos en el area hacen una tirada de constitucion, sufriendo la mitad del daño de frio si no la supera"
+    },
+    "rage" : {
+        "name" : "Furia",
+        "type" : "active",
+        "range": "0m",
+        "description" : "Entra en furia y si no tiene equipada armadura pesada tienes ventaja en tiradas de salvacion de fuerza, tienes resistencia al daño contundente, perforante y cortante y agregas +2 a tu daño. 2 veces por descanso."
+    },
+    "bardicInspiration" : {
+        "name" : "Inspiracion de bardo",
+        "type" : "active",
+        "range": "18m",
+        "description" : "Otorga 1d6 a un aliado para una prueba de habilidad, tirada de ataque o de salvacion. Puedes usar esta habilidad un numero de veces igual a tu mod de carisma."
+    },
+    "newEnergies" : {
+        "name" : "Nuevas energias",
+        "type" : "active",
+        "range": "0m",
+        "description" : "Puedes curarte por 1D10 + Nivel de guerrero una vez por descanso."
+    },
+    "handImposition" : {
+        "name" : "Imposicion de manos",
+        "type" : "active",
+        "range": "0m",
+        "description" : "Puedes curar a una criatura viva hasta un maximo de 5 x nivel de paladin"
+    },
+    "stealthAtack" : {
+        "name" : "Ataque furtivo",
+        "type" : "active",
+        "range": "NA",
+        "description" : "agrega 1D6 al daño de tu arma si tienes ventaja contra tu objetivo"
+    },
+    "blessingsOfTrickery" : {
+        "name" : "Bendicion de sigilo",
+        "type" : "active",
+        "range": "0m",
+        "description" : "Toca a un aliado con tu accion para darle ventaja en las tiradas de sigilo."
+    },
+    "feyPresence" : {
+        "name" : "Presencia feerica",
+        "type" : "active",
+        "range": "3m",
+        "description" : "Toda criatura en el rango centrada en ti hace una tirada de salvacion de sabiduria o queda asustada o encantada hasta el proximo turno."
+    }
+}

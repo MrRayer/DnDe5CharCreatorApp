@@ -1,0 +1,13 @@
+{
+    "draconicAncestry" : {
+        "parent" : "Hechicero",
+        "name" : "Ancestro Draconico",
+        "description" : ""
+    },
+    "wildMagic" : {
+        "parent" : "Hechicero",
+        "name" : "Magia Salvaje",
+        "description" : "",
+        "abilities" : ["wildMagicSurge","tidesOfChaos"]
+    }
+}

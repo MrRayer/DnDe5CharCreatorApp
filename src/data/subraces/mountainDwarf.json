@@ -1,0 +1,7 @@
+{
+    "Parent": "Enano",
+    "Subrace": "Enano de las montañas",
+    "extraStats": [2,0,0,0,0,0],
+    "extraHp": 1,
+    "armorProf": ["Ligera","Media"]
+}

@@ -1,0 +1,9 @@
+{
+    "Parent": "Gnomo",
+    "Subrace": "Gnomo del Bosque",
+    "extraStats": [0,1,0,0,0,0],
+    "languages": ["Pequeñas Criaturas"],
+    "abilities":[
+        "minorIllusion"
+    ]
+}
