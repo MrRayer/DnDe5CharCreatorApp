@@ -6,12 +6,14 @@ export function GlobalsProvider({ children }) {
     const [contentFlag, setContentFlag] = useState("mainMenu")
     const [popupName, setPopupName] = useState("none");
     const [abilityToShow, setAbilityToShow] = useState("none");
+    const [choosingType, setChoosingType] = useState("none");
     return (
             <GlobalsContext.Provider value={{
                     shaderFlag, setShaderFlag,
                     popupName, setPopupName,
                     contentFlag, setContentFlag,
-                    abilityToShow, setAbilityToShow
+                    abilityToShow, setAbilityToShow,
+                    choosingType, setChoosingType
                     }}>
                 {children}
             </GlobalsContext.Provider>

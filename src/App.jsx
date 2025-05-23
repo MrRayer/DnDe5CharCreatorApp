@@ -16,6 +16,8 @@ import AddInventoryItem from './components/popups/addInventoryItem/addInventoryI
 import DieRoll from './components/popups/dieRoll/dieRoll'
 import AbilitiesAndSpells from './components/content/abilitiesAndSpells/abilitiesAndSpells'
 import ShowAbilityInfo from './components/popups/showAbilityInfo/showAbilityInfo'
+import Choices from './components/content/choices/choices'
+import ChoicePopup from './components/popups/choicePopup/choicePopup'
 
 function App() {
   const { shaderFlag,setShaderFlag,popupName,contentFlag } = useContext(GlobalsContext);
@@ -32,6 +34,7 @@ function App() {
             {popupName === "addInventoryItem" && (<AddInventoryItem/>)}
             {popupName === "dieRoll" && (<DieRoll/>)}
             {popupName === "showAbilityInfo" && (<ShowAbilityInfo/>)}
+            {popupName === "choicePopup" && (<ChoicePopup/>)}
           </div>
         </div>
       )}
@@ -52,6 +55,9 @@ function App() {
       )}
       {contentFlag === "abilitiesAndSpells" && (
         <AbilitiesAndSpells/>
+      )}
+      {contentFlag === "choices" && (
+        <Choices/>
       )}
     </>
   )

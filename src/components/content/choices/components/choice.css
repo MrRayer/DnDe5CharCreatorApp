@@ -1,0 +1,25 @@
+.choice-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px #009600;
+    border-radius: 10px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    width: 100%;
+}
+.choice-title {
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    margin: 10px;
+}
+.choice-ammount {
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin: 10px;
+}

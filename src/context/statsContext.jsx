@@ -107,6 +107,19 @@ export function StatsProvider({ children }) {
         }));
     }
 
+    const addSpell = (spell, type) => {
+        if (charChoices.cantripChoice > 0) {
+            setCharChoices(prevChoices => ({
+                ...prevChoices,
+                cantripChoice: prevChoices.cantripChoice - 1
+            }));
+            setCharIdentity(prevIdentity => ({
+                ...prevIdentity,
+                spells: [...prevIdentity.spells, spell]
+            }));
+        }
+    }
+
     const calcStat = (stat) => {return charAbilityScores.stats[stat]+charAbilityScores.extraStats[stat]}
     return (
         <StatsContext.Provider value={{
@@ -114,13 +127,15 @@ export function StatsProvider({ children }) {
                 charAbilityScores, 
                 charEquipment,
                 charResources,
+                charChoices,
                 setRaceSubrace,
                 calcStat,
                 addAbility,
                 subtractAbility,
                 setClass,
                 setCharResources,
-                resetResources}}>
+                resetResources,
+                addSpell}}>
             {children}
         </StatsContext.Provider>
     );

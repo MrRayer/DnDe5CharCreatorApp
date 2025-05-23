@@ -9,4 +9,4 @@ const abilitiesAndSpells = {
   ...cantrips,
   ...spells1
 };
-export default abilitiesAndSpells
+export default abilitiesAndSpells;
