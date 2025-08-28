@@ -1,11 +1,11 @@
 import { useContext } from "react"
 import "./inventory.css"
-import { InventoryContext } from "../../../context/inventoryContext"
+import { StatsContext } from "../../../context/statsContext"
 import { GlobalsContext } from "../../../context/globalsContext"
 import InventoryItem from "./components/inventoryItem"
 
 export default function Inventory(){
-    const { inventory,setInventory } = useContext(InventoryContext)
+    const { inventory,setInventory } = useContext(StatsContext)
     const { setShaderFlag, setPopupName } = useContext(GlobalsContext)
     const addItem = () => {
         setPopupName("addInventoryItem");
@@ -17,7 +17,7 @@ export default function Inventory(){
             <div className="inventory-container">
                 <button className="inventory-add-button"
                         onClick={addItem}>Agregar Item</button>
-                {inventory.map(item => <InventoryItem item={item}/>)}
+                {inventory.map(item => <InventoryItem key={item.name} item={item}/>)}
             </div>
         </>
     )

@@ -4,7 +4,7 @@ import { StatsContext } from "../../../context/statsContext"
 import { useContext } from "react"
 
 export default function Resources(){
-    const { charResources, setCharResources, resetResources } = useContext(StatsContext)
+    const { charResources, setCharResources } = useContext(StatsContext)
     const handleMinusButtonClick = (index) => {
         if (charResources.current[index] > 0) {
             setCharResources(prevResources => {
@@ -31,7 +31,6 @@ export default function Resources(){
     }
     return(
         <div className="resources-container">
-            <div className="resources-reset" onClick={()=>resetResources()}>Turno</div>
             <Resource
                 name={"Accion"}
                 max={charResources.max[0]}

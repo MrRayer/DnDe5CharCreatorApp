@@ -23,7 +23,7 @@ export default function GlobalSelector(){
                 Habilidades
             </div>
             <div className="global-item-container" onClick={()=>handleClick("choices")}>
-                Choices
+                Elecciones
             </div>
         </div>
     )

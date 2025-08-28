@@ -8,16 +8,6 @@ export function loadDataIntoIdentity(_charIdentity) {
     const subraceObj = findByField(Subraces, "Subrace", _charIdentity.Subrace);
     const classObj = findByField(Classes, "name", _charIdentity.Class);
     const subclassObj = findByField(Subclasses, "name", _charIdentity.Subclass);
-    console.log(_charIdentity)
-    console.log("loading abilities");
-    console.log("race abilities:");
-    console.log(raceObj?.abilities);
-    console.log("subrace abilities:");
-    console.log(subraceObj);
-    console.log("class abilities:");
-    console.log(classObj?.abilities);
-    console.log("subclass abilities:");
-    console.log(subclassObj?.abilities);
     const characterIdentity = {
         Name: _charIdentity.Name,
         Race: _charIdentity.Race,
@@ -135,6 +125,21 @@ export function loadDataIntoChoices(charIdentity) {
                     (subclassObj?.spell1Choice ?? 0),
     };
     return charChoices;
+}
+export function loadDataIntoInventory(charIdentity){
+    console.log("loadDataIntoInventory is being called");
+    const raceObj = findByField(Races, "Race", charIdentity.Race);
+    const subraceObj = findByField(Subraces, "Subrace", charIdentity.Subrace);
+    const classObj = findByField(Classes, "name", charIdentity.Class);
+    const subclassObj = findByField(Subclasses, "name", charIdentity.Subclass);
+    const inventory = [
+            ...(raceObj?.startingInventory || []),
+            ...(subraceObj?.startingInventory || []),
+            ...(classObj?.startingInventory || []),
+            ...(subclassObj?.startingInventory || [])
+        ];
+    console.log(inventory);
+    return inventory;
 }
 
 function findByField(array, field, value) {

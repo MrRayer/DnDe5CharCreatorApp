@@ -1,10 +1,10 @@
 import { useContext, useRef } from "react"
 import "./addInventoryItem.css"
-import { InventoryContext } from "../../../context/inventoryContext"
+import { StatsContext } from "../../../context/statsContext"
 import { GlobalsContext } from "../../../context/globalsContext";
 
 export default function AddInventoryItem(){
-    const { inventory,setInventory } = useContext(InventoryContext);
+    const { inventory,setInventory } = useContext(StatsContext);
     const { setShaderFlag } = useContext(GlobalsContext)
     const addItemNameRef = useRef('');
     const addItemDescriptionRef = useRef('');

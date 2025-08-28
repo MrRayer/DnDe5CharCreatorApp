@@ -1,9 +1,9 @@
 import { useContext } from "react"
 import "./inventoryItem.css"
-import { InventoryContext } from "../../../../context/inventoryContext"
+import { StatsContext } from "../../../../context/statsContext"
 
 export default function InventoryItem({ item }) {
-    const { inventory, setInventory } = useContext(InventoryContext);
+    const { inventory, setInventory } = useContext(StatsContext);
     let timer;
     const modifyQuantity = (itemId, change) => {        
         clearTimeout(timer);

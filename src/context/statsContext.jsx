@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import { loadDataIntoAbilityScores, loadDataIntoChoices, loadDataIntoIdentity, loadDataIntoResources } from "../logic/loadDataIntoContext";
+import { loadDataIntoAbilityScores, loadDataIntoChoices, loadDataIntoIdentity, loadDataIntoInventory, loadDataIntoResources } from "../logic/loadDataIntoContext";
 
 export const StatsContext = createContext();
 export function StatsProvider({ children }) {
@@ -44,6 +44,8 @@ export function StatsProvider({ children }) {
         spell1Choice: 0,
     });
 
+    const [ inventory, setInventory ] = useState([])
+
     const addAbility = (ability) => {
         setCharAbilityScores(prevStats => {
             const { stats, extraStats, Remaining } = prevStats;
@@ -80,16 +82,14 @@ export function StatsProvider({ children }) {
         let _charIdentity = charIdentity;
         if (Stat === "Race") {
             _charIdentity.Race = Value.Race;
-            setCharIdentity(loadDataIntoIdentity(_charIdentity));
-            setCharAbilityScores(loadDataIntoAbilityScores(_charIdentity));
-            setCharChoices(loadDataIntoChoices(_charIdentity));
         }
         else {
             _charIdentity.Subrace = Value.Subrace;
-            setCharIdentity(loadDataIntoIdentity(_charIdentity));
-            setCharAbilityScores(loadDataIntoAbilityScores(_charIdentity));
-            setCharChoices(loadDataIntoChoices(_charIdentity));
         }
+        setCharIdentity(loadDataIntoIdentity(_charIdentity));
+        setCharAbilityScores(loadDataIntoAbilityScores(_charIdentity));
+        setCharChoices(loadDataIntoChoices(_charIdentity));
+        setInventory(loadDataIntoInventory(_charIdentity));
     };
 
     const setClass = (selected) => {
@@ -98,13 +98,7 @@ export function StatsProvider({ children }) {
         setCharIdentity(loadDataIntoIdentity(_charIdentity));
         setCharResources(loadDataIntoResources(_charIdentity));
         setCharChoices(loadDataIntoChoices(_charIdentity));
-    }
-
-    const resetResources = () =>{
-        setCharResources(prevResources => ({
-            ...prevResources,
-            current: [...prevResources.max]
-        }));
+        setInventory(loadDataIntoInventory(_charIdentity));
     }
 
     const addSpell = (spell, type) => {
@@ -118,7 +112,7 @@ export function StatsProvider({ children }) {
                 spells: [...prevIdentity.spells, spell]
             }));
         }
-    }
+    }    
 
     const calcStat = (stat) => {return charAbilityScores.stats[stat]+charAbilityScores.extraStats[stat]}
     return (
@@ -128,13 +122,14 @@ export function StatsProvider({ children }) {
                 charEquipment,
                 charResources,
                 charChoices,
+                inventory,
                 setRaceSubrace,
                 calcStat,
                 addAbility,
                 subtractAbility,
                 setClass,
                 setCharResources,
-                resetResources,
+                setInventory,
                 addSpell}}>
             {children}
         </StatsContext.Provider>

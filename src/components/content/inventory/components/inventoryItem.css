@@ -4,6 +4,7 @@
     margin: 1vw;
     display: flex;
     flex-direction: column;
+    width: 80%;
 }
 .inventory-item-name{
     font-size: 20px;

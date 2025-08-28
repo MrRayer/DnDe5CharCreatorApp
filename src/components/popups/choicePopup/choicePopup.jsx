@@ -18,7 +18,7 @@ export default function ChoicePopup() {
                     return (
                     spell.type === choosingType &&
                     spell.classes.includes(charIdentity.Class) &&
-                    !charIdentity.spells.includes(spell.name) ? (
+                    !charIdentity.spells.includes(key) ? (
                         <div key={spell.name} onClick={() => {handleClickedSpellOrCantrip(key, "cantrip")}}>{spell.name}</div>
                     ) : null)}
             )}
