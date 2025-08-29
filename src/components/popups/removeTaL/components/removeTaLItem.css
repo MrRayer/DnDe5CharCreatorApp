@@ -1,0 +1,23 @@
+.remove-talitem-container{
+    border: solid 3px #009600;
+    border-radius: 20px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.remove-talitem-name{
+    width: 75%;
+    font-size: 20px;
+    overflow: none;
+    word-wrap: break-word;
+}
+.remove-talitem-button{
+    width: 25%;
+    font-size: 20px;
+    margin: 0;
+    background: #121212;
+    color: #009600;
+    border: #121212;
+    border-radius: 30px;
+}

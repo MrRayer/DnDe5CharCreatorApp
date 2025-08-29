@@ -1,0 +1,41 @@
+.add-tal-title{
+    font-size: 25px;
+    border-bottom: solid 3px #009600;
+    padding-bottom: 10px;
+}
+.add-tal-container{
+    display: flex;
+    flex-direction: column;
+    overflow: none;
+    height: 75%;
+
+}
+.add-tal-label{
+    font-size: 20px;
+    justify-self: flex-start;
+    align-self: center;
+}
+.add-tal-input{
+    font-size: 15px;
+    color: #009600;
+    background-color: #121212;
+    border-bottom: solid 3px #009600;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+    margin: 5%;
+}
+.add-tal-button{
+    font-size: 15px;
+    color: #009600;
+    background-color: #121212;
+    border: solid 3px #009600;
+    border-radius: 30;
+    width: 95%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    align-self: flex-end;
+}

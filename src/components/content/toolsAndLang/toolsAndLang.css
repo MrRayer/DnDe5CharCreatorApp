@@ -1,0 +1,80 @@
+.tal-main-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    height: 85%;
+    border: solid 3px #009600;
+    border-radius: 20px;
+    overflow: none;
+    align-items: center;
+}
+.tal-selection-container{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.tal-selection-container::before,
+.tal-selection-container::after {
+  content: '';
+  width: 100%;
+}
+.tal-selection-button{
+    font-size: 15px;
+    color: #009600;
+    background-color: #121212;
+    border: solid 3px #009600;
+    border-radius: 30;
+    margin: 2px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.tal-title{
+    margin-top: 0;
+    font-size: 30px;
+    height: 3%;
+}
+.tal-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px #009600;
+    border-radius: 20px;
+    height: 100%;
+    width: 98%;
+    overflow-x: none;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.tal-button{
+    font-size: 15px;
+    color: #009600;
+    background-color: #121212;
+    border: solid 3px #009600;
+    border-radius: 20;
+    font-size: 20px;
+    margin: 5px;
+
+}
+.singleTaL{
+    border: solid 3px #009600;
+    border-radius: 10px;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 20px;
+    padding: 5px;
+    align-self: flex-start;
+    overflow: none;
+    word-wrap: break-word;
+}

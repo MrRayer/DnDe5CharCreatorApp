@@ -17,7 +17,6 @@ export function loadDataIntoIdentity(_charIdentity) {
         Level: _charIdentity.Level,
 
         languages: [
-            "Common",
             ...(raceObj?.languages || []),
             ...(subraceObj?.languages || []),
             ...(classObj?.languages || []),

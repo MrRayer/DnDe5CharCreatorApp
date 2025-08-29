@@ -18,6 +18,9 @@ import AbilitiesAndSpells from './components/content/abilitiesAndSpells/abilitie
 import ShowAbilityInfo from './components/popups/showAbilityInfo/showAbilityInfo'
 import Choices from './components/content/choices/choices'
 import ChoicePopup from './components/popups/choicePopup/choicePopup'
+import ToolsAndLang from './components/content/toolsAndLang/toolsAndLang'
+import AddTaL from './components/popups/addTaL/addTaL'
+import RemoveTaL from './components/popups/removeTaL/removeTaL'
 
 function App() {
   const { shaderFlag,setShaderFlag,popupName,contentFlag } = useContext(GlobalsContext);
@@ -35,6 +38,8 @@ function App() {
             {popupName === "dieRoll" && (<DieRoll/>)}
             {popupName === "showAbilityInfo" && (<ShowAbilityInfo/>)}
             {popupName === "choicePopup" && (<ChoicePopup/>)}
+            {popupName === "addTaL" && (<AddTaL/>)}
+            {popupName === "removeTaL" && (<RemoveTaL/>)}
           </div>
         </div>
       )}
@@ -58,6 +63,9 @@ function App() {
       )}
       {contentFlag === "choices" && (
         <Choices/>
+      )}
+      {contentFlag === "TaL" &&(
+        <ToolsAndLang/>
       )}
     </>
   )
