@@ -1,0 +1,5 @@
+{
+    "name":"Intimidacion",
+    "parent":5,
+    "classes":["Barbaro","Bardo","Brujo","Guerrero","Hechicero","Paladin","Picaro"]
+}

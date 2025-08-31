@@ -1,0 +1,29 @@
+{
+    "name":"Artista",
+    "skills":["acrobatics","interpretation"],
+    "toolProf":["Kit de disfraz","Instrumentos musicales"],
+    "langChoice":1,
+    "toolChoice":1,
+    "startingInventory":[
+        {
+            "name" : "Instrumento musical",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Carta de un admirador",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Disfraz",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Oro",
+            "description" : "",
+            "quantity" : 15
+        }
+    ]
+}

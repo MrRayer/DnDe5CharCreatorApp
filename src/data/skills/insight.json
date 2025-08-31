@@ -1,0 +1,5 @@
+{
+    "name":"Perspicacia",
+    "parent":4,
+    "classes":["Bardo","Clerigo","Druida","Explorer","Guerrero","Hechicero","Mago","Monje","Paladin","Picaro"]
+}

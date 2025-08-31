@@ -1,5 +1,6 @@
 import React, { createContext, useState } from "react";
 import { loadDataIntoAbilityScores, loadDataIntoChoices, loadDataIntoIdentity, loadDataIntoInventory, loadDataIntoResources } from "../logic/loadDataIntoContext";
+import Backgrounds from "../data/backgrounds";
 
 export const StatsContext = createContext();
 export function StatsProvider({ children }) {
@@ -9,6 +10,7 @@ export function StatsProvider({ children }) {
         Subrace: "none",
         Class: "none",
         Subclass:"none",
+        Background:"none",
         Level: 1,
         languages: [],
         baseHP : 1,
@@ -18,6 +20,7 @@ export function StatsProvider({ children }) {
         toolProf : [],
         abilities : [],
         spells : [],
+        skills : [],
     });
 
     const [charResources, setCharResources] = useState({
@@ -101,6 +104,14 @@ export function StatsProvider({ children }) {
         setInventory(loadDataIntoInventory(_charIdentity));
     }
 
+    const setBackground = (selected) => {
+        let _charIdentity = charIdentity;
+        _charIdentity.Background = selected.name;
+        setCharIdentity(loadDataIntoIdentity(_charIdentity));
+        setCharChoices(loadDataIntoChoices(_charIdentity));
+        setInventory(loadDataIntoInventory(_charIdentity));
+    }
+
     const addSpell = (spell, type) => {
         if (charChoices.cantripChoice > 0) {
             setCharChoices(prevChoices => ({
@@ -129,8 +140,10 @@ export function StatsProvider({ children }) {
                 addAbility,
                 subtractAbility,
                 setClass,
+                setBackground,
                 setCharResources,
                 setInventory,
+                setCharChoices,
                 addSpell}}>
             {children}
         </StatsContext.Provider>

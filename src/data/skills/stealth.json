@@ -1,0 +1,5 @@
+{
+    "name":"Sigilo",
+    "parent":1,
+    "classes":["Bardo","Explorer","Monje","Picaro"]
+}

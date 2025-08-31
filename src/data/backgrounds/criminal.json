@@ -1,0 +1,22 @@
+{
+    "name":"Criminal",
+    "skills":["deception","stealth"],
+    "toolProf":["Kit de apuestas","Herramientas de ladron"],
+    "startingInventory":[
+        {
+            "name" : "Barreta",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Ropa oscura con capucha",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Oro",
+            "description" : "",
+            "quantity" : 15
+        }
+    ]
+}

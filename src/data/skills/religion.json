@@ -1,0 +1,5 @@
+{
+    "name":"Religion",
+    "parent":3,
+    "classes":["Bardo","Brujo","Clerigo","Druida","Hechicero","Mago","Monje","Paladin"]
+}

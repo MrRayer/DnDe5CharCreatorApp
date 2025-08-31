@@ -1,0 +1,37 @@
+{
+    "name":"Acolito",
+    "skills":["insight","religion"],
+    "langChoice":2,
+    "startingInventory":[
+        {
+            "name" : "Simbolo sagrado",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Biblia",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Incienso",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Vestiduras",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Ropa comun",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Oro",
+            "description" : "",
+            "quantity" : 15
+        }
+    ]
+}

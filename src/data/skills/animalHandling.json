@@ -1,0 +1,5 @@
+{
+    "name":"Trato con animales",
+    "parent":4,
+    "classes":["Barbaro","Bardo","Druida","Explorer","Guerrero"]
+}

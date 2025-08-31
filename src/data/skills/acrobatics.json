@@ -1,0 +1,5 @@
+{
+    "name":"Acrobacias",
+    "parent":1,
+    "classes":["Bardo","Guerrero","Monje","Picaro"]
+}

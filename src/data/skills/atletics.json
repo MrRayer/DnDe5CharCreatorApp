@@ -1,0 +1,5 @@
+{
+    "name":"Atletismo",
+    "parent":0,
+    "classes":["Barbaro","Bardo","Explorer","Guerrero","Monje","Paladin","Picaro"]
+}

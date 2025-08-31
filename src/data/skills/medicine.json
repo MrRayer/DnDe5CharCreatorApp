@@ -1,0 +1,5 @@
+{
+    "name":"Medicina",
+    "parent":4,
+    "classes":["Bardo","Clerigo","Druida","Mago","Paladin"]
+}

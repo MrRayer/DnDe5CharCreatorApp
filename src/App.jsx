@@ -21,6 +21,8 @@ import ChoicePopup from './components/popups/choicePopup/choicePopup'
 import ToolsAndLang from './components/content/toolsAndLang/toolsAndLang'
 import AddTaL from './components/popups/addTaL/addTaL'
 import RemoveTaL from './components/popups/removeTaL/removeTaL'
+import BackgroundSelector from './components/popups/backgroundSelector/backgroundSelector'
+import Skills from './components/content/skills/skills'
 
 function App() {
   const { shaderFlag,setShaderFlag,popupName,contentFlag } = useContext(GlobalsContext);
@@ -40,6 +42,7 @@ function App() {
             {popupName === "choicePopup" && (<ChoicePopup/>)}
             {popupName === "addTaL" && (<AddTaL/>)}
             {popupName === "removeTaL" && (<RemoveTaL/>)}
+            {popupName === "BackgroundSelector" && (<BackgroundSelector/>)}
           </div>
         </div>
       )}
@@ -66,6 +69,9 @@ function App() {
       )}
       {contentFlag === "TaL" &&(
         <ToolsAndLang/>
+      )}
+      {contentFlag === "skills" &&(
+        <Skills/>
       )}
     </>
   )

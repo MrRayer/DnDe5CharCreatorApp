@@ -1,0 +1,5 @@
+{
+    "name":"Supervivencia",
+    "parent":4,
+    "classes":["Barbaro","Bardo","Druida","Explorer","Guerrero"]
+}

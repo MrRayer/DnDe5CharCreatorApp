@@ -1,0 +1,5 @@
+{
+    "name":"Persuacion",
+    "parent":5,
+    "classes":["Bardo","Clerigo","Hechicero","Paladin","Picaro"]
+}

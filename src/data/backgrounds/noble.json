@@ -1,0 +1,28 @@
+{
+    "name":"Noble",
+    "skills":["history","persuation"],
+    "toolProf":["Juegos"],
+    "langChoice":1,
+    "startingInventory":[
+        {
+            "name" : "Ropas finas",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Anillo con sello",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Acta de nacimiento",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Oro",
+            "description" : "",
+            "quantity" : 25
+        }
+    ]
+}

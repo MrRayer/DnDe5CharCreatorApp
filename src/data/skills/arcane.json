@@ -1,0 +1,5 @@
+{
+    "name":"Arcano",
+    "parent":3,
+    "classes":["Bardo","Brujo","Druida","Hechicero","Mago"]
+}

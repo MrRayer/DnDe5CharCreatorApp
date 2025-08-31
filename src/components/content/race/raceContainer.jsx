@@ -28,6 +28,10 @@ export default function RaceContainer(){
                     {charIdentity["Subclass"]}
                 </div>
             )}
+            <div className="race-container" onClick={()=>{setPopupName("BackgroundSelector");setShaderFlag(true);}}>
+                <h1 className="race-title">Transfondo</h1>
+                {charIdentity["Background"]}
+            </div>
         </div>
     )
 }

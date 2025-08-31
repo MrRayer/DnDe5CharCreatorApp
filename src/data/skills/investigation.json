@@ -1,0 +1,5 @@
+{
+    "name":"Investigacion",
+    "parent":3,
+    "classes":["Bardo","Brujo","Explorer","Mago","Picaro"]
+}

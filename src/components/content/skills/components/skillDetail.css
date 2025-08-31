@@ -1,0 +1,30 @@
+.skill-detail-container{
+    border: solid 3px #009600;
+    border-radius: 20px;
+    margin: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: 0;
+    font-size: 10px;
+    width: 80%;
+}
+.skill-detail-title{
+    font-size: 20px;
+    padding: 5px;
+    margin: 0;
+    border-bottom: solid 3px #009600;
+}
+.skill-detail-inside-container{
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.skill-parent{
+    font-size: 10px;
+    width: 50%;
+    border-right: solid 3px #009600;
+}
+.skill-prof{
+    font-size: 10px;
+    width: 50%;
+}

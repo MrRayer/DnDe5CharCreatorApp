@@ -1,0 +1,33 @@
+{
+    "name":"Forastero",
+    "skills":["atletics","survival"],
+    "toolProf":["Instrumentos musicales"],
+    "langChoice":1,
+    "startingInventory":[
+        {
+            "name" : "Baston",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Trampa de caza",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Trofeo de animal",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Ropa de viajero",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Oro",
+            "description" : "",
+            "quantity" : 10
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+{
+    "name":"Juego de manos",
+    "parent":1,
+    "classes":["Bardo","Picaro"]
+}

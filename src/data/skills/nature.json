@@ -1,0 +1,5 @@
+{
+    "name":"Naturaleza",
+    "parent":3,
+    "classes":["Barbaro","Bardo","Brujo","Druida","Explorer"]
+}

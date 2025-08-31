@@ -1,0 +1,32 @@
+{
+    "name":"Sabio",
+    "skills":["arcane","history"],
+    "langChoice":2,
+    "startingInventory":[
+        {
+            "name" : "Kit de escritura",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Cuchillo pequeño",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Carta de colega muerto",
+            "description" : "con pregunta sin responder",
+            "quantity" : 1
+        },
+        {
+            "name" : "Ropa",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Oro",
+            "description" : "",
+            "quantity" : 10
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "name":"Artesano",
+    "skills":["insight","persuation"],
+    "langChoice":1,
+    "toolChoice":1,
+    "startingInventory":[
+        {
+            "name" : "Herramientas de artesano",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Carta del gremio",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Ropa de viaje",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Oro",
+            "description" : "",
+            "quantity" : 15
+        }
+    ]
+}

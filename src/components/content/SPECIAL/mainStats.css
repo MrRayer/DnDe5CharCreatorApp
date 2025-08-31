@@ -4,7 +4,7 @@
     margin: 2vw;
     margin-left: 1vw;
     margin-right: 1vw;
-    padding: 0; /* Remove padding to ensure proper sizing */
+    padding: 0;
 }
 .main-stats-container{
     padding-top: 1vh;

@@ -1,0 +1,33 @@
+{
+    "name":"Ermitaño",
+    "skills":["medicine","religion"],
+    "toolProf":["Kit de herbolisteria"],
+    "langChoice":1,
+    "startingInventory":[
+        {
+            "name" : "Notas de estudios",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Frazada",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Ropa",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Kit de herbolisteria",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Oro",
+            "description" : "",
+            "quantity" : 5
+        }
+    ]
+}

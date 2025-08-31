@@ -1,0 +1,32 @@
+{
+    "name":"Soldado",
+    "skills":["atletics","intimidation"],
+    "toolProf":["Juegos","Carretas"],
+    "startingInventory":[
+        {
+            "name" : "Insignia de rango",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Trofeo de enemigo caido",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Dados o cartas",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Ropa",
+            "description" : "",
+            "quantity" : 1
+        },
+        {
+            "name" : "Oro",
+            "description" : "",
+            "quantity" : 10
+        }
+    ]
+}

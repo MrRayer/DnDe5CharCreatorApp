@@ -2,18 +2,21 @@ import Classes from '../data/classes';
 import Subclasses from '../data/subclasses';
 import Races from '../data/races';
 import Subraces from '../data/subraces';
+import Backgrounds from '../data/backgrounds';
 
 export function loadDataIntoIdentity(_charIdentity) {
     const raceObj = findByField(Races, "Race", _charIdentity.Race);
     const subraceObj = findByField(Subraces, "Subrace", _charIdentity.Subrace);
     const classObj = findByField(Classes, "name", _charIdentity.Class);
     const subclassObj = findByField(Subclasses, "name", _charIdentity.Subclass);
+    const backgroundsObj = findByField(Backgrounds, "name", _charIdentity.Background);
     const characterIdentity = {
         Name: _charIdentity.Name,
         Race: _charIdentity.Race,
         Subrace: _charIdentity.Subrace,
         Class: _charIdentity.Class,
         Subclass: _charIdentity.Subclass,
+        Background: _charIdentity.Background,
         Level: _charIdentity.Level,
 
         languages: [
@@ -21,25 +24,29 @@ export function loadDataIntoIdentity(_charIdentity) {
             ...(subraceObj?.languages || []),
             ...(classObj?.languages || []),
             ...(subclassObj?.languages || []),
+            ...(backgroundsObj?.languages || []),
         ],
 
         baseHP:
             (raceObj?.baseHP ?? 0) +
             (subraceObj?.baseHP ?? 0) +
             (classObj?.baseHP ?? 0) +
-            (subclassObj?.baseHP ?? 0),
+            (subclassObj?.baseHP ?? 0) +
+            (backgroundsObj?.baseHP ?? 0),
 
         hitDie:
             (raceObj?.hitDie ?? 0) +
             (subraceObj?.hitDie ?? 0) +
             (classObj?.hitDie ?? 0) +
-            (subclassObj?.hitDie ?? 0),
+            (subclassObj?.hitDie ?? 0) +
+            (backgroundsObj?.hitDie ?? 0),
 
         armorProf: [
             ...(raceObj?.armorProf || []),
             ...(subraceObj?.armorProf || []),
             ...(classObj?.armorProf || []),
             ...(subclassObj?.armorProf || []),
+            ...(backgroundsObj?.armorProf || []),
         ],
 
         weaponProf: [
@@ -47,6 +54,7 @@ export function loadDataIntoIdentity(_charIdentity) {
             ...(subraceObj?.weaponProf || []),
             ...(classObj?.weaponProf || []),
             ...(subclassObj?.weaponProf || []),
+            ...(backgroundsObj?.weaponProf || []),
         ],
 
         toolProf: [
@@ -54,12 +62,14 @@ export function loadDataIntoIdentity(_charIdentity) {
             ...(subraceObj?.toolProf || []),
             ...(classObj?.toolProf || []),
             ...(subclassObj?.toolProf || []),
+            ...(backgroundsObj?.toolProf || []),
         ],
         abilities: [
             ...(raceObj?.abilities || []),
             ...(subraceObj?.abilities || []),
             ...(classObj?.abilities || []),
             ...(subclassObj?.abilities || []),
+            ...(backgroundsObj?.abilities || []),
         ],
 
         spells: [
@@ -67,10 +77,17 @@ export function loadDataIntoIdentity(_charIdentity) {
             ...(subraceObj?.spells || []),
             ...(classObj?.spells || []),
             ...(subclassObj?.spells || []),
+            ...(backgroundsObj?.spells || []),
+        ],
+
+        skills: [
+            ...(raceObj?.skills || []),
+            ...(subraceObj?.skills || []),
+            ...(classObj?.skills || []),
+            ...(subclassObj?.skills || []),
+            ...(backgroundsObj?.skills || []),
         ],
     };
-    console.log("abilities after loading:");
-    console.log(characterIdentity.abilities);
     return characterIdentity;
 }
 export function loadDataIntoResources(charIdentity) {
@@ -97,47 +114,53 @@ export function loadDataIntoChoices(charIdentity) {
     const subraceObj = findByField(Subraces, "Subrace", charIdentity.Subrace);
     const classObj = findByField(Classes, "name", charIdentity.Class);
     const subclassObj = findByField(Subclasses, "name", charIdentity.Subclass);
+    const backgroundsObj = findByField(Backgrounds, "name", charIdentity.Background);
     const charChoices = {
         skillChoice: (raceObj?.skillChoice ?? 0) +
                     (subraceObj?.skillChoice ?? 0) +
                     (classObj?.skillChoice ?? 0) +
-                    (subclassObj?.skillChoice ?? 0),
+                    (subclassObj?.skillChoice ?? 0) +
+                    (backgroundsObj?.skillChoice ?? 0),
                     
         toolChoice: (raceObj?.toolChoice ?? 0) +
                     (subraceObj?.toolChoice ?? 0) +
                     (classObj?.toolChoice ?? 0) +
-                    (subclassObj?.toolChoice ?? 0),
+                    (subclassObj?.toolChoice ?? 0) +
+                    (backgroundsObj?.toolChoice ?? 0),
 
-        languageChoice: (raceObj?.languageChoice ?? 0) +
-                    (subraceObj?.languageChoice ?? 0) +
-                    (classObj?.languageChoice ?? 0) +
-                    (subclassObj?.languageChoice ?? 0),
+        languageChoice: (raceObj?.langChoice ?? 0) +
+                    (subraceObj?.langChoice ?? 0) +
+                    (classObj?.langChoice ?? 0) +
+                    (subclassObj?.langChoice ?? 0) +
+                    (backgroundsObj?.langChoice ?? 0),
 
         cantripChoice: (raceObj?.cantripChoice ?? 0) +
                     (subraceObj?.cantripChoice ?? 0) +
                     (classObj?.cantripChoice ?? 0) +
-                    (subclassObj?.cantripChoice ?? 0),
+                    (subclassObj?.cantripChoice ?? 0) +
+                    (backgroundsObj?.cantripChoice ?? 0),
 
         spell1Choice: (raceObj?.spell1Choice ?? 0) +
                     (subraceObj?.spell1Choice ?? 0) +
                     (classObj?.spell1Choice ?? 0) +
-                    (subclassObj?.spell1Choice ?? 0),
+                    (subclassObj?.spell1Choice ?? 0) +
+                    (backgroundsObj?.spell1Choice ?? 0),
     };
     return charChoices;
 }
 export function loadDataIntoInventory(charIdentity){
-    console.log("loadDataIntoInventory is being called");
     const raceObj = findByField(Races, "Race", charIdentity.Race);
     const subraceObj = findByField(Subraces, "Subrace", charIdentity.Subrace);
     const classObj = findByField(Classes, "name", charIdentity.Class);
     const subclassObj = findByField(Subclasses, "name", charIdentity.Subclass);
+    const backgroundsObj = findByField(Backgrounds, "name", charIdentity.Background);
     const inventory = [
             ...(raceObj?.startingInventory || []),
             ...(subraceObj?.startingInventory || []),
             ...(classObj?.startingInventory || []),
-            ...(subclassObj?.startingInventory || [])
+            ...(subclassObj?.startingInventory || []),
+            ...(backgroundsObj?.startingInventory || [])
         ];
-    console.log(inventory);
     return inventory;
 }
 
