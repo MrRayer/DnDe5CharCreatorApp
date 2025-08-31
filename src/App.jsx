@@ -23,6 +23,7 @@ import AddTaL from './components/popups/addTaL/addTaL'
 import RemoveTaL from './components/popups/removeTaL/removeTaL'
 import BackgroundSelector from './components/popups/backgroundSelector/backgroundSelector'
 import Skills from './components/content/skills/skills'
+import SaveLoad from './components/content/saveLoad/saveLoad'
 
 function App() {
   const { shaderFlag,setShaderFlag,popupName,contentFlag } = useContext(GlobalsContext);
@@ -72,6 +73,9 @@ function App() {
       )}
       {contentFlag === "skills" &&(
         <Skills/>
+      )}
+      {contentFlag === "saveLoad" &&(
+        <SaveLoad/>
       )}
     </>
   )

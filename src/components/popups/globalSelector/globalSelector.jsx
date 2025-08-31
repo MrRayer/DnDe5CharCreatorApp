@@ -31,6 +31,9 @@ export default function GlobalSelector(){
             <div className="global-item-container" onClick={()=>handleClick("skills")}>
                 Abilidades
             </div>
+            <div className="global-item-container" onClick={()=>handleClick("saveLoad")}>
+                Save/Load
+            </div>
         </div>
     )
 }

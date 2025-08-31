@@ -113,7 +113,7 @@ export function StatsProvider({ children }) {
     }
 
     const addSpell = (spell, type) => {
-        if (charChoices.cantripChoice > 0) {
+        if (charChoices.cantripChoice > 0 && type === "cantrip") {
             setCharChoices(prevChoices => ({
                 ...prevChoices,
                 cantripChoice: prevChoices.cantripChoice - 1
@@ -121,6 +121,26 @@ export function StatsProvider({ children }) {
             setCharIdentity(prevIdentity => ({
                 ...prevIdentity,
                 spells: [...prevIdentity.spells, spell]
+            }));
+        }
+        if (charChoices.spell1Choice > 0 && type === "lvl1") {
+            setCharChoices(prevChoices => ({
+                ...prevChoices,
+                spell1Choice: prevChoices.spell1Choice - 1
+            }));
+            setCharIdentity(prevIdentity => ({
+                ...prevIdentity,
+                spells: [...prevIdentity.spells, spell]
+            }));
+        }
+        if (charChoices.skillChoice > 0 && type === "skill") {
+            setCharChoices(prevChoices => ({
+                ...prevChoices,
+                skillChoice: prevChoices.skillChoice - 1
+            }));
+            setCharIdentity(prevIdentity => ({
+                ...prevIdentity,
+                skills: [...prevIdentity.skills, spell]
             }));
         }
     }    
@@ -144,7 +164,9 @@ export function StatsProvider({ children }) {
                 setCharResources,
                 setInventory,
                 setCharChoices,
-                addSpell}}>
+                addSpell,
+                setCharAbilityScores,
+                setCharEquipment}}>
             {children}
         </StatsContext.Provider>
     );
