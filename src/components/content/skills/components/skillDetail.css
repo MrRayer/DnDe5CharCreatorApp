@@ -21,10 +21,16 @@
 }
 .skill-parent{
     font-size: 10px;
-    width: 50%;
+    width: 40%;
     border-right: solid 3px #009600;
+}
+.skill-mod{
+    font-size: 10px;
+    width: 20%;
+    border-right: solid 3px #009600;
+
 }
 .skill-prof{
     font-size: 10px;
-    width: 50%;
+    width: 40%;
 }

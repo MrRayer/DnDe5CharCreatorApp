@@ -20,16 +20,16 @@ export default function GlobalSelector(){
                 Equipamiento
             </div>
             <div className="global-item-container" onClick={()=>handleClick("abilitiesAndSpells")}>
-                Habilidades
+                Hechizos
             </div>
-            <div className="global-item-container" onClick={()=>handleClick("choices")}>
-                Elecciones
+            <div className="global-item-container" onClick={()=>handleClick("skills")}>
+                Habilidades
             </div>
             <div className="global-item-container" onClick={()=>handleClick("TaL")}>
                 Proficiencias
             </div>
-            <div className="global-item-container" onClick={()=>handleClick("skills")}>
-                Abilidades
+            <div className="global-item-container" onClick={()=>handleClick("choices")}>
+                Elecciones
             </div>
             <div className="global-item-container" onClick={()=>handleClick("saveLoad")}>
                 Save/Load

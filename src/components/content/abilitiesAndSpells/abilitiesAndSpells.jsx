@@ -9,14 +9,12 @@ import { GlobalsContext } from '../../../context/globalsContext';
 export default function AbilitiesAndSpells() {
     const { setShaderFlag, setAbilityToShow, setPopupName } = useContext(GlobalsContext);
     const { charIdentity } = useContext(StatsContext);
-    const [showType, setShowType] = useState(false);
+    const [showType, setShowType] = useState("active");
     const [charTypes, setCharTypes] = useState([]);
     const setSelectedType = (type) => {
-        console.log(charIdentity)
         setShowType(type);
     }
     const handleClickedAbilityOrSpell = (name) => {
-        console.log("handle clicked ability or spell", name);
         setAbilityToShow(name);
         setShaderFlag(true);
         setPopupName("showAbilityInfo");

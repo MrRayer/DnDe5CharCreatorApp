@@ -85,6 +85,7 @@ export function StatsProvider({ children }) {
         let _charIdentity = charIdentity;
         if (Stat === "Race") {
             _charIdentity.Race = Value.Race;
+            _charIdentity.Subrace = "none";
         }
         else {
             _charIdentity.Subrace = Value.Subrace;
@@ -146,6 +147,10 @@ export function StatsProvider({ children }) {
     }    
 
     const calcStat = (stat) => {return charAbilityScores.stats[stat]+charAbilityScores.extraStats[stat]}
+    const getProffBonus = () => {
+        let lvl = charIdentity.Level
+        return lvl < 5 ? 2 : lvl < 9 ? 3 : lvl < 13 ? 4 : lvl < 17 ? 5 : 6
+    }
     return (
         <StatsContext.Provider value={{
                 charIdentity,
@@ -166,7 +171,8 @@ export function StatsProvider({ children }) {
                 setCharChoices,
                 addSpell,
                 setCharAbilityScores,
-                setCharEquipment}}>
+                setCharEquipment,
+                getProffBonus}}>
             {children}
         </StatsContext.Provider>
     );
