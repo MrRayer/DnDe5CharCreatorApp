@@ -7,7 +7,49 @@
     border-radius: 20px;
     overflow: scroll;
     scrollbar-width: none;
+    align-items: center;
 }
 .equipment-title{
     font-size: 30px;
+}
+.equipment-manequin-main-container{
+    display: flex;
+    flex-direction: column;
+    border: solid 3px #009600;
+    border-radius: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: fit-content;
+}
+.equipment-manequin-row-1{
+    display: flex;
+    flex-direction: row;
+}
+.equipment-manequin-row-2{
+    display: flex;
+    flex-direction: row;
+}
+.equipment-manequin-row-3{
+    display: flex;
+    flex-direction: row;
+}
+.equipment-manequin-row-4{
+    display: flex;
+    flex-direction: row;
+}
+.equipment-manequin-square{
+    border: solid 3px #009600;
+    border-radius: 10px;
+    width: 85px;
+    aspect-ratio: 1/1;
+    margin: 5px;
+}
+.equipment-manequin-square-title{
+    font-size: 10px;
+}
+.equipment-logo{
+    width: 100%;
+    aspect-ratio: 1/1;
 }

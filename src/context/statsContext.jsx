@@ -47,6 +47,19 @@ export function StatsProvider({ children }) {
         spell1Choice: 0,
     });
 
+    const [ equipment, setEquipment ] = useState({
+        head: "none",
+        armor: "none",
+        boots: "none",
+        gloves: "none",
+        amulet: "none",
+        ring1: "none",
+        ring2: "none",
+        mWeapon: "none",
+        shield: "none",
+        rWeapon: "none",
+    })
+
     const [ inventory, setInventory ] = useState([])
 
     const addAbility = (ability) => {
@@ -159,6 +172,8 @@ export function StatsProvider({ children }) {
                 charResources,
                 charChoices,
                 inventory,
+                equipment,
+                setEquipment,
                 setCharIdentity,
                 setRaceSubrace,
                 calcStat,

@@ -1,0 +1,9 @@
+.background-container{
+    border: solid 3px #009600;
+    border-radius: 20px;
+    margin: 2vw;
+    margin-right: 25vw;
+}
+.background-title{
+    font-size: 20px;
+}

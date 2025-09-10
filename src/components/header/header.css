@@ -33,6 +33,7 @@
     font-family: FalloutJH;
     width: 50vw;
     height: 20vw;
+    max-height: 70px;
     text-align: center;
     font-size: 18px;
     display: flex;
@@ -43,10 +44,14 @@
     resize: none;
 }
 .logo-container{
-    width: 20vw;
-    height: 20vw;
+    width: 20%;
+    max-width: 70px;
+    aspect-ratio:1/1;
     border: solid 5px rgb(0,150,0);
     border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 1vw;
 }
 .logo-container:hover{
@@ -69,8 +74,12 @@
     }
 }
 .class-logo-container{
-    width: 20vw;
-    height: 20vw;
+    width: 20%;
+    max-width: 70px;
+    aspect-ratio:1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid 5px rgb(0,150,0);
     border-radius: 100px;
     margin-left: 1vh;
