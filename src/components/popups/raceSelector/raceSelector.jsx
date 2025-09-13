@@ -5,6 +5,7 @@ import Races from "../../../data/races";
 import Subraces from "../../../data/subraces";
 import { GlobalsContext } from "../../../context/globalsContext";
 import GetStatName from "../../../logic/getStatName";
+import SubraceSelector from "../subraceSelector/subraceSelector";
 
 export default function RaceSelector() {
     const { setRaceSubrace } = useContext(StatsContext);
@@ -12,7 +13,7 @@ export default function RaceSelector() {
     const handleRaceSelect = (race) => {
         setRaceSubrace("Race", race);
         const _subraces = Subraces.filter(subrace => subrace.Parent === race.Race)
-        if (_subraces.length > 0) {setPopupName("SubRace");}
+        if (_subraces.length > 0) {setPopupName(<SubraceSelector/>);}
         else {setShaderFlag(false)}
     }
 

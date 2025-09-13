@@ -3,12 +3,13 @@ import "./inventory.css"
 import { StatsContext } from "../../../context/statsContext"
 import { GlobalsContext } from "../../../context/globalsContext"
 import InventoryItem from "./components/inventoryItem"
+import AddInventoryItem from "../../popups/addInventoryItem/addInventoryItem"
 
 export default function Inventory(){
     const { inventory,setInventory } = useContext(StatsContext)
     const { setShaderFlag, setPopupName } = useContext(GlobalsContext)
     const addItem = () => {
-        setPopupName("addInventoryItem");
+        setPopupName(<AddInventoryItem/>);
         setShaderFlag(true);
     }
     return(

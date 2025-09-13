@@ -5,6 +5,7 @@ import { StatsContext } from '../../../context/statsContext';
 import TypeButton from './components/typeButton';
 import AbilityOrSpell from './components/abilityOrSpell';
 import { GlobalsContext } from '../../../context/globalsContext';
+import ShowAbilityInfo from '../../popups/showAbilityInfo/showAbilityInfo';
 
 export default function AbilitiesAndSpells() {
     const { setShaderFlag, setAbilityToShow, setPopupName } = useContext(GlobalsContext);
@@ -17,7 +18,7 @@ export default function AbilitiesAndSpells() {
     const handleClickedAbilityOrSpell = (name) => {
         setAbilityToShow(name);
         setShaderFlag(true);
-        setPopupName("showAbilityInfo");
+        setPopupName(<ShowAbilityInfo/>);
     }
     const reloadCharTypes = () => {
         let _charTypes = [];

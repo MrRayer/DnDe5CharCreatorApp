@@ -2,6 +2,8 @@ import "./toolsAndLang.css"
 import { StatsContext } from "../../../context/statsContext"
 import { useState, useContext } from "react"
 import { GlobalsContext } from "../../../context/globalsContext"
+import AddTaL from "../../popups/addTaL/addTaL"
+import RemoveTaL from "../../popups/removeTaL/removeTaL"
 
 export default function ToolsAndLang() {
     const { charIdentity } = useContext(StatsContext)
@@ -10,12 +12,12 @@ export default function ToolsAndLang() {
     const selectionInLang = {"tools":"Herramientas","lang":"Lenguajes","armor":"Armaduras","weapons":"Armas"}
     const handleAddTaL = () => {
         setChoosingType(talSelection);
-        setPopupName("addTaL");
+        setPopupName(<AddTaL/>);
         setShaderFlag(true);
     }
     const handleRemoveTaL = () => {
         setChoosingType(talSelection);
-        setPopupName("removeTaL");
+        setPopupName(<RemoveTaL/>);
         setShaderFlag(true);
     }
     return (

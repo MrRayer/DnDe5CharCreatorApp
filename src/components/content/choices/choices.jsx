@@ -3,13 +3,15 @@ import { useContext } from 'react';
 import { StatsContext } from '../../../context/statsContext';
 import { GlobalsContext } from '../../../context/globalsContext';
 import Choice from './components/choice';
+import ChoicePopup from '../../popups/choicePopup/choicePopup';
+import AddTaL from '../../popups/addTaL/addTaL';
 
 export default function Choices() {
     const { setShaderFlag, setPopupName, setChoosingType } = useContext(GlobalsContext);
     const { charChoices, setCharChoices } = useContext(StatsContext);
     const handleClickedChoice = (choice) => {
         setChoosingType(choice);
-        setPopupName("choicePopup");
+        setPopupName(<ChoicePopup/>);
         setShaderFlag(true);
     }
     const handleClickedToL = (choice) => {
@@ -29,7 +31,7 @@ export default function Choices() {
                 languageChoice: prevChoices.languageChoice - 1
             }));
         }
-        setPopupName("addTaL");
+        setPopupName(<AddTaL/>);
         setShaderFlag(true);
     }
     return (
