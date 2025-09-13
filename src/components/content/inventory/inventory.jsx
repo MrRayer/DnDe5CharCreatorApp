@@ -18,7 +18,7 @@ export default function Inventory(){
             <div className="inventory-container">
                 <button className="inventory-add-button"
                         onClick={addItem}>Agregar Item</button>
-                {inventory.map(item => <InventoryItem key={item.name} item={item}/>)}
+                {inventory.length > 0 ? (inventory.map(item => <InventoryItem key={item.name} item={item}/>)) : null}
             </div>
         </>
     )

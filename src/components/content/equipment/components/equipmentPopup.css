@@ -1,0 +1,28 @@
+.equipment-popup-main-container{
+    display: flex;
+    flex-direction: column;
+}
+.equipment-popup-title-top{
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 0;
+    border-bottom: solid 3px #009600
+}
+.equipment-popup-title{
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: solid 3px #009600;
+    border-top: solid 3px #009600
+}
+.equipment-popup-current{
+    font-size: 20px;
+}
+.equipment-popup-change{
+    background-color: #121212;
+    color: #009600;
+    border: solid 3px #009600;
+    border-radius: 20px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 25vw;
+}

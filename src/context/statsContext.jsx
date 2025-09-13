@@ -60,7 +60,54 @@ export function StatsProvider({ children }) {
         rWeapon: "none",
     })
 
-    const [ inventory, setInventory ] = useState([])
+    const [ inventory, setInventory ] = useState([
+        {
+            name: "pecho de cuero",
+            ac: 12,
+            description: "este es un pecho de cuero",
+            slot: "armor",
+            quantity: 1
+        },{
+            name: "casco de cuero",
+            ac: 2,
+            description: "este es un casco de cuero",
+            slot: "head",
+            quantity: 1
+        },{
+            name: "espada de madera",
+            damage: "1D4",
+            description: "este es una espada de madera",
+            slot: "mWeapon",
+            quantity: 1
+        },
+    ])
+
+    const addItem = (item) => {
+        setInventory(prevInventory => {
+            const prevItem = prevInventory.find(_item => _item.name === item.name)
+            if (prevItem) {
+                return prevInventory.map(_item => _item.name === item.name ? {..._item,
+                    quantity: _item.quantity + 1} : _item);}
+            else {
+                const newItem = item.quantity ? item : { ...item, quantity: 1 };
+                return [...prevInventory, newItem];
+            }
+        });
+    }
+    const removeItem = (item) => {
+        setInventory(prevInventory => 
+            prevInventory.reduce((acc, _item) => {
+                if(_item.name === item.name) {
+                    if (_item.quantity > 1) {
+                        acc.push({ ..._item, quantity: _item.quantity -1 });
+                    } 
+                }else {
+                    acc.push(_item);
+                }
+                return acc;
+            },[])
+        );
+    }
 
     const addAbility = (ability) => {
         setCharAbilityScores(prevStats => {
@@ -187,7 +234,9 @@ export function StatsProvider({ children }) {
                 addSpell,
                 setCharAbilityScores,
                 setCharEquipment,
-                getProffBonus}}>
+                getProffBonus,
+                addItem,
+                removeItem,}}>
             {children}
         </StatsContext.Provider>
     );

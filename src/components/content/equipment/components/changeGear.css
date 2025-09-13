@@ -1,0 +1,29 @@
+.change-gear-main-container{
+    display: flex;
+    flex-direction: column;
+}
+.change-gear-item{
+    border: solid 3px #009600;
+    border-radius: 20px;
+    margin: 10px;
+    margin-right: 25vw;
+}
+.change-gear-top-separator{
+    padding-bottom: 10px;
+    border-bottom: #009600 solid 3px;
+}
+.change-gear-title{
+    font-size: 20px;
+    width: 100%;
+}
+.change-gear-subcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.change-gear-subtitle{
+    font-size: 14px;
+    width: 100%;
+
+}
