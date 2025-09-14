@@ -17,4 +17,9 @@
     background-color: #121212;
     border-bottom: solid 3px #009600;
     border-radius: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
 }

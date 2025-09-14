@@ -60,27 +60,7 @@ export function StatsProvider({ children }) {
         rWeapon: "none",
     })
 
-    const [ inventory, setInventory ] = useState([
-        {
-            name: "pecho de cuero",
-            ac: 12,
-            description: "este es un pecho de cuero",
-            slot: "armor",
-            quantity: 1
-        },{
-            name: "casco de cuero",
-            ac: 2,
-            description: "este es un casco de cuero",
-            slot: "head",
-            quantity: 1
-        },{
-            name: "espada de madera",
-            damage: "1D4",
-            description: "este es una espada de madera",
-            slot: "mWeapon",
-            quantity: 1
-        },
-    ])
+    const [ inventory, setInventory ] = useState([])
 
     const addItem = (item) => {
         setInventory(prevInventory => {

@@ -1,0 +1,77 @@
+.add-item-title{
+    font-size: 20px;
+}
+.add-item-sepatator{
+    border-bottom: #009600 solid 3px;
+    padding-bottom: 10px;
+}
+.add-item-container{
+    margin: 1vw;
+}
+.add-item-label{
+    margin: 2vw;
+    font-size: 20px;
+}
+.add-item-input{
+    margin: 2vw;
+}
+.add-item-button{
+    color: #009600;
+    background-color: #121212;
+    border: solid 3px #009600;
+    border-radius: 20px;
+    margin-top: 5vw;
+}
+.add-item-optional-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+.add-item-optional-x-container{
+    width: 50px;
+    height: 50px;
+    border: #009600 3px solid;
+    border-radius: 15px;
+    display: flex;
+    margin: 5px;
+
+    justify-content: center;
+    align-items: center;
+}
+.add-item-optional-content-container{
+    width: 80%;
+    justify-content: start;
+    align-items: start;
+}
+.add-item-optional-checks{
+    font-size: 20px;
+    margin: 0;
+}
+.add-item-equipable-dropmenu-button{
+    color: #009600;
+    background-color: #121212;
+    border: #009600 solid 3px;
+    border-radius: 20px;
+    width: 100%;
+}
+.add-item-equipable-dropmenu{
+    border: #009600 solid 3px;
+    background-color: #121212;
+    border-radius: 20px;
+    position: absolute;
+    height: 150px;
+    width: 70%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.add-item-dropmenu-item{
+    font-size: 20px;
+    border-bottom: #009600 solid 3px;
+    border-top: #009600 solid 3px;
+    border-right: #009600 solid 3px;
+    margin:0;
+    margin-right: 50px;
+    padding:5px
+}

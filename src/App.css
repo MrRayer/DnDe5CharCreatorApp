@@ -28,10 +28,6 @@
   -ms-user-select: none;
   cursor: pointer;
 }
-.close-shader-button:hover{
-  background-color: #009600;
-  border: solid 3px #121212;
-}
 .popup-content-container{
   width: 90%;
   height: 85%;

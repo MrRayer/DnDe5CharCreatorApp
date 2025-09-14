@@ -3,7 +3,8 @@ import "./inventory.css"
 import { StatsContext } from "../../../context/statsContext"
 import { GlobalsContext } from "../../../context/globalsContext"
 import InventoryItem from "./components/inventoryItem"
-import AddInventoryItem from "../../popups/addInventoryItem/addInventoryItem"
+import AddInventoryItem from "./components/addInventoryItem"
+import ItemDetails from "./components/itemDetails"
 
 export default function Inventory(){
     const { inventory,setInventory } = useContext(StatsContext)
@@ -12,13 +13,19 @@ export default function Inventory(){
         setPopupName(<AddInventoryItem/>);
         setShaderFlag(true);
     }
+    const handleOpenDetails = (item) => {
+        setPopupName(<ItemDetails item={item}/>)
+        setShaderFlag(true);
+    }
     return(
         <>
             <h1 className="inventory-title">Inventario</h1>
             <div className="inventory-container">
                 <button className="inventory-add-button"
                         onClick={addItem}>Agregar Item</button>
-                {inventory.length > 0 ? (inventory.map(item => <InventoryItem key={item.name} item={item}/>)) : null}
+                {inventory.length > 0 ? (inventory.map(item =>
+                    <InventoryItem key={item.name} item={item} onClick={handleOpenDetails}/>
+                )) : null}
             </div>
         </>
     )
