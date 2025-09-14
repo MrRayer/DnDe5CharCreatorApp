@@ -2,6 +2,7 @@
     "Race": "Enano",
     "extraStats": [0,0,2,0,0,0],
     "languages": ["Comun","enano"],
+    "toolProf":["Herramientas de artesano"],
     "abilities": [
         "darkvision",
         "dwarvenResilience",

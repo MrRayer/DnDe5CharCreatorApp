@@ -2,6 +2,7 @@
     "Race": "Elfo",
     "extraStats": [0,2,0,0,0,0],
     "languages": ["Comun","Elfico"],
+    "skills":["perception"],
     "abilities": [
         "darkvision",
         "keenSenses",
