@@ -4,6 +4,7 @@ import { StatsContext } from "../../context/statsContext"
 import { GlobalsContext } from "../../context/globalsContext";
 import GlobalSelector from "../popups/globalSelector/globalSelector";
 import DieRoll from "../popups/dieRoll/dieRoll";
+import ChangeName from "./components/changeName";
 
 export default function Header() {
     const { charIdentity } = useContext(StatsContext);
@@ -15,16 +16,8 @@ export default function Header() {
                     src={`${import.meta.env.BASE_URL}img/d20green.png`} alt="App Logo"
                     onClick={()=>{setPopupName(<DieRoll/>);setShaderFlag(true)}}/>
             </div>
-            <div className="name-container">
-                <textarea
-                    className="char-name-textarea"
-                    defaultValue={charIdentity["Name"]}
-                    onChange={(e) => setCharIdentity(prevIdentity => ({
-                        ...prevIdentity,
-                        Name: e.target.value
-                    }))}
-                    spellCheck="false"
-                />
+            <div className="name-container" onClick={()=>{setPopupName(<ChangeName/>);setShaderFlag(true)}}>
+                <h1 className="char-name">{charIdentity["Name"]}</h1>
             </div>
             <div className="class-logo-container" onClick={() => {setPopupName(<GlobalSelector/>);setShaderFlag(true)}}>
                 <img className="class-logo" src={`${import.meta.env.BASE_URL}img/hamburguer.png`} alt="Menu Logo"/>

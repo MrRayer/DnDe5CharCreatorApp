@@ -3,7 +3,7 @@ import "./calculatedStats.css"
 import { StatsContext } from "../../../context/statsContext"
 
 export default function CalculatedStats(){
-    const { charIdentity, charEquipment, calcStat } = useContext(StatsContext);
+    const { charIdentity, equipment, calcStat } = useContext(StatsContext);
     const HP = charIdentity.baseHP + (Math.floor((calcStat(2) - 10) / 2)) + ((charIdentity.Level - 1) * charIdentity.hitDie);
     const [currentHP,setCurrentHP] = useState(HP);
     let timer;
@@ -23,8 +23,15 @@ export default function CalculatedStats(){
             }, 100);
         }
     };
-    const ACN = 10 + Math.floor((calcStat(1) - 10) / 2);
-    const AC = ACN + charEquipment["ACA"] + charEquipment["ACS"];
+    const ACN = 10 +
+                Math.floor((calcStat(1) - 10) / 2) +
+                ((charIdentity.abilities.some(item => item === "unarmoredDefense"))&&
+                (!equipment.armor.ac || equipment.armor.ac === 0) &&
+                Math.floor((calcStat(2) - 10) / 2));
+    const armorAC = equipment.armor.ac ?? 0
+    const shieldAC = equipment.shield.ac ?? 0
+    const AC = Math.max(armorAC, ACN) + shieldAC;
+
     const Initiative = () => {
         const Ini = Math.floor((calcStat(1) - 10) / 2);
         if (Ini > 0) return `+${Ini}`;
@@ -58,11 +65,11 @@ export default function CalculatedStats(){
                     </div>
                     <div className="AC-arm-container">
                         <h1>Armadura</h1>
-                        <div className="AC">{charEquipment["ACA"]}</div>
+                        <div className="AC">{armorAC}</div>
                     </div>
                     <div className="AC-shield-container">
                         <h1>Escudo</h1>
-                        <div className="AC">{charEquipment["ACS"]}</div>
+                        <div className="AC">{shieldAC}</div>
                     </div>
                 </div>
             </div> 

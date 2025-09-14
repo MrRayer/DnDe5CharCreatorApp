@@ -3,10 +3,10 @@ import { useContext } from "react";
 import { StatsContext } from "../../../context/statsContext";
 export default function SaveLoad(){
     const { charIdentity, charResources, charAbilityScores,
-            charEquipment, charChoices, inventory,
+            charEquipment, charChoices, inventory, equipment,
             setCharIdentity, setCharResources,
             setCharAbilityScores, setCharEquipment,
-            setCharChoices, setInventory } = useContext(StatsContext);
+            setCharChoices, setInventory, setEquipment } = useContext(StatsContext);
     const handleSave = () => {
         const savedStats = [
             charIdentity,
@@ -14,7 +14,8 @@ export default function SaveLoad(){
             charAbilityScores,
             charEquipment,
             charChoices,
-            inventory
+            inventory,
+            equipment
         ]
         localStorage.setItem("savedStats",JSON.stringify(savedStats))
         console.log("data stored")
@@ -32,6 +33,7 @@ export default function SaveLoad(){
         setCharEquipment(savedStats[3]);
         setCharChoices(savedStats[4]);
         setInventory(savedStats[5]);
+        setEquipment(savedStats[6]);
     }
     return(
         <div className="saveload-main-container">

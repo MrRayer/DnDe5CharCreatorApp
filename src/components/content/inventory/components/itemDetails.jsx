@@ -1,6 +1,10 @@
 import "./itemDetails.css"
+import { useContext } from "react"
+import { GlobalsContext } from "../../../../context/globalsContext"
+import ModInventoryItem from "./modInventoryItem";
 
 export default function ItemDetails({item}) {
+    const { setPopupName } = useContext(GlobalsContext);
     return (
         <div className="item-details-main-container">
             <h1 className="item-details-title item-details-top-separator">{item.name}</h1>
@@ -27,7 +31,9 @@ export default function ItemDetails({item}) {
                     <h1 className="item-details-title item-details-top-separator">Equipable en </h1>
                     <p className="item-details-content">{item.slot}</p>
                 </div>
-            :null}   
+            :null}
+            <button className="item-details-button"
+                    onClick={()=>{setPopupName(<ModInventoryItem item={item}/>)}}>Modificar</button>
         </div>
     )
 }

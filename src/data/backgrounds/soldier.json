@@ -21,7 +21,9 @@
         {
             "name" : "Ropa",
             "description" : "",
-            "quantity" : 1
+            "quantity" : 1,
+            "ac" : 0,
+            "slot" : "armor"
         },
         {
             "name" : "Oro",

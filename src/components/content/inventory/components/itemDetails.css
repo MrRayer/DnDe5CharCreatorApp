@@ -14,3 +14,9 @@
     border-radius: 20px;
     margin: 5px
 }
+.item-details-button{
+    background-color: #121212;
+    color: #009600;
+    border: #009600 solid 3px;
+    margin: 5px;
+}

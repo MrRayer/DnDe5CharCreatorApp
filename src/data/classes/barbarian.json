@@ -14,13 +14,15 @@
             "name" : "Gran hacha",
             "description" : "Hacha de dos manos. Pesada. Arma marcial",
             "damage" : "1D12 cortante",
-            "quantity" : 1
+            "quantity" : 1,
+            "slot" : "mWeapon"
         },
         {
             "name" : "Hacha",
             "description" : "Hacha de una mano.",
             "damage" : "1D6 cortante",
-            "quantity" : 2
+            "quantity" : 2,
+            "slot" : "rWeapon"
         },
         {
             "name" : "Equipo de explorardor",
@@ -31,7 +33,8 @@
             "name" : "Javalina",
             "description" : "Lanza corta arrojadiza. Rango 9m/36m",
             "damage" : "1D6 perforante",
-            "quantity" : 4
+            "quantity" : 4,
+            "slot" : "rWeapon"
         }
     ]
 }
