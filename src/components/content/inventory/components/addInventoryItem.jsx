@@ -1,125 +1,33 @@
-import { useContext, useRef, useState } from "react"
+import { useContext, useState } from "react"
 import "./addInventoryItem.css"
 import { StatsContext } from "../../../../context/statsContext";
 import { GlobalsContext } from "../../../../context/globalsContext";
+import ItemForm from "./itemForm";
+import InfoPopup from "./infoPopup";
 
 export default function AddInventoryItem(){
-    const { inventory,setInventory } = useContext(StatsContext);
-    const { setShaderFlag } = useContext(GlobalsContext)
-    const [ descriptionFlag, setDescriptionFlag] = useState(false);
-    const [ acFlag, setAcFlag] = useState(false);
-    const [ damageFlag, setDamageFlag] = useState(false);
-    const [ equipableFlag, setEquipableFlag] = useState(false);
-    const [ dropmenuFlag, setDropmenuFlag] = useState(false);
-    const [ dropmenuSelection, setDropmenuSelection ] = useState("none");
-    const addItemNameRef = useRef('');
-    const addItemDescriptionRef = useRef('');
-    const addItemQuantityRef = useRef('');
-    const addItemAcRef = useRef('');
-    const addItemDamageRef = useRef('');
-
-    const handleClickAdd = () => {
-        const quantity = Number(addItemQuantityRef.current.value);
-        if (!Number.isInteger(quantity) || quantity <= 0) return;
-        if (acFlag) {
-            const ac = Number(addItemAcRef.current.value);
-            if (!Number.isInteger(ac) || ac <= 0) return;
+    const { inventory, setInventory } = useContext(StatsContext);
+    const { setShaderFlag } = useContext(GlobalsContext);
+    const [ infoPopupFlag, setInfoPopupFlag ] = useState(false)
+    const [ infoPopupContent, setInfoPopupContent ] = useState(false)
+    const handleClickAdd = (item) => {
+        addItem(item)
+    }
+    const addItem = (newItem) => {
+        if (inventory.some(item => item.name === newItem.name)) {
+            setInfoPopupContent("El nombre del item ya esta en uso por otro item en su inventario");
+            setInfoPopupFlag(true);
+            return;
         }
-        const itemName = addItemNameRef.current.value;
-        const existingItemIndex = inventory.findIndex(item => item.name === itemName);
-        if (existingItemIndex !== -1) {
-            const updatedInventory = [...inventory];
-            updatedInventory[existingItemIndex].quantity += quantity;
-            setInventory(updatedInventory);
-        } else {
-            const newItem = {
-                name: itemName,
-                quantity,
-                ...(descriptionFlag && { description: addItemDescriptionRef.current.value }),
-                ...(acFlag && { ac: Number(addItemAcRef.current.value) }),
-                ...(damageFlag && { damage: addItemDamageRef.current.value }),
-                ...(equipableFlag && { slot: dropmenuSelection })
-            };
-            setInventory(prevInventory => [...(prevInventory || []), newItem]);
-        }
+        setInventory(prevInventory => [...(prevInventory || []), newItem]);
         setShaderFlag(false);
     };
 
     return(
         <>
             <h1 className="add-item-title add-item-sepatator">Agregar Item</h1>
-            <div className="add-item-container">
-                <h1 className="add-item-label">Nombre</h1>
-                <input ref={addItemNameRef} className="add-item-input" type="text" />
-            </div>
-            <div className="add-item-container">
-                <h1 className="add-item-label">cantidad</h1>
-                <input
-                    ref={addItemQuantityRef}
-                    className="add-item-input"
-                    type="number"
-                    min="1"
-                />
-            </div>
-            <div className="add-item-optional-container">
-                <div className="add-item-optional-x-container"
-                    onClick={() => { descriptionFlag ? setDescriptionFlag(false) : setDescriptionFlag(true) }}>
-                    <h1 className="add-item-optional-checks">{descriptionFlag && "X"}</h1>
-                </div>
-                <div className="add-item-optional-content-container">
-                    <h1 className="add-item-label">descripcion</h1>
-                    {descriptionFlag && <input ref={addItemDescriptionRef} className="add-item-input" type="text" />}
-                </div>
-            </div>
-            <div className="add-item-optional-container">
-                <div className="add-item-optional-x-container"
-                    onClick={() => { acFlag ? setAcFlag(false) : setAcFlag(true) }}>
-                    <h1 className="add-item-optional-checks">{acFlag && "X"}</h1>
-                </div>
-                <div className="add-item-optional-content-container">
-                    <h1 className="add-item-label">AC</h1>
-                    {acFlag && <input ref={addItemAcRef} className="add-item-input" type="number" min="1" />}
-                </div>
-            </div>
-            <div className="add-item-optional-container">
-                <div className="add-item-optional-x-container"
-                    onClick={() => { damageFlag ? setDamageFlag(false) : setDamageFlag(true) }}>
-                    <h1 className="add-item-optional-checks">{damageFlag && "X"}</h1>
-                </div>
-                <div className="add-item-optional-content-container">
-                    <h1 className="add-item-label">Daño</h1>
-                    {damageFlag && <input ref={addItemDamageRef} className="add-item-input" type="text" />}
-                </div>
-            </div>
-            <div className="add-item-optional-container">
-                <div className="add-item-optional-x-container"
-                    onClick={() => { equipableFlag ? setEquipableFlag(false) : setEquipableFlag(true) }}>
-                    <h1 className="add-item-optional-checks">{equipableFlag && "X"}</h1>
-                </div>
-                <div className="add-item-optional-content-container">
-                    <h1 className="add-item-label">Equipable</h1>
-                    {equipableFlag &&
-                        <>
-                            <button className="add-item-equipable-dropmenu-button"
-                                onClick={() => { dropmenuFlag ? setDropmenuFlag(false) : setDropmenuFlag(true) }}>
-                                {dropmenuSelection}
-                            </button>
-                            {dropmenuFlag && <div className="add-item-equipable-dropmenu">
-                                <h1 className="add-item-dropmenu-item" onClick={() => { setDropmenuSelection("ring"); setDropmenuFlag(false) }}>ring</h1>
-                                <h1 className="add-item-dropmenu-item" onClick={() => { setDropmenuSelection("amulet"); setDropmenuFlag(false) }}>amulet</h1>
-                                <h1 className="add-item-dropmenu-item" onClick={() => { setDropmenuSelection("head"); setDropmenuFlag(false) }}>head</h1>
-                                <h1 className="add-item-dropmenu-item" onClick={() => { setDropmenuSelection("armor"); setDropmenuFlag(false) }}>armor</h1>
-                                <h1 className="add-item-dropmenu-item" onClick={() => { setDropmenuSelection("boots"); setDropmenuFlag(false) }}>boots</h1>
-                                <h1 className="add-item-dropmenu-item" onClick={() => { setDropmenuSelection("gloves"); setDropmenuFlag(false) }}>gloves</h1>
-                                <h1 className="add-item-dropmenu-item" onClick={() => { setDropmenuSelection("mWeapon"); setDropmenuFlag(false) }}>mWeapon</h1>
-                                <h1 className="add-item-dropmenu-item" onClick={() => { setDropmenuSelection("shield"); setDropmenuFlag(false) }}>shield</h1>
-                                <h1 className="add-item-dropmenu-item" onClick={() => { setDropmenuSelection("rWeapon"); setDropmenuFlag(false) }}>rWeapon</h1>
-                            </div>}
-                        </>
-                    }
-                </div>
-            </div>
-            <button className="add-item-button" onClick={handleClickAdd}>Agregar</button>
+            <ItemForm handleItem={handleClickAdd}/>
+            {infoPopupFlag && <InfoPopup flagSetter={setInfoPopupFlag} content={infoPopupContent}/>}
         </>
     )
 }

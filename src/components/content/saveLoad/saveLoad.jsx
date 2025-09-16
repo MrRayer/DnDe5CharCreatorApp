@@ -1,7 +1,8 @@
 import "./saveLoad.css"
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { StatsContext } from "../../../context/statsContext";
 export default function SaveLoad(){
+    const fileInputRef = useRef();
     const { charIdentity, charResources, charAbilityScores,
             charEquipment, charChoices, inventory, equipment,
             setCharIdentity, setCharResources,
@@ -35,10 +36,47 @@ export default function SaveLoad(){
         setInventory(savedStats[5]);
         setEquipment(savedStats[6]);
     }
+    const importChar = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            try {
+                const data = JSON.parse(event.target.result);
+                loadData(data);
+                console.log("data loaded");
+            } catch (err) { console.log("invalid JSON", err);}
+        }
+        reader.readAsText(file);
+
+    }
+    const exportChar = () => {
+        const savedStats = [
+            charIdentity,
+            charResources,
+            charAbilityScores,
+            charEquipment,
+            charChoices,
+            inventory,
+            equipment
+        ]
+        const savedStatsJson = JSON.stringify(savedStats,null,2);
+        const blob = new Blob([savedStatsJson],{ type:"application/json" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = charIdentity.Name + ".json"
+        link.click();
+        URL.revokeObjectURL(url);
+    }
     return(
         <div className="saveload-main-container">
-            <button className="saveload-button" onClick={handleSave}>Save</button>
-            <button className="saveload-button" onClick={handleLoad}>Load</button>
+            <button className="saveload-button" onClick={handleSave}>Guardado rapido</button>
+            <button className="saveload-button" onClick={handleLoad}>Cargado rapido</button>
+            <input type="file" accept="application/json" ref={fileInputRef}
+                onChange={importChar} style={{display:"none"}}/>
+            <button className="saveload-button" onClick={()=>fileInputRef.current.click()}>Cargar desde archivo</button>
+            <button className="saveload-button" onClick={exportChar}>Descargar</button>
         </div>
     );
 }

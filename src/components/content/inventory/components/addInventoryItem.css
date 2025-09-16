@@ -65,13 +65,39 @@
     width: 70%;
     overflow: scroll;
     scrollbar-width: none;
+    z-index: 10;
 }
 .add-item-dropmenu-item{
-    font-size: 20px;
+    font-size: 15px;
     border-bottom: #009600 solid 3px;
     border-top: #009600 solid 3px;
     border-right: #009600 solid 3px;
     margin:0;
     margin-right: 50px;
     padding:5px
+}
+.add-item-armor-type-container{
+    display: flex;
+    overflow: scroll;
+    overflow-x: none;
+    scrollbar-width: none;
+    border: #009600 solid 3px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.add-item-armor-type{
+    font-size: 15px;
+    border: #009600 solid 3px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+}
+.selected{
+    background-color: #00ff00;
+    filter: brightness(60%);
 }

@@ -1,0 +1,28 @@
+.info-popup-shader{
+    background-color: rgba(12,12,12,0.75);
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.info-popup-container{
+    background-color: #121212;
+    border: #009600 solid 3px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.info-popup-content{
+    font-size: 15px;
+    margin: 10px;
+}
+.info-popup-button{
+    background-color: #121212;
+    color: #009600;
+    border: #009600 solid 3px;
+    margin: 10px;
+}

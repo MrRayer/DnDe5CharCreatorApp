@@ -23,12 +23,19 @@ export default function CalculatedStats(){
             }, 100);
         }
     };
+    const agilityMod = Math.floor((calcStat(1) - 10) / 2);
+    const constMod = Math.floor((calcStat(2) - 10) / 2);
     const ACN = 10 +
-                Math.floor((calcStat(1) - 10) / 2) +
+                agilityMod +
                 ((charIdentity.abilities.some(item => item === "unarmoredDefense"))&&
                 (!equipment.armor.ac || equipment.armor.ac === 0) &&
-                Math.floor((calcStat(2) - 10) / 2));
-    const armorAC = equipment.armor.ac ?? 0
+                constMod);
+    const armorAC = equipment?.armor?.ac ? (
+        equipment.armor.ac +
+        (equipment.armor.armorType === "light" ? (agilityMod) :
+        equipment.armor.armorType === "medium" ? (Math.min(agilityMod, 2)) :
+        0)
+    ) : 0;
     const shieldAC = equipment.shield.ac ?? 0
     const AC = Math.max(armorAC, ACN) + shieldAC;
 

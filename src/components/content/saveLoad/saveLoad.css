@@ -2,4 +2,11 @@
     color: #009600;
     border: solid 3px #009600;
     border-radius: 20px;
+    width: 90vw;
+    margin: 5vw;
+    margin-bottom: 0;
+}
+.saveload-main-container{
+    display: flex;
+    flex-direction: column;
 }

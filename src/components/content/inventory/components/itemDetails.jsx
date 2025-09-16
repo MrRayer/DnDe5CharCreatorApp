@@ -32,6 +32,12 @@ export default function ItemDetails({item}) {
                     <p className="item-details-content">{item.slot}</p>
                 </div>
             :null}
+            {item?.armorType ?
+                <div className="item-details-container">
+                    <h1 className="item-details-title item-details-top-separator">Tipo de armadura </h1>
+                    <p className="item-details-content">{item.armorType}</p>
+                </div>
+            :null}
             <button className="item-details-button"
                     onClick={()=>{setPopupName(<ModInventoryItem item={item}/>)}}>Modificar</button>
         </div>
