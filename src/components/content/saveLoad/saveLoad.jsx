@@ -1,7 +1,11 @@
 import "./saveLoad.css"
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { StatsContext } from "../../../context/statsContext";
+import InfoPopup from "../inventory/components/infoPopup";
+
 export default function SaveLoad(){
+    const [ infoPopupFlag, setInfoPopupFlag ] = useState(false);
+    const [ infoPopupContent, setInfoPopupContent ] = useState("");
     const fileInputRef = useRef();
     const { charIdentity, charResources, charAbilityScores,
             charEquipment, charChoices, inventory, equipment,
@@ -19,13 +23,15 @@ export default function SaveLoad(){
             equipment
         ]
         localStorage.setItem("savedStats",JSON.stringify(savedStats))
-        console.log("data stored")
+        setInfoPopupContent("Guardado rapido exitoso");
+        setInfoPopupFlag(true);
     }
     const handleLoad = () => {
         const rawSavedStats = localStorage.getItem("savedStats")
         const savedStats = JSON.parse(rawSavedStats);
         loadData(savedStats);
-        console.log("data loaded")
+        setInfoPopupContent("Personaje cargado");
+        setInfoPopupFlag(true);
     }
     const loadData = (savedStats) => {
         setCharIdentity(savedStats[0]);
@@ -44,7 +50,8 @@ export default function SaveLoad(){
             try {
                 const data = JSON.parse(event.target.result);
                 loadData(data);
-                console.log("data loaded");
+                setInfoPopupContent("Personaje cargado");
+                setInfoPopupFlag(true);
             } catch (err) { console.log("invalid JSON", err);}
         }
         reader.readAsText(file);
@@ -77,6 +84,7 @@ export default function SaveLoad(){
                 onChange={importChar} style={{display:"none"}}/>
             <button className="saveload-button" onClick={()=>fileInputRef.current.click()}>Cargar desde archivo</button>
             <button className="saveload-button" onClick={exportChar}>Descargar</button>
+            {infoPopupFlag && <InfoPopup flagSetter={setInfoPopupFlag} content={infoPopupContent}/>}
         </div>
     );
 }
