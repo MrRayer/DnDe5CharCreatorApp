@@ -4,25 +4,9 @@
     "toolProf":["Juegos"],
     "langChoice":1,
     "startingInventory":[
-        {
-            "name" : "Ropas finas",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Anillo con sello",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Acta de nacimiento",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Oro",
-            "description" : "",
-            "quantity" : 25
-        }
+        {"item":"fineClothes","quantity":1},
+        {"item":"sealRing","quantity":1},
+        {"item":"familyTree","quantity":1},
+        {"item":"gc","quantity":25}
     ]
 }

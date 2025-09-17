@@ -8,25 +8,5 @@
     "cantripChoice" : 3,
     "spell1Choice" : 2,
     "startingInventory" : [
-        {
-            "name" : "Baston",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Bolsa de componentes de conjuros",
-            "description" : "",
-            "quantity" : 20
-        },
-        {
-            "name" : "Equipo de erudito",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Libro de conjuros",
-            "description" : "",
-            "quantity" : 1
-        }
     ]
 }

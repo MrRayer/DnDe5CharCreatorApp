@@ -3,30 +3,11 @@
     "skills":["arcane","history"],
     "langChoice":2,
     "startingInventory":[
-        {
-            "name" : "Kit de escritura",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Cuchillo pequeño",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Carta de colega muerto",
-            "description" : "con pregunta sin responder",
-            "quantity" : 1
-        },
-        {
-            "name" : "Ropa",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Oro",
-            "description" : "",
-            "quantity" : 10
-        }
+        {"item":"inkFlask","quantity":1},
+        {"item":"pen","quantity":1},
+        {"item":"smallKnife","quantity":1},
+        {"item":"peerLetter","quantity":1},
+        {"item":"clothes","quantity":1},
+        {"item":"gc","quantity":10}
     ]
 }

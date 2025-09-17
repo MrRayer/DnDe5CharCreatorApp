@@ -4,30 +4,10 @@
     "toolProf":["Instrumentos musicales"],
     "langChoice":1,
     "startingInventory":[
-        {
-            "name" : "Baston",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Trampa de caza",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Trofeo de animal",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Ropa de viajero",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Oro",
-            "description" : "",
-            "quantity" : 10
-        }
+        {"item":"staff","quantity":1},
+        {"item":"huntingTrap","quantity":1},
+        {"item":"gameTrophy","quantity":1},
+        {"item":"clothes","quantity":1},
+        {"item":"gc","quantity":10}
     ]
 }

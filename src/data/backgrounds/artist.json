@@ -5,25 +5,9 @@
     "langChoice":1,
     "toolChoice":1,
     "startingInventory":[
-        {
-            "name" : "Instrumento musical",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Carta de un admirador",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Disfraz",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Oro",
-            "description" : "",
-            "quantity" : 15
-        }
+        {"item":"musicalInstrument","quantity":1},
+        {"item":"fanLetter","quantity":1},
+        {"item":"disguise","quantity":1},
+        {"item":"gc","quantity":15}
     ]
 }

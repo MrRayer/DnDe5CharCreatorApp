@@ -3,30 +3,9 @@
     "skills":["deception","sleightOfHands"],
     "toolProf":["Kit de disfraz","Kit de falsificacion"],
     "startingInventory":[
-        {
-            "name" : "Ropa fina",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Kit de disfraz",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Kit de falsificacion",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Dados cargados",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Oro",
-            "description" : "",
-            "quantity" : 15
-        }
+        {"item":"fineClothes","quantity":1},
+        {"item":"disguiseKit","quantity":1},
+        {"item":"scammingKit","quantity":1},
+        {"item":"gc","quantity":10}
     ]
 }

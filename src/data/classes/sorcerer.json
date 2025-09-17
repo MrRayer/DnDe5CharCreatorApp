@@ -8,25 +8,5 @@
     "cantripChoice" : 4,
     "spell1Choice" : 2,
     "startingInventory" : [
-        {
-            "name" : "Ballesta ligera",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Birotes",
-            "description" : "",
-            "quantity" : 20
-        },
-        {
-            "name" : "Bolsa de componentes de conjuros",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Equipo para dungeon",
-            "description" : "",
-            "quantity" : 1
-        }
     ]
 }

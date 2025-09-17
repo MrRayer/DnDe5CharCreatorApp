@@ -4,25 +4,9 @@
     "langChoice":1,
     "toolChoice":1,
     "startingInventory":[
-        {
-            "name" : "Herramientas de artesano",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Carta del gremio",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Ropa de viaje",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Oro",
-            "description" : "",
-            "quantity" : 15
-        }
+        {"item":"artisanKit","quantity":1},
+        {"item":"guildCard","quantity":1},
+        {"item":"clothes","quantity":1},
+        {"item":"gc","quantity":15}
     ]
 }

@@ -13,30 +13,5 @@
         "entangle","fogCloud","jump"
     ],
     "startingInventory" : [
-        {
-            "name" : "Cimitarra",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Escudo de madera",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Armadura de cuero",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Equipo de explorardor",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Foco druidico",
-            "description" : "",
-            "quantity" : 1
-        }
     ]
 }

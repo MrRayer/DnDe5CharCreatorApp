@@ -10,20 +10,5 @@
         "unarmoredMonkDefense","martialArts"
     ],
     "startingInventory" : [
-        {
-            "name" : "Espada corta",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Equipo de dungeon",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Dardo",
-            "description" : "",
-            "quantity" : 10
-        }
     ]
 }

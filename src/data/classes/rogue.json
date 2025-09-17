@@ -10,40 +10,5 @@
     "abilities" : ["expertise","stealthAtack"],
     "languages" : ["Jerga de ladrones"],
     "startingInventory" : [
-        {
-            "name" : "Estoque",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Arco pequeño",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Flechas",
-            "description" : "",
-            "quantity" : 20
-        },
-        {
-            "name" : "Equipo de ladron",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Armadura de cuero",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Daga",
-            "description" : "",
-            "quantity" : 2
-        },
-        {
-            "name" : "Herramientas de ladron",
-            "description" : "",
-            "quantity" : 1
-        }
     ]
 }

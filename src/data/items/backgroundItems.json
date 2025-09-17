@@ -1,0 +1,84 @@
+[
+    {
+        "name":"studyNotes",
+        "display":"Notas de estudio",
+        "description":"Notas de tus estudios durante tus años de ermitaño"
+    },
+    {
+        "name":"holySymbol",
+        "display":"Simbolo sagrado",
+        "description":"Simbolo de tu deidad"
+    },
+    {
+        "name":"prayersBook",
+        "display":"Biblia",
+        "description":"Libro sagrado de tu religion"
+    },
+    {
+        "name":"guildCard",
+        "display":"Carta del gremio",
+        "description":"Carta que te identifica como miembro de tu gremio"
+    },
+    {
+        "name":"fanLetter",
+        "display":"Carta de un admirador",
+        "description":"Carta entregada uno de tus actos por un miembro del publico reconociendo tu talento"
+    },
+    {
+        "name":"sealRing",
+        "display":"Anillo con sello",
+        "description":"Anillo con el sello de tu familia"
+    },
+    {
+        "name":"familyTree",
+        "display":"Arbol genealogico",
+        "description":"Pergamino con tu genealogia"
+    },
+    {
+        "name":"homeTownMap",
+        "display":"Mapa de ciudad de origen",
+        "description":"Mapa de la ciudad en la que creciste"
+    },
+    {
+        "name":"petRat",
+        "display":"Raton mascota",
+        "description":"Mascota que te acompaña en tus aventuras"
+    },
+    {
+        "name":"familySymbol",
+        "display":"Simbolo familiar",
+        "description":"Simbolo para recordar a tus padres"
+    },
+    {
+        "name":"gameTrophy",
+        "display":"Trofeo de caza",
+        "description":"Trofeo de un animal que mataste en el bosque"
+    },
+    {
+        "name":"peerLetter",
+        "display":"Carta de colega",
+        "description":"Carta de un colega muerto con un problema sin resolver"
+    },
+    {
+        "name":"woodBeam",
+        "display":"Barra de madera",
+        "description":"Barra de madera para reparacion de barcos"
+    },
+    {
+        "name":"luckyCharm",
+        "display":"Amuleto de la suerte",
+        "description":"Pequeño colgante conseguido en tus dias de marinero que, segun vos, da buena suerte",
+        "slot":"amulet"
+    },
+    {
+        "name":"rankSymbol",
+        "display":"Insignia de rango",
+        "description":"Insignia que demuestra tu rango en el ejercito",
+        "slot":"amulet"
+    },
+    {
+        "name":"enemyTrophy",
+        "display":"Trofeo de batalla",
+        "description":"Trofeo que tomaste de un enemigo caido en batalla"
+    }
+]

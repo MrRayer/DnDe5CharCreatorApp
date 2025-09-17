@@ -3,30 +3,10 @@
     "skills":["atletics","perception"],
     "toolProf":["Herramientas de navegacion","Barcos"],
     "startingInventory":[
-        {
-            "name" : "Barra de madera",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Cuerda",
-            "description" : "",
-            "quantity" : 50
-        },
-        {
-            "name" : "Amuleto de la suerte",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Ropa",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Oro",
-            "description" : "",
-            "quantity" : 10
-        }
+        {"item":"woodBeam","quantity":1},
+        {"item":"rope","quantity":50},
+        {"item":"luckyCharm","quantity":1},
+        {"item":"clothes","quantity":1},
+        {"item":"gc","quantity":10}
     ]
 }

@@ -12,40 +12,21 @@
     "sanctuary"
 ],
     "startingInventory" : [
-        {
-            "name" : "Maza",
-            "description" : "Corto alcanze, daño contundente",
-            "quantity" : 1
-        },
-        {
-            "name" : "Cota de escamas",
-            "description" : "Armadura para el torso",
-            "quantity" : 1
-        },
-        {
-            "name" : "Ballesta ligera",
-            "description" : "Usa birotes",
-            "quantity" : 1
-        },
-        {
-            "name" : "Birotes",
-            "description" : "Municion para ballesta ligera",
-            "quantity" : 20
-        },
-        {
-            "name" : "Equipo de sacerdote",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Escudo",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Simbolo sagrado",
-            "description" : "",
-            "quantity" : 1
-        }
+        {"item":"maze","quantity":1},
+        {"item":"scaleArmor","quantity":1},
+        {"item":"lightCrossbow","quantity":1},
+        {"item":"bolt","quantity":20},
+        {"item":"bag","quantity":1},
+        {"item":"blanket","quantity":1},
+        {"item":"candle","quantity":10},
+        {"item":"tinderbox","quantity":1},
+        {"item":"donationsBox","quantity":1},
+        {"item":"incense","quantity":2},
+        {"item":"incenseBurner","quantity":1},
+        {"item":"robes","quantity":1},
+        {"item":"ration","quantity":4},
+        {"item":"waterskin","quantity":1},
+        {"item":"shield","quantity":1},
+        {"item":"holySymbol","quantity":1}
     ]
 }

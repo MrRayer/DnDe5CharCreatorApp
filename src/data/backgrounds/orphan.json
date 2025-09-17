@@ -3,35 +3,11 @@
     "skills":["sleightOfHands","stealth"],
     "toolProf":["Kit de disfraz","Herramientas de ladron"],
     "startingInventory":[
-        {
-            "name" : "Pequeño cuchillo",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Mapa de ciudad de origen",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Raton mascota",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Simbolo familiar",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Ropa",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Oro",
-            "description" : "",
-            "quantity" : 10
-        }
+        {"item":"smallKnife","quantity":1},
+        {"item":"homeTownMap","quantity":1},
+        {"item":"petRat","quantity":1},
+        {"item":"familySymbol","quantity":1},
+        {"item":"clothes","quantity":1},
+        {"item":"gc","quantity":10}
     ]
 }

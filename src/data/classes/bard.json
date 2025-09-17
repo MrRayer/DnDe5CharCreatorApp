@@ -13,30 +13,20 @@
         "bardicInspiration"
     ],
     "startingInventory" : [
-        {
-            "name" : "Estoque",
-            "description" : "Fina espada de duelo",
-            "quantity" : 1
-        },
-        {
-            "name" : "Equipo de diplomatico",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Instrumento musical",
-            "description" : "a eleccion",
-            "quantity" : 1
-        },
-        {
-            "name" : "Armadura de cuero",
-            "description" : "Armadura para el torso",
-            "quantity" : 1
-        },
-        {
-            "name" : "Daga",
-            "description" : "Pequeña daga de cuero",
-            "quantity" : 1
-        }
+        {"item":"rapier","quantity":1},
+        {"item":"chest","quantity":1},
+        {"item":"mapBag","quantity":1},
+        {"item":"fineClothes","quantity":1},
+        {"item":"inkFlask","quantity":1},
+        {"item":"pen","quantity":1},
+        {"item":"lantern","quantity":1},
+        {"item":"oilFlask","quantity":2},
+        {"item":"paper","quantity":5},
+        {"item":"parfumeFlask","quantity":1},
+        {"item":"wax","quantity":1},
+        {"item":"soap","quantity":1},
+        {"item":"musicalInstrument","quantity":1},
+        {"item":"dagger","quantity":1},
+        {"item":"leatherArmor","quantity":1}
     ]
 }

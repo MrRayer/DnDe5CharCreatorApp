@@ -10,31 +10,16 @@
         "rage", "unarmoredDefense"
     ],
     "startingInventory" : [
-        {
-            "name" : "Gran hacha",
-            "description" : "Hacha de dos manos. Pesada. Arma marcial",
-            "damage" : "1D12 cortante",
-            "quantity" : 1,
-            "slot" : "mWeapon"
-        },
-        {
-            "name" : "Hacha",
-            "description" : "Hacha de una mano.",
-            "damage" : "1D6 cortante",
-            "quantity" : 2,
-            "slot" : "rWeapon"
-        },
-        {
-            "name" : "Equipo de explorardor",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Javalina",
-            "description" : "Lanza corta arrojadiza. Rango 9m/36m",
-            "damage" : "1D6 perforante",
-            "quantity" : 4,
-            "slot" : "rWeapon"
-        }
+        {"item":"greatAxe","quantity":1},
+        {"item":"handAxe","quantity":2},
+        {"item":"javelin","quantity":4},
+        {"item":"bag","quantity":1},
+        {"item":"sleepingBag","quantity":1},
+        {"item":"cookingKit","quantity":1},
+        {"item":"tinderbox","quantity":1},
+        {"item":"torch","quantity":10},
+        {"item":"ration","quantity":20},
+        {"item":"waterskin","quantity":1},
+        {"item":"rope","quantity":50}
     ]
 }

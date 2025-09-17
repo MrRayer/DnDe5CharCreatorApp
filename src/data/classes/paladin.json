@@ -13,35 +13,5 @@
         "shieldOfFaith","command","purifyFoodAndDrink","divineFavor","searingSmite","wrathfulSmite","thunderousSmite"
     ],
     "startingInventory" : [
-        {
-            "name" : "Espada larga",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Escudo",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Javalina",
-            "description" : "",
-            "quantity" : 5
-        },
-        {
-            "name" : "Equipo de sacerdote",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Cota de malla",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Simbolo sagrado",
-            "description" : "",
-            "quantity" : 1
-        }
     ]
 }

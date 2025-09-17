@@ -4,30 +4,10 @@
     "toolProf":["Kit de herbolisteria"],
     "langChoice":1,
     "startingInventory":[
-        {
-            "name" : "Notas de estudios",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Frazada",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Ropa",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Kit de herbolisteria",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Oro",
-            "description" : "",
-            "quantity" : 5
-        }
+        {"item":"studyNotes","quantity":1},
+        {"item":"warmBlanket","quantity":1},
+        {"item":"clothes","quantity":1},
+        {"item":"herbloreKit","quantity":1},
+        {"item":"gc","quantity":5}
     ]
 }

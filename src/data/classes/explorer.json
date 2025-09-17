@@ -8,30 +8,5 @@
     "skillChoice" : 2,
     "cantripChoice" : 0,
     "startingInventory" : [
-        {
-            "name" : "Espadas cortas",
-            "description" : "",
-            "quantity" : 2
-        },
-        {
-            "name" : "Cota de escamas",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Equipo de explorardor",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Arco largo",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Flechas",
-            "description" : "",
-            "quantity" : 20
-        }
     ]
 }

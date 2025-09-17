@@ -3,35 +3,11 @@
     "skills":["insight","religion"],
     "langChoice":2,
     "startingInventory":[
-        {
-            "name" : "Simbolo sagrado",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Biblia",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Incienso",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Vestiduras",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Ropa comun",
-            "description" : "",
-            "quantity" : 1
-        },
-        {
-            "name" : "Oro",
-            "description" : "",
-            "quantity" : 15
-        }
+        {"item":"holySymbol","quantity":1},
+        {"item":"prayersBook","quantity":1},
+        {"item":"incense","quantity":5},
+        {"item":"robes","quantity":1},
+        {"item":"clothes","quantity":1},
+        {"item":"gc","quantity":15}
     ]
 }
