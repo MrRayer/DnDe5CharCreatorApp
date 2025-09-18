@@ -8,5 +8,18 @@
     "skillChoice" : 2,
     "cantripChoice" : 0,
     "startingInventory" : [
+        {"item":"scaleArmor","quantity":1},
+        {"item":"shortSword","quantity":2},
+        {"item":"sleepingBag","quantity":1},
+        {"item":"crowbar","quantity":1},
+        {"item":"hammer","quantity":1},
+        {"item":"metalicStake","quantity":10},
+        {"item":"torch","quantity":10},
+        {"item":"tinderbox","quantity":1},
+        {"item":"ration","quantity":20},
+        {"item":"waterskin","quantity":1},
+        {"item":"rope","quantity":50},
+        {"item":"longbow","quantity":1},
+        {"item":"arrow","quantity":20}
     ]
 }

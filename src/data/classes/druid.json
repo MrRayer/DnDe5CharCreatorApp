@@ -13,5 +13,17 @@
         "entangle","fogCloud","jump"
     ],
     "startingInventory" : [
+        {"item":"shield","quantity":1},
+        {"item":"scimitar","quantity":1},
+        {"item":"leatherArmor","quantity":1},
+        {"item":"bag","quantity":1},
+        {"item":"sleepingBag","quantity":1},
+        {"item":"cookingKit","quantity":1},
+        {"item":"tinderbox","quantity":1},
+        {"item":"torch","quantity":10},
+        {"item":"ration","quantity":20},
+        {"item":"waterskin","quantity":1},
+        {"item":"rope","quantity":50},
+        {"item":"druidicFocus","quantity":1}
     ]
 }

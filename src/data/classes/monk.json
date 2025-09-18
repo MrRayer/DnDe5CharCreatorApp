@@ -10,5 +10,16 @@
         "unarmoredMonkDefense","martialArts"
     ],
     "startingInventory" : [
+        {"item":"shortSword","quantity":1},
+        {"item":"sleepingBag","quantity":1},
+        {"item":"crowbar","quantity":1},
+        {"item":"hammer","quantity":1},
+        {"item":"metalicStake","quantity":10},
+        {"item":"torch","quantity":10},
+        {"item":"tinderbox","quantity":1},
+        {"item":"ration","quantity":20},
+        {"item":"waterskin","quantity":1},
+        {"item":"rope","quantity":50},
+        {"item":"dart","quantity":10}
     ]
 }

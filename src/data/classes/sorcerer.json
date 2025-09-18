@@ -8,5 +8,18 @@
     "cantripChoice" : 4,
     "spell1Choice" : 2,
     "startingInventory" : [
+        {"item":"lightCrossbow","quantity":1},
+        {"item":"bolt","quantity":20},
+        {"item":"arcaneFocus","quantity":1},
+        {"item":"sleepingBag","quantity":1},
+        {"item":"crowbar","quantity":1},
+        {"item":"hammer","quantity":1},
+        {"item":"metalicStake","quantity":10},
+        {"item":"torch","quantity":10},
+        {"item":"tinderbox","quantity":1},
+        {"item":"ration","quantity":20},
+        {"item":"waterskin","quantity":1},
+        {"item":"rope","quantity":50},
+        {"item":"dagger","quantity":2}
     ]
 }

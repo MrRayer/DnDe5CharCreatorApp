@@ -150,6 +150,11 @@
         "description":"Dados, cartas y otros juegos para disfrutar en tus viajes"
     },
     {
+        "name":"thiefTools",
+        "display":"Herramientas de ladron",
+        "description":"Herramientas para abrir cerraduras"
+    },
+    {
         "name":"blanket",
         "display":"Manta",
         "description":"Sirve para abrigarse fuera de combate"
@@ -160,7 +165,7 @@
         "description":"Calida frazada para descansar comodamente en climas frios"
     },
     {
-        "name":"tipsBox",
+        "name":"donationsBox",
         "display":"Caja de limosnas",
         "description":"Caja con una ranura y un simbolo sagrado"
     },

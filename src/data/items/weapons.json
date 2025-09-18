@@ -250,5 +250,23 @@
         "description":"Tubo usado para impulsar dardos",
         "slot": "rWeapon",
         "damage": "1 perforante"
+    },
+    {
+        "name":"druidicFocus",
+        "display":"Foco druidico",
+        "description":"Usado para lanzar conjuros de druida",
+        "slot": "shield"
+    },
+    {
+        "name":"arcaneFocus",
+        "display":"Foco arcano",
+        "description":"Item usado para lanzar conjuros",
+        "slot":"shield"
+    },
+    {
+        "name":"spellBook",
+        "display":"Libro de conjuros",
+        "description":"Libro que contiene informacion sobre el lanzamiento de conjuros",
+        "slot":"mWeapon"
     }
 ]

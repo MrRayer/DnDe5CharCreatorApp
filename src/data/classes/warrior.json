@@ -8,5 +8,19 @@
     "skillChoice" : 2,
     "abilities" : ["newEnergies"],
     "startingInventory" : [
+        {"item":"mailArmor","quantity":1},
+        {"item":"longSword","quantity":1},
+        {"item":"shield","quantity":1},
+        {"item":"lightCrossbow","quantity":1},
+        {"item":"bolt","quantity":20},
+        {"item":"sleepingBag","quantity":1},
+        {"item":"crowbar","quantity":1},
+        {"item":"hammer","quantity":1},
+        {"item":"metalicStake","quantity":10},
+        {"item":"torch","quantity":10},
+        {"item":"tinderbox","quantity":1},
+        {"item":"ration","quantity":20},
+        {"item":"waterskin","quantity":1},
+        {"item":"rope","quantity":50}
     ]
 }

@@ -13,5 +13,20 @@
         "shieldOfFaith","command","purifyFoodAndDrink","divineFavor","searingSmite","wrathfulSmite","thunderousSmite"
     ],
     "startingInventory" : [
+        {"item":"warHammer","quantity":1},
+        {"item":"shield","quantity":1},
+        {"item":"javelin","quantity":5},
+        {"item":"bag","quantity":1},
+        {"item":"blanket","quantity":1},
+        {"item":"candle","quantity":10},
+        {"item":"tinderbox","quantity":1},
+        {"item":"donationsBox","quantity":1},
+        {"item":"incense","quantity":2},
+        {"item":"incenseBurner","quantity":1},
+        {"item":"robes","quantity":1},
+        {"item":"ration","quantity":4},
+        {"item":"waterskin","quantity":1},
+        {"item":"mailArmor","quantity":1},
+        {"item":"holySymbol","quantity":1}
     ]
 }

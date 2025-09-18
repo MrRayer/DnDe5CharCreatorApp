@@ -10,5 +10,25 @@
     "abilities" : ["expertise","stealthAtack"],
     "languages" : ["Jerga de ladrones"],
     "startingInventory" : [
+        {"item":"rapier","quantity":1},
+        {"item":"shortBow","quantity":1},
+        {"item":"arrow","quantity":20},
+        {"item":"bag","quantity":1},
+        {"item":"caltrops","quantity":1000},
+        {"item":"thread","quantity":10},
+        {"item":"bell","quantity":1},
+        {"item":"candle","quantity":5},
+        {"item":"crowbar","quantity":1},
+        {"item":"hammer","quantity":1},
+        {"item":"metalicStake","quantity":10},
+        {"item":"lantern","quantity":1},
+        {"item":"oilFlask","quantity":2},
+        {"item":"ration","quantity":10},
+        {"item":"tinderbox","quantity":1},
+        {"item":"waterskin","quantity":1},
+        {"item":"rope","quantity":50},
+        {"item":"leatherArmor","quantity":1},
+        {"item":"dagger","quantity":2},
+        {"item":"thiefTools","quantity":1}
     ]
 }

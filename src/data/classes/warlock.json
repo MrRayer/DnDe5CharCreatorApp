@@ -9,5 +9,18 @@
     "cantripChoice" : 2,
     "spell1Choice" : 2,
     "startingInventory" : [
+        {"item":"lightCrossbow","quantity":1},
+        {"item":"bolt","quantity":20},
+        {"item":"arcaneFocus","quantity":1},
+        {"item":"bag","quantity":1},
+        {"item":"knowledgeBook","quantity":1},
+        {"item":"inkFlask","quantity":1},
+        {"item":"pen","quantity":1},
+        {"item":"paper","quantity":10},
+        {"item":"smallSandBag","quantity":1},
+        {"item":"smallKnife","quantity":1},
+        {"item":"leatherArmor","quantity":1},
+        {"item":"sickle","quantity":1},
+        {"item":"dagger","quantity":2}
     ]
 }
