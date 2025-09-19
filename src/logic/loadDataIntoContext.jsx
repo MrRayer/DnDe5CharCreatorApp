@@ -3,6 +3,7 @@ import Subclasses from '../data/subclasses';
 import Races from '../data/races';
 import Subraces from '../data/subraces';
 import Backgrounds from '../data/backgrounds';
+import { ItemList } from '../data/itemList';
 
 export function loadDataIntoIdentity(_charIdentity) {
     const raceObj = findByField(Races, "Race", _charIdentity.Race);
@@ -154,16 +155,50 @@ export function loadDataIntoInventory(charIdentity){
     const classObj = findByField(Classes, "name", charIdentity.Class);
     const subclassObj = findByField(Subclasses, "name", charIdentity.Subclass);
     const backgroundsObj = findByField(Backgrounds, "name", charIdentity.Background);
-    const inventory = [
-            ...(raceObj?.startingInventory || []),
-            ...(subraceObj?.startingInventory || []),
-            ...(classObj?.startingInventory || []),
-            ...(subclassObj?.startingInventory || []),
-            ...(backgroundsObj?.startingInventory || [])
+    const inventoryWDupes = [
+            ...(raceObj?.startingInventory ? loadItemsIntoArray(raceObj.startingInventory) : []),
+            ...(subraceObj?.startingInventory ? loadItemsIntoArray(subraceObj.startingInventory) : []),
+            ...(classObj?.startingInventory ? loadItemsIntoArray(classObj.startingInventory) : []),
+            ...(subclassObj?.startingInventory ? loadItemsIntoArray(subclassObj.startingInventory) : []),
+            ...(backgroundsObj?.startingInventory ? loadItemsIntoArray(backgroundsObj.startingInventory) : [])
         ];
+    const inventoryMap = {};
+    inventoryWDupes.map(item => {
+        if (inventoryMap[item.name]){
+            inventoryMap[item.name].quantity += item.quantity;
+        } else {
+            inventoryMap[item.name] = { ...item };
+        }
+    })
+    const inventory = Object.values(inventoryMap)
     return inventory;
+}
+export function resetEquipment(){
+    return {
+        head: "none",
+        armor: "none",
+        boots: "none",
+        gloves: "none",
+        amulet: "none",
+        ring1: "none",
+        ring2: "none",
+        hand1: "none",
+        hand2: "none"
+    }
 }
 
 function findByField(array, field, value) {
     return array.find(item => item[field] === value);
+}
+
+function loadItemsIntoArray(startingArray){
+    const returnArray = startingArray.map(item => {
+        const details= ItemList[item.item];
+        return {
+            ...details,
+            name:details.display,
+            quantity:item.quantity
+        };
+    });
+    return returnArray;
 }

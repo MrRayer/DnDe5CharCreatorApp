@@ -36,7 +36,7 @@ export default function CalculatedStats(){
         equipment.armor.armorType === "medium" ? (Math.min(agilityMod, 2)) :
         0)
     ) : 0;
-    const shieldAC = equipment.shield.ac ?? 0
+    const shieldAC = 0 + (equipment?.hand1?.ac || 0) + (equipment?.hand2?.ac || 0)
     const AC = Math.max(armorAC, ACN) + shieldAC;
 
     const Initiative = () => {

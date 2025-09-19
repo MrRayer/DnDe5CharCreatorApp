@@ -1,5 +1,5 @@
-[
-    {
+{
+    "paddedArmor":{
         "name": "paddedArmor",
         "display": "Armadura acolchonada",
         "ac": 11,
@@ -8,7 +8,7 @@
         "description": "Armadura ligera hecha de varias capas de tela. Otorga desventaja en sigilo",
         "stealthDisadvantage": true
     },
-    {
+    "leatherArmor":{
         "name": "leatherArmor",
         "display": "Armadura de cuero",
         "ac": 11,
@@ -16,7 +16,7 @@
         "armorType": "light",
         "description": "Armadura ligera hecha de cuero"
     },
-    {
+    "studdedLeatherArmor":{
         "name": "studdedLeatherArmor",
         "display": "Armadura de cuero tachonado",
         "ac": 12,
@@ -24,7 +24,7 @@
         "armorType": "light",
         "description": "Armadura ligera hecha de cuero con remaches"
     },
-    {
+    "hideArmor":{
         "name": "hideArmor",
         "display": "Armadura de piel",
         "ac": 12,
@@ -32,15 +32,15 @@
         "armorType": "medium",
         "description": "Armadura media hecha de pieles"
     },
-    {
-        "name": "mailArmor",
+    "shirtArmor":{
+        "name": "shirtArmor",
         "display": "Camisa de malla",
         "ac": 13,
         "slot": "armor",
         "armorType": "medium",
         "description": "Armadura media con anillos de metal en la zona del pecho"
     },
-    {
+    "scaleArmor":{
         "name": "scaleArmor",
         "display": "Armadura de escamas",
         "ac": 14,
@@ -49,7 +49,7 @@
         "description": "Armadura media cubierta de pequeñas piezas de metal",
         "stealthDisadvantage": true
     },
-    {
+    "breastPlateArmor":{
         "name": "breastPlateArmor",
         "display": "Coraza",
         "ac": 14,
@@ -57,7 +57,7 @@
         "armorType": "medium",
         "description": "Coraza de metal que proteje el torso del portador"
     },
-    {
+    "halfPlateArmor":{
         "name": "halfPlateArmor",
         "display": "Armadura de semiplacas",
         "ac": 15,
@@ -66,7 +66,7 @@
         "description": "Armadura media compuesta en parte de placas de metal",
         "stealthDisadvantage": true
     },
-    {
+    "lightMailArmor":{
         "name": "lightMailArmor",
         "display": "Cota de anillas",
         "ac": 14,
@@ -75,7 +75,7 @@
         "description": "Armadura pesada compuesta de pequeños anillos de metal",
         "stealthDisadvantage": true
     },
-    {
+    "mailArmor":{
         "name": "mailArmor",
         "display": "Cota de mallas",
         "ac": 16,
@@ -84,7 +84,7 @@
         "description": "Armadura pesada compuesta de anillos de metal",
         "stealthDisadvantage": true
     },
-    {
+    "lamellarArmor":{
         "name": "lamellarArmor",
         "display": "Armadura de laminas",
         "ac": 17,
@@ -93,7 +93,7 @@
         "description": "Armadura pesada compuesta de anillos de metal",
         "stealthDisadvantage": true
     },
-    {
+    "plateArmor":{
         "name": "plateArmor",
         "display": "Armadura de placas",
         "ac": 18,
@@ -102,11 +102,11 @@
         "description": "Armadura pesada compuesta de anillos de metal",
         "stealthDisadvantage": true
     },
-    {
+    "shield":{
         "name": "shield",
         "display": "Escudo",
         "ac": 2,
-        "slot": "shield",
+        "slot": "hand",
         "description": "Escudo de madera pensado para bloquear ataques"
     }
-]
+}

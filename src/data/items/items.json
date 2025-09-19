@@ -1,220 +1,228 @@
-[
-    {
+{
+    "bag":{
         "name":"bag",
         "display":"Mochila",
         "description":"Usado para almacenar items"
     },
-    {
+    "caltrops":{
         "name":"caltrops",
         "display":"Pinchos de hierro",
         "description":"Tiralos en el suelo para entorpecer el movimiento de los enemigos"
     },
-    {
+    "thread":{
         "name":"thread",
         "display":"Hilo",
         "description":"Hilo de coser"
     },
-    {
+    "bell":{
         "name":"bell",
         "display":"Campana",
         "description":"Usada para hacer ruido"
     },
-    {
+    "candle":{
         "name":"candle",
         "display":"Vela",
         "description":"Usada para iluminar"
     },
-    {
+    "crowbar":{
         "name":"crowbar",
         "display":"Palanca de metal",
         "description":"usada para forzar cerraduras"
     },
-    {
+    "hammer":{
         "name":"hammer",
         "display":"martillo",
         "description":"Herramienta basica"
     },
-    {
+    "metalicStake":{
         "name":"metalicStake",
         "display":"Estaca",
         "description":"Usado para atar cosas al piso"
     },
-    {
+    "lantern":{
         "name":"lantern",
         "display":"Linterna",
         "description":"Usada para iluminar, resistente al viento"
     },
-    {
+    "oilFlask":{
         "name":"oilFlask",
         "display":"Frasco de aceite",
-        "description":"Aceite inflamable y resbaladizo"
+        "description":"Aceite inflamable y resbaladizo",
+        "charges":5,
+        "chargeDisplay":"100ml / carga"
     },
-    {
+    "ration":{
         "name":"ration",
         "display":"Racion",
         "description":"Galletas secas de trigo"
     },
-    {
+    "tinderbox":{
         "name":"tinderbox",
         "display":"Yesquero",
         "description":"Herramienta para prender fuegos"
     },
-    {
+    "waterskin":{
         "name":"waterskin",
         "display":"Odre",
-        "description":"Contenedor de agua"
+        "description":"Contenedor de agua",
+        "charges": 20,
+        "chargeDisplay": "100ml / carga"
     },
-    {
+    "rope":{
         "name":"rope",
         "display":"Cuerda",
         "description":"Resistente y multiuso"
     },
-    {
+    "chest":{
         "name":"chest",
         "display":"Cofre",
         "description":"Pequeña caja de madera para almacenar objetos"
     },
-    {
+    "mapBag":{
         "name":"mapBag",
         "display":"Estuche para mapas",
         "description":"Contenedor para mapas"
     },
-    {
+    "inkFlask":{
         "name":"inkFlask",
         "display":"Frasco de tinta",
-        "description":"Tinta negra para escribir"
+        "description":"Tinta negra para escribir",
+        "charges":6,
+        "chargeDisplay":"5ml / carga"
     },
-    {
+    "pen":{
         "name":"pen",
         "display":"Pluma de escribir",
         "description":"Pluma para escribir en conjunto con un frasco de tinta"
     },
-    {
+    "paper":{
         "name":"paper",
         "display":"Papel",
         "description":"Papel para escribir"
     },
-    {
+    "parfumeFlask":{
         "name":"parfumeFlask",
         "display":"Frasco de perfume",
-        "description":"Perfume de olor suave y agradable"
+        "description":"Perfume de olor suave y agradable",
+        "charges":15,
+        "chargeDisplay":"1ml / carga"
     },
-    {
+    "soap":{
         "name":"soap",
         "display":"Jabon",
         "description":"Herramienta de higiene basica"
     },
-    {
+    "wax":{
         "name":"wax",
         "display":"Lacre",
         "description":"Usado para sellar cartas"
     },
-    {
+    "sleepingBag":{
         "name":"sleepingBag",
         "display":"Bolsa de dormir",
         "description":"Bolsa de piel para descansar comodamente en el bosque"
     },
-    {
+    "torch":{
         "name":"torch",
         "display":"Antorcha",
         "description":"Sirve para iluminar"
     },
-    {
+    "disguiseKit":{
         "name":"disguiseKit",
         "display":"Kit de disfraz",
         "description":"Kit con pinturas para preparar un disfraz"
     },
-    {
+    "cookingKit":{
         "name":"cookingKit",
         "display":"Kit de cocina",
         "description":"Herramientas de cocina basica"
     },
-    {
+    "herbloreKit":{
         "name":"herbloreKit",
         "display":"Kit de herbolisteria",
         "description":"Herramientas de herbolisteria"
     },
-    {
+    "artisanKit":{
         "name":"artisanKit",
         "display":"Kit de artesano",
         "description":"Herramientas de artesania"
     },
-    {
+    "scammingKit":{
         "name":"scammingKit",
         "display":"Kit de estafas",
         "description":"Dados cargados, cartas marcadas y otros artilugios para hacer trampas"
     },
-    {
+    "gamesKit":{
         "name":"gamesKit",
         "display":"Kit de juegos",
         "description":"Dados, cartas y otros juegos para disfrutar en tus viajes"
     },
-    {
+    "thiefTools":{
         "name":"thiefTools",
         "display":"Herramientas de ladron",
         "description":"Herramientas para abrir cerraduras"
     },
-    {
+    "blanket":{
         "name":"blanket",
         "display":"Manta",
         "description":"Sirve para abrigarse fuera de combate"
     },
-    {
+    "warmBlanket":{
         "name":"warmBlanket",
         "display":"Frazada",
         "description":"Calida frazada para descansar comodamente en climas frios"
     },
-    {
+    "donationsBox":{
         "name":"donationsBox",
         "display":"Caja de limosnas",
         "description":"Caja con una ranura y un simbolo sagrado"
     },
-    {
+    "incense":{
         "name":"incense",
         "display":"Incienso",
         "description":"Hiervas secas bendecidas de olor agradable pero fuerte"
     },
-    {
+    "incenseBurner":{
         "name":"incenseBurner",
         "display":"Incensario",
         "description":"Herramienta de arcilla pensada para quemar incienso"
     },
-    {
+    "knowledgeBook":{
         "name":"knowledgeBook",
         "display":"Libro de conocimiento",
         "description":"Libro de estudios varios"
     },
-    {
+    "smallSandBag":{
         "name":"smallSandBag",
         "display":"Pequeña bolsa de arena",
         "description":"Arena en una bolsa"
     },
-    {
+    "smallKnife":{
         "name":"smallKnife",
         "display":"Cuchillo pequeño",
         "description":"Pequeño cuchillo no apto para combate"
     },
-    {
+    "huntingTrap":{
         "name":"huntingTrap",
         "display":"Trampa de caza",
         "description":"Trampa para pequeñas criaturas"
     },
-    {
+    "musicalInstrument":{
         "name":"musicalInstrument",
         "display":"Instrumento musical",
         "description":"Instrumento musical que te acompaña en tu aventuras"
     },
-    {
+    "bolt":{
         "name":"bolt",
         "display":"Birote",
         "description":"Municion para ballestas"
     },
-    {
+    "arrow":{
         "name":"arrow",
         "display":"Flecha",
         "description":"Municion para arcos"
     },
-    {
+    "fineClothes":{
         "name":"fineClothes",
         "display":"Ropa fina",
         "description":"Ropas elegantes",
@@ -222,7 +230,7 @@
         "type":"light",
         "ac":0
     },
-    {
+    "clothes":{
         "name":"clothes",
         "display":"Ropa",
         "description":"Ropas comunes",
@@ -230,7 +238,7 @@
         "type":"light",
         "ac":0
     },
-    {
+    "disguise":{
         "name":"disguise",
         "display":"Disfraz",
         "description":"Ropa preparada para imitar a otro",
@@ -238,7 +246,7 @@
         "type":"light",
         "ac":0
     },
-    {
+    "robes":{
         "name":"robes",
         "display":"Vestiduras",
         "description":"Ropa que te identifica como acolito de tu religion",
@@ -246,7 +254,7 @@
         "type":"light",
         "ac":0
     },
-    {
+    "darkClothes":{
         "name":"darkClothes",
         "display":"Ropas oscuras",
         "description":"Ropa oscura con capucha, para ser mas dificil de identificar",
@@ -254,19 +262,19 @@
         "type":"light",
         "ac":0
     },
-    {
+    "gc":{
         "name":"gc",
         "display":"Moneda de oro",
         "description":"Unidad monetaria de maxima denominacion"
     },
-    {
+    "sc":{
         "name":"sc",
         "display":"Moneda de plata",
         "description":"Unidad monetaria"
     },
-    {
+    "cc":{
         "name":"cc",
         "display":"Moneda de cobre",
         "description":"Unidad monetaria de menor denominacion"
     }
-]
+}

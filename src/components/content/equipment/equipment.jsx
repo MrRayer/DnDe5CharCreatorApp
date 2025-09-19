@@ -8,7 +8,8 @@ export default function Equipment(){
     const { equipment } = useContext(StatsContext);
     const { setShaderFlag, setPopupName } = useContext(GlobalsContext);
     const handleEquipmentClick = (type,slot) => {
-        setPopupName(<EquipmentPopup selected={slot}/>);
+        if (equipment[slot] === "twoHanding") return;
+        setPopupName(<EquipmentPopup selected={slot} type={type}/>);
         setShaderFlag(true);
     }
     return(
@@ -106,41 +107,29 @@ export default function Equipment(){
                     </div>
                 </div>
                 <div className="equipment-manequin-row-4">
-                    <div className="equipment-manequin-square-container">
+                    <div className="equipment-manequin-square-container align-start">
                         <div className={`equipment-manequin-square ${
-                            equipment.mWeapon !== "none" ? "equipment-invert" : null
+                            equipment.hand1 !== "none" ? "equipment-invert" : null
                         }`}
-                            onClick={()=>handleEquipmentClick("mWeapon","mWeapon")}>
+                            onClick={()=>handleEquipmentClick("hand","hand1")}>
                             <img className="equipment-logo"
                                 src={`${import.meta.env.BASE_URL}img/mWeapon.png`}
-                                alt="Melee"
-                            />                            
-                        </div>
-                        <h1 className="equipment-manequin-square-title">Melee</h1>
-                    </div>
-                    <div className="equipment-manequin-square-container">
-                        <div className={`equipment-manequin-square ${
-                            equipment.rWeapon !== "none" ? "equipment-invert" : null
-                        }`}
-                            onClick={()=>handleEquipmentClick("rWeapon","rWeapon")}>
-                            <img className="equipment-logo"
-                                src={`${import.meta.env.BASE_URL}img/rWeapon.png`}
                                 alt="Range"
                             />                            
                         </div>
-                        <h1 className="equipment-manequin-square-title">A Distancia</h1>
+                        <h1 className="equipment-manequin-square-title">Mano derecha</h1>
                     </div>
-                    <div className="equipment-manequin-square-container">
+                    <div className="equipment-manequin-square-container align-end">
                         <div className={`equipment-manequin-square ${
-                            equipment.shield !== "none" ? "equipment-invert" : null
+                            equipment.hand2 !== "none" ? "equipment-invert" : null
                         }`}
-                            onClick={()=>handleEquipmentClick("shield","shield")}>
+                            onClick={()=>handleEquipmentClick("hand","hand2")}>
                             <img className="equipment-logo"
                                 src={`${import.meta.env.BASE_URL}img/shield.png`}
                                 alt="Shield"
                             />                            
                         </div>
-                        <h1 className="equipment-manequin-square-title">Escudo</h1>
+                        <h1 className="equipment-manequin-square-title">Mano izquierda</h1>
                     </div>
                 </div>
             </div>

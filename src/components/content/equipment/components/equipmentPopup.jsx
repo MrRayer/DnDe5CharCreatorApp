@@ -4,15 +4,22 @@ import { StatsContext } from "../../../../context/statsContext"
 import { GlobalsContext } from "../../../../context/globalsContext"
 import ChangeGear from "./changeGear"
 
-export default function EquipmentPopup ({selected}) {
+export default function EquipmentPopup ({selected, type}) {
     const { setPopupName } = useContext(GlobalsContext);
     const { equipment, setEquipment, addItem } = useContext(StatsContext);
     const handleChangeGear = () => {
-        setPopupName(<ChangeGear selected={selected}/>);
+        setPopupName(<ChangeGear selected={selected} type={type}/>);
     };
     const handleUnequip = () => {
+        const otherHand = {"hand1":"hand2","hand2":"hand1"}
         addItem(equipment[selected]);
-        setEquipment(prevEquipment => ({...prevEquipment, [selected]: "none"}));
+        if (equipment[selected]?.tags?.some(tag => tag === "twoHanded") && equipment[otherHand[selected]] === "twoHanding"){
+            setEquipment(prevEquipment => ({...prevEquipment, [otherHand[selected]]: "none", [selected]: "none"}));
+        }
+        else{
+            setEquipment(prevEquipment => ({...prevEquipment, [selected]: "none"}));
+        }
+        
     }
     const titleInSpanish = {
         ring1: "Anillo Equipado",
@@ -22,9 +29,8 @@ export default function EquipmentPopup ({selected}) {
         armor: "Armadura Equipada",
         gloves: "Guantes Equipados",
         boots: "Botas Equipadas",
-        mWeapon: "Arma cuerpo a cuerpo Equipada",
-        rWeapon: "Arma a distancia Equipada",
-        shield: "Escudo Equipado"
+        hand1: "Mano derecha Equipada",
+        hand2: "Mano Izquierda Equipada"
     }
     return <div className="equipment-popup-main-container">
         <h1 className="equipment-popup-title-top">{titleInSpanish[selected]}</h1>
@@ -47,7 +53,8 @@ export default function EquipmentPopup ({selected}) {
                 <h2 className="equipment-popup-current">{equipment[selected]?.description || "sin descripcion"}</h2>
             </>
         : null}
-        {equipment[selected] !== "none" ? (<button className="equipment-popup-change" onClick={() => handleUnequip()}>Desequipar</button>): null}
-        <button className="equipment-popup-change" onClick={() => handleChangeGear()}>Cambiar equipo</button>
+
+        {equipment[selected] !== "none" ? (<button className="equipment-popup-change" onClick={() => handleUnequip()}>Desequipar</button>):
+        <button className="equipment-popup-change" onClick={() => handleChangeGear()}>Cambiar equipo</button>}
     </div>
 }

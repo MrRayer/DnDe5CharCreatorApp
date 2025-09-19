@@ -38,6 +38,7 @@
 .equipment-manequin-row-4{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 .equipment-manequin-square{
     border: solid 3px #009600;
@@ -45,6 +46,12 @@
     width: 85px;
     aspect-ratio: 1/1;
     margin: 5px;
+}
+.equipment-manequin-square-container{    
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 .equipment-manequin-square-title{
     font-size: 10px;
@@ -56,4 +63,7 @@
 .equipment-invert{
     filter: brightness(45%);
     background-color: #00ff00;
+}
+.align-end{
+    margin-left:auto
 }

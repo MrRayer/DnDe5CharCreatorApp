@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import { loadDataIntoAbilityScores, loadDataIntoChoices, loadDataIntoIdentity, loadDataIntoInventory, loadDataIntoResources } from "../logic/loadDataIntoContext";
+import { loadDataIntoAbilityScores, loadDataIntoChoices, loadDataIntoIdentity, loadDataIntoInventory, loadDataIntoResources, resetEquipment } from "../logic/loadDataIntoContext";
 import Backgrounds from "../data/backgrounds";
 
 export const StatsContext = createContext();
@@ -55,9 +55,8 @@ export function StatsProvider({ children }) {
         amulet: "none",
         ring1: "none",
         ring2: "none",
-        mWeapon: "none",
-        shield: "none",
-        rWeapon: "none",
+        hand1: "none",
+        hand2: "none"
     })
 
     const [ inventory, setInventory ] = useState([])
@@ -134,6 +133,7 @@ export function StatsProvider({ children }) {
         setCharAbilityScores(loadDataIntoAbilityScores(_charIdentity));
         setCharChoices(loadDataIntoChoices(_charIdentity));
         setInventory(loadDataIntoInventory(_charIdentity));
+        setEquipment(resetEquipment());
     };
 
     const setClass = (selected) => {
@@ -143,6 +143,7 @@ export function StatsProvider({ children }) {
         setCharResources(loadDataIntoResources(_charIdentity));
         setCharChoices(loadDataIntoChoices(_charIdentity));
         setInventory(loadDataIntoInventory(_charIdentity));
+        setEquipment(resetEquipment());
     }
 
     const setBackground = (selected) => {
@@ -151,6 +152,7 @@ export function StatsProvider({ children }) {
         setCharIdentity(loadDataIntoIdentity(_charIdentity));
         setCharChoices(loadDataIntoChoices(_charIdentity));
         setInventory(loadDataIntoInventory(_charIdentity));
+        setEquipment(resetEquipment());
     }
 
     const addSpell = (spell, type) => {

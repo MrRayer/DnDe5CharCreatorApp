@@ -1,272 +1,288 @@
-[
-    {
+{
+    "staff":{
         "name":"staff",
         "display":"Baston",
         "description":"Palo grueso de madera de mas de un metro de largo. Versatil",
-        "slot": "mWeapon",
-        "damage": "una mano: 1D6, dos manos: 1D8 contundente"
+        "slot": "hand",
+        "damage": "una mano: 1D6, dos manos: 1D8 contundente",
+        "tags":["versatile"]
     },
-    {
+    "dagger":{
         "name":"dagger",
         "display":"Daga",
         "description":"Daga de metal, ligera, sutil y arrojadiza",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D4 Perforante"
     },
-    {
+    "greatClub":{
         "name":"greatClub",
         "display":"Garrotazo",
         "description":"Gran garrote",
-        "slot": "mWeapon",
-        "damage": "1D8 contundente"
+        "slot": "hand",
+        "damage": "1D8 contundente",
+        "tags":["twoHanded"]
     },
-    {
+    "handAxe":{
         "name":"handAxe",
         "display":"Hacha de mano",
         "description":"Pequeña hacha, ligera y arrojadiza",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D6 cortante"
     },
-    {
+    "sickle":{
         "name":"sickle",
         "display":"Hoz",
         "description":"Pequeña hoja curva, ligera",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D4 cortante"
     },
-    {
+    "javelin":{
         "name":"javelin",
         "display":"Jabalina",
         "description":"Pequeña lanza arrojadiza",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D6 perforante"
     },
-    {
+    "spear":{
         "name":"spear",
         "display":"Lanza",
         "description":"Pequeña lanza arrojadiza",
-        "slot": "mWeapon",
-        "damage": "una mano: 1D6, dos manos: 1D8 perforante"
+        "slot": "hand",
+        "damage": "una mano: 1D6, dos manos: 1D8 perforante",
+        "tags":["versatile"]
     },
-    {
+    "lightHammer":{
         "name":"lightHammer",
         "display":"Martillo ligero",
         "description":"Pequeño martillo, ligero y arrojadizo",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D4 contundente"
     },
-    {
+    "maze":{
         "name":"maze",
         "display":"Maza",
         "description":"Martillo pesado",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D6 contundente"
     },
-    {
+    "club":{
         "name":"club",
         "display":"Garrote",
         "description":"Palo grueso de madera, ligero",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D4 contundente"
     },
-    {
+    "shortBow":{
         "name":"shortBow",
         "display":"Arco corto",
         "description":"Pequeño arco de dos manos, usa flechas",
-        "slot": "rWeapon",
-        "damage": "1D6 perforante"
+        "slot": "hand",
+        "damage": "1D6 perforante",
+        "tags":["twoHanded"]
     },
-    {
+    "lightCrossbow":{
         "name":"lightCrossbow",
         "display":"Ballesta ligera",
         "description":"Simple ballesta de dos manos, usa birotes",
-        "slot": "rWeapon",
-        "damage": "1D6 contundente"
+        "slot": "hand",
+        "damage": "1D6 perforante",
+        "tags":["twoHanded"]
     },
-    {
+    "dart":{
         "name":"dart",
         "display":"Dardo",
         "description":"Dardo arrojadizo",
-        "slot": "rWeapon",
+        "slot": "hand",
         "damage": "1D4 perforante"
     },
-    {
+    "sling":{
         "name":"sling",
         "display":"Honda",
         "description":"Honda de tela usada para arrojar piedras a altas velocidades",
-        "slot": "rWeapon",
+        "slot": "hand",
         "damage": "1D4 contundente"
     },
-    {
-        "name":"Halberd",
+    "halberd":{
+        "name":"halberd",
         "display":"Alabarda",
         "description":"Mix de hacha y lanza usada como arma anti-caballeria, a 2 manos, largo alcance y pesada",
-        "slot": "mWeapon",
-        "damage": "1D10 cortante"
+        "slot": "hand",
+        "damage": "1D10 cortante",
+        "tags":["twoHanded"]
     },
-    {
+    "greatMace":{
         "name":"greatMace",
         "display":"Gran mazo",
         "description":"Gran mazo de dos manos, pesado",
-        "slot": "mWeapon",
-        "damage": "2D6 contundente"
+        "slot": "hand",
+        "damage": "2D6 contundente",
+        "tags":["twoHanded"]
     },
-    {
+    "scimitar":{
         "name":"scimitar",
         "display":"Cimitarra",
         "description":"Espada curva de una mano, ligera y sutil",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D6 cortante"
     },
-    {
+    "shortSword":{
         "name":"shortSword",
         "display":"Espada corta",
         "description":"Pequeña espada recta de una mano, ligera y sutil",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D6 cortante"
     },
-    {
+    "longSword":{
         "name":"longSword",
         "display":"Espada larga",
         "description":"Larga espada recta, versatil",
-        "slot": "mWeapon",
-        "damage": "una mano: 1D8, dos manos: 1D10 cortante"
+        "slot": "hand",
+        "damage": "una mano: 1D8, dos manos: 1D10 cortante",
+        "tags":["versatile"]
     },
-    {
+    "greatSword":{
         "name":"greatSword",
         "display":"Gran espada",
         "description":"Gran espada de dos manos",
-        "slot": "mWeapon",
-        "damage": "2D6 cortante"
+        "slot": "hand",
+        "damage": "2D6 cortante",
+        "tags":["twoHanded"]
     },
-    {
+    "rapier":{
         "name":"rapier",
         "display":"Estoque",
         "description":"Larga aguja de metal, sutil",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D8 perforante"
     },
-    {
+    "warAxe":{
         "name":"warAxe",
         "display":"Hacha de guerra",
         "description":"Hacha pensada para combatir, versatil",
-        "slot": "mWeapon",
-        "damage": "una mano: 1D8, dos manos: 1D10 cortante"
+        "slot": "hand",
+        "damage": "una mano: 1D8, dos manos: 1D10 cortante",
+        "tags":["versatile"]
     },
-    {
+    "greatAxe":{
         "name":"greatAxe",
         "display":"Gran hacha",
         "description":"Gran hacha de dos manos, pesada",
-        "slot": "mWeapon",
-        "damage": "1D12 cortante"
+        "slot": "hand",
+        "damage": "1D12 cortante",
+        "tags":["twoHanded"]
     },
-    {
+    "glaive":{
         "name":"glaive",
         "display":"Glaive",
         "description":"Lanza de dos manos con hoja larga y curva, pesada, largo alcanze",
-        "slot": "mWeapon",
-        "damage": "1D10 cortante"
+        "slot": "hand",
+        "damage": "1D10 cortante",
+        "tags":["twoHanded"]
     },
-    {
+    "cabSpear":{
         "name":"cabSpear",
         "display":"Lanza de caballeria",
         "description":"Lanza pensada para ser usada desde una montura, daño extra dependiendo de la velocidad",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D12 perforante"
     },
-    {
+    "whip":{
         "name":"whip",
         "display":"Latigo",
         "description":"Latigo de cuero, largo alcance, sutil",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D4 cortante"
     },
-    {
+    "morningStar":{
         "name":"morningStar",
         "display":"Lucero del alba",
-        "description":"Mazo de dos manos con pinches",
-        "slot": "mWeapon",
+        "description":"Mazo con pinches",
+        "slot": "hand",
         "damage": "1D8 perforante"
     },
-    {
+    "warHammer":{
         "name":"warHammer",
         "display":"Martillo de guerra",
         "description":"Martillo pensado para combatir",
-        "slot": "mWeapon",
-        "damage": "1D8 contundente"
+        "slot": "hand",
+        "damage": "una mano: 1D8, dos manos: 1D10 contundente",
+        "tags":["versatile"]
     },
-    {
+    "flail":{
         "name":"flail",
         "display":"Maza con cadena",
         "description":"Bola de metal unida con una cadena al mango",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D8 contundente"
     },
-    {
+    "pike":{
         "name":"pike",
         "display":"Pica",
         "description":"Gran lanza de dos manos y largo alcance, pesada",
-        "slot": "mWeapon",
-        "damage": "1D10 perforante"
+        "slot": "hand",
+        "damage": "1D10 perforante",
+        "tags":["twoHanded"]
     },
-    {
+    "warPick":{
         "name":"warPick",
         "display":"Pico de guerra",
         "description":"Pico pensado para combatir",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D8 perforante"
     },
-    {
+    "trident":{
         "name":"trident",
         "display":"Tridente",
         "description":"Lanza con tres puntas, pensado para la pesca, arrojadiza y versatil",
-        "slot": "mWeapon",
+        "slot": "hand",
         "damage": "1D6 perforante"
     },
-    {
+    "longbow":{
         "name":"longbow",
         "display":"Arco largo",
         "description":"Gran arco de dos manos, usa flechas, pesado",
-        "slot": "rWeapon",
-        "damage": "1D8 perforante"
+        "slot": "hand",
+        "damage": "1D8 perforante",
+        "tags":["twoHanded"]
     },
-    {
+    "handCrossbow":{
         "name":"handCrossbow",
         "display":"Ballesta de mano",
         "description":"Pequeña ballesta pensada para ser operada con una mano, ligera, usa birotes",
-        "slot": "rWeapon",
+        "slot": "hand",
         "damage": "1D6 perforante"
     },
-    {
+    "heavyCrossbow":{
         "name":"heavyCrossbow",
         "display":"Ballesta pesada",
         "description":"Ballesta de dos manos pensada para disparar y cargar con mayor fuerza, pesada, usa birotes",
-        "slot": "rWeapon",
-        "damage": "1D10 perforante"
+        "slot": "hand",
+        "damage": "1D10 perforante",
+        "tags":["twoHanded"]
     },
-    {
+    "blowpipe":{
         "name":"blowpipe",
         "display":"Cerbatana",
         "description":"Tubo usado para impulsar dardos",
-        "slot": "rWeapon",
+        "slot": "hand",
         "damage": "1 perforante"
     },
-    {
+    "druidicFocus":{
         "name":"druidicFocus",
         "display":"Foco druidico",
         "description":"Usado para lanzar conjuros de druida",
-        "slot": "shield"
+        "slot": "hand"
     },
-    {
+    "arcaneFocus":{
         "name":"arcaneFocus",
         "display":"Foco arcano",
         "description":"Item usado para lanzar conjuros",
-        "slot":"shield"
+        "slot":"hand"
     },
-    {
+    "spellBook":{
         "name":"spellBook",
         "display":"Libro de conjuros",
         "description":"Libro que contiene informacion sobre el lanzamiento de conjuros",
-        "slot":"mWeapon"
+        "slot":"hand"
     }
-]
+}

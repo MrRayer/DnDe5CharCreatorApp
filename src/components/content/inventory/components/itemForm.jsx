@@ -30,9 +30,7 @@ export default function ItemForm({item, handleItem}) {
         {name:"armor",display:"Armadura"},
         {name:"boots",display:"Botas"},
         {name:"gloves",display:"Guantes"},
-        {name:"mWeapon",display:"Arma de Melee"},
-        {name:"shield",display:"Escudo"},
-        {name:"rWeapon",display:"Arma de Rango"},
+        {name:"hand",display:"Arma"}
     ]
     const optionalInputs = [
         {
