@@ -20,9 +20,20 @@ export default function ChangeGear({selected, type}) {
         removeItem(item);
         setPopupName(<EquipmentPopup selected={selected}/>)
     }
+    const equipmentDictionary = {
+        head: "Casco",
+        armor: "Armadura",
+        boots: "Botas",
+        gloves: "Guantes",
+        amulet: "Amuleto",
+        ring1: "Anillo 1",
+        ring2: "Anillo 2",
+        hand1: "Arma derecha",
+        hand2: "Arma izquierda"
+    }
     return (
         <div className="change-gear-main-container">
-            <h1 className="change-gear-title change-gear-top-separator">change gear {selected}</h1>
+            <h1 className="change-gear-title change-gear-top-separator">Cambiar {equipmentDictionary[selected]}</h1>
             {inventory.map(item => type === item.slot &&
                 <div className="change-gear-item" onClick={()=>handleItemEquipping(item)} key={item.name}>
                     <h1 className="change-gear-title change-gear-top-separator">{item.name}</h1>

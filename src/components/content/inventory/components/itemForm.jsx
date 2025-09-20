@@ -35,7 +35,7 @@ export default function ItemForm({item, handleItem}) {
         {name:"armor",display:"Armadura"},
         {name:"boots",display:"Botas"},
         {name:"gloves",display:"Guantes"},
-        {name:"hand",display:"Arma"}
+        {name:"hand",display:"Manos"}
     ]
     const optionalInputs = [
         {
@@ -100,6 +100,17 @@ export default function ItemForm({item, handleItem}) {
         if (handTags.includes(tag)) setHandTags(handTags.filter(_tag => _tag !== tag));
         else setHandTags(prevHandTags => [...prevHandTags, tag])
     }
+    const equipableTypesDictionary = {
+        none:"Seleccionar",
+        ring:"Anillo",
+        amulet:"Amuleto",
+        head:"Cabeza",
+        armor:"Armadura",
+        boots:"Botas",
+        gloves:"Guantes",
+        hand:"Manos"        
+    }
+    
     return(
         <>
             <div className="add-item-container">
@@ -133,12 +144,12 @@ export default function ItemForm({item, handleItem}) {
                     <h1 className="add-item-optional-checks">{equipableFlag && "X"}</h1>
                 </div>
                 <div className="add-item-optional-content-container">
-                    <h1 className="add-item-label">Equipable</h1>
+                    <h1 className="add-item-label">Equipable en</h1>
                     {equipableFlag &&
                         <>
                             <button className="add-item-equipable-dropmenu-button"
                                 onClick={() => { dropmenuFlag ? setDropmenuFlag(false) : setDropmenuFlag(true) }}>
-                                {dropmenuSelection}
+                                {equipableTypesDictionary[dropmenuSelection]}
                             </button>
                             {dropmenuFlag && <div className="add-item-equipable-dropmenu">
                                 {equipableTypes.map(type =>

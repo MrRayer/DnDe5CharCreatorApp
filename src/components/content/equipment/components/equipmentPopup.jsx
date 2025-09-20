@@ -29,8 +29,8 @@ export default function EquipmentPopup ({selected, type}) {
         armor: "Armadura Equipada",
         gloves: "Guantes Equipados",
         boots: "Botas Equipadas",
-        hand1: "Mano derecha Equipada",
-        hand2: "Mano Izquierda Equipada"
+        hand1: "Arma derecha Equipada",
+        hand2: "Arma Izquierda Equipada"
     }
     return <div className="equipment-popup-main-container">
         <h1 className="equipment-popup-title-top">{titleInSpanish[selected]}</h1>

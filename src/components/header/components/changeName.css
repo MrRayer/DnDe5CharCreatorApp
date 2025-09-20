@@ -1,0 +1,22 @@
+.change-name-main-container{
+    display: flex;
+    flex-direction: column;
+}
+.change-name-title{
+    font-size: 25px;
+    padding-bottom: 10px;
+    border-bottom: #009600 solid 3px;
+}
+.change-name-input{
+    font-size:15px;
+    margin: 10px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+.change-name-button{
+    margin: 20px;
+    color: #009600;
+    background-color: #121212;
+    border: #009600 solid 3px;
+
+}
