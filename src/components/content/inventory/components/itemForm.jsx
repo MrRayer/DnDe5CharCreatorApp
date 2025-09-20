@@ -9,8 +9,9 @@ export default function ItemForm({item, handleItem}) {
     const [ damageFlag, setDamageFlag] = useState(!!item?.damage);
     const [ equipableFlag, setEquipableFlag] = useState(!!item?.slot);
     const [ dropmenuFlag, setDropmenuFlag] = useState(false);
-    const [ dropmenuSelection, setDropmenuSelection ] = useState("none");
+    const [ dropmenuSelection, setDropmenuSelection ] = useState(item?.slot || "none");
     const [ armorType, setArmorType ] = useState("light");
+    const [ handTags, setHandTags ] = useState(item?.tags ? [...item?.tags]:[]);
     const [ infoPopupFlag, setInfoPopupFlag ] = useState(false)
     const [ infoPopupContent, setInfoPopupContent ] = useState(false)
     const addItemNameRef = useRef('');
@@ -18,6 +19,10 @@ export default function ItemForm({item, handleItem}) {
     const addItemQuantityRef = useRef('');
     const addItemAcRef = useRef('');
     const addItemDamageRef = useRef('');
+    const handTagsList = [
+        {name:"twoHanded",display:"A dos manos"}
+    ]
+    console.log(handTags);
     const armorTypes = [
         {name:"light",display:"Ligera"},
         {name:"medium",display:"Media"},
@@ -86,9 +91,14 @@ export default function ItemForm({item, handleItem}) {
                 ...(acFlag && { ac: Number(addItemAcRef.current.value) }),
                 ...(damageFlag && { damage: addItemDamageRef.current.value }),
                 ...(equipableFlag && { slot: dropmenuSelection }),
-                ...(dropmenuSelection === "armor" ? { armorType: armorType }:null)
+                ...(dropmenuSelection === "armor" ? { armorType: armorType }:null),
+                ...(handTags?.length > 0 ? { tags: handTags }:null)
             }
         handleItem(newItem)
+    }
+    const handleTagClick = (tag) => {
+        if (handTags.includes(tag)) setHandTags(handTags.filter(_tag => _tag !== tag));
+        else setHandTags(prevHandTags => [...prevHandTags, tag])
     }
     return(
         <>
@@ -146,6 +156,17 @@ export default function ItemForm({item, handleItem}) {
                                     onClick={()=>setArmorType(type.name)}
                                     key={type.name}>
                                         {type.display}
+                                    </h1>
+                                )}
+                            </div>
+                            : null}
+                            {dropmenuSelection === "hand" ? 
+                            <div className="add-item-armor-type-container">
+                                {handTagsList.map(tag =>
+                                    <h1 className={`add-item-armor-type ${handTags.some(_tag => tag.name === _tag) ? "selected" : null}`}
+                                    onClick={()=>handleTagClick(tag.name)}
+                                    key={tag.name}>
+                                        {tag.display}
                                     </h1>
                                 )}
                             </div>
