@@ -20,3 +20,16 @@
     border: #009600 solid 3px;
     margin: 5px;
 }
+.item-details-charge-button{
+    background-color: #121212;
+    color: #009600;
+    border: #009600 solid 3px;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.item-details-charge-button:focus{outline: none;}
+.item-details-charge-button:focus-visible{outline: none;}
+.item-details-charge-button:active{outline: none;box-shadow: none;}

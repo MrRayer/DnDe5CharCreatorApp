@@ -101,3 +101,7 @@
     background-color: #00ff00;
     filter: brightness(60%);
 }
+.text-left{
+    text-align: left;
+    margin-left: 20px;
+}

@@ -1,14 +1,13 @@
-import "./itemForm.css"
 import { useRef, useState } from "react";
-import OptionalInputComponent from "./optionalInputComponent";
 import InfoPopup from "./infoPopup";
+import { EquipableItem, BasicInput, ChargesInput, OptionalInputComponent } from "./itemFormInputs";
 
-export default function ItemForm({item, handleItem}) {    
+export default function ItemForm({item, handleItem}) {
     const [ descriptionFlag, setDescriptionFlag] = useState(!!item?.description);
     const [ acFlag, setAcFlag] = useState(!!item?.ac);
     const [ damageFlag, setDamageFlag] = useState(!!item?.damage);
     const [ equipableFlag, setEquipableFlag] = useState(!!item?.slot);
-    const [ dropmenuFlag, setDropmenuFlag] = useState(false);
+    const [ chargesFlag, setChargesFlag] = useState(!!item?.charges);
     const [ dropmenuSelection, setDropmenuSelection ] = useState(item?.slot || "none");
     const [ armorType, setArmorType ] = useState("light");
     const [ handTags, setHandTags ] = useState(item?.tags ? [...item?.tags]:[]);
@@ -19,49 +18,47 @@ export default function ItemForm({item, handleItem}) {
     const addItemQuantityRef = useRef('');
     const addItemAcRef = useRef('');
     const addItemDamageRef = useRef('');
-    const handTagsList = [
-        {name:"twoHanded",display:"A dos manos"}
-    ]
-    console.log(handTags);
-    const armorTypes = [
-        {name:"light",display:"Ligera"},
-        {name:"medium",display:"Media"},
-        {name:"heavy",display:"Pesada"},
-    ]
-    const equipableTypes = [
-        {name:"ring",display:"Anillo"},
-        {name:"amulet",display:"Amuleto"},
-        {name:"head",display:"Cabeza"},
-        {name:"armor",display:"Armadura"},
-        {name:"boots",display:"Botas"},
-        {name:"gloves",display:"Guantes"},
-        {name:"hand",display:"Manos"}
-    ]
+    const addItemChargesRef = useRef('');
+    const addItemCurrentChargesRef = useRef('');
+    const addItemChargeDisplayRef = useRef('');
     const optionalInputs = [
         {
             flag:descriptionFlag,
             flagSetter:setDescriptionFlag,
             title:"Descripcion",
-            ref:addItemDescriptionRef,
-            type:"text",
-            defVal:item?.description || ""
+            display:<BasicInput ref={addItemDescriptionRef} type="text" defVal={item?.description || ""}/>
         },
         {
             flag:acFlag,
             flagSetter:setAcFlag,
             title:"AC",
-            ref:addItemAcRef,
-            type:"number",
-            defVal:item?.ac || ""
+            display:<BasicInput ref={addItemAcRef} type="number" defVal={item?.ac || ""}/>
         },
         {
             flag:damageFlag,
             flagSetter:setDamageFlag,
             title:"Daño",
-            ref:addItemDamageRef,
-            type:"text",
-            defVal:item?.damage || ""
+            display:<BasicInput ref={addItemDamageRef} type="text" defVal={item?.damage || ""}/>
         },
+        {
+            flag:chargesFlag,
+            flagSetter:setChargesFlag,
+            title:"Cargas",
+            display:<ChargesInput addItemChargesRef={addItemChargesRef} addItemCurrentChargesRef={addItemCurrentChargesRef}
+                                defCharge={item?.charges || ""} defCurrentCharge={item?.currentCharges || ""}
+                                addItemChargeDisplayRef={addItemChargeDisplayRef} defChargeDisplay={item?.chargeDisplay || ""}/>
+        },
+        {
+            flag:equipableFlag,
+            flagSetter:setEquipableFlag,
+            title:"Equipable en",
+            display:<EquipableItem dropmenuSelection={dropmenuSelection}
+                                    setDropmenuSelection={setDropmenuSelection}
+                                    armorType={armorType}
+                                    setArmorType={setArmorType}
+                                    handTags={handTags}
+                                    setHandTags={setHandTags}/>
+        }
     ]
     const handleClick = () => {
         const itemName = addItemNameRef.current.value;
@@ -83,7 +80,21 @@ export default function ItemForm({item, handleItem}) {
                 setInfoPopupFlag(true);
                 return;
             };
-        }
+        };
+        if (chargesFlag) {
+            const charges = Number(addItemChargesRef.current.value);
+            const currentCharges = Number(addItemCurrentChargesRef.current.value);
+            if (!Number.isInteger(charges) || charges <= 0) {
+                setInfoPopupContent("Cargas debe contener solo numeros y no puede ser negativo");
+                setInfoPopupFlag(true);
+                return;
+            };
+            if (currentCharges > charges || currentCharges < 0) {
+                setInfoPopupContent("Cargas Actuales debe ser menor o igual a cargas maximas y no puede ser negativo");
+                setInfoPopupFlag(true);
+                return;
+            };
+        };
         const newItem = {
                 name: itemName,
                 quantity: quantity,
@@ -92,25 +103,13 @@ export default function ItemForm({item, handleItem}) {
                 ...(damageFlag && { damage: addItemDamageRef.current.value }),
                 ...(equipableFlag && { slot: dropmenuSelection }),
                 ...(dropmenuSelection === "armor" ? { armorType: armorType }:null),
-                ...(handTags?.length > 0 ? { tags: handTags }:null)
+                ...(handTags?.length > 0 ? { tags: handTags }:null),
+                ...(chargesFlag && { charges: Number(addItemChargesRef.current.value),
+                                     currentCharges: Number(addItemCurrentChargesRef.current.value),
+                                     chargeDisplay: addItemChargeDisplayRef.current.value} )
             }
         handleItem(newItem)
-    }
-    const handleTagClick = (tag) => {
-        if (handTags.includes(tag)) setHandTags(handTags.filter(_tag => _tag !== tag));
-        else setHandTags(prevHandTags => [...prevHandTags, tag])
-    }
-    const equipableTypesDictionary = {
-        none:"Seleccionar",
-        ring:"Anillo",
-        amulet:"Amuleto",
-        head:"Cabeza",
-        armor:"Armadura",
-        boots:"Botas",
-        gloves:"Guantes",
-        hand:"Manos"        
-    }
-    
+    }    
     return(
         <>
             <div className="add-item-container">
@@ -134,58 +133,8 @@ export default function ItemForm({item, handleItem}) {
                                         flag={input.flag}
                                         flagSetter={input.flagSetter}
                                         title={input.title}
-                                        ref={input.ref}
-                                        type={input.type}
-                                        defVal={input.defVal}
+                                        display={input.display}
             />)}
-            <div className="add-item-optional-container">
-                <div className="add-item-optional-x-container"
-                    onClick={() => { equipableFlag ? setEquipableFlag(false) : setEquipableFlag(true) }}>
-                    <h1 className="add-item-optional-checks">{equipableFlag && "X"}</h1>
-                </div>
-                <div className="add-item-optional-content-container">
-                    <h1 className="add-item-label">Equipable en</h1>
-                    {equipableFlag &&
-                        <>
-                            <button className="add-item-equipable-dropmenu-button"
-                                onClick={() => { dropmenuFlag ? setDropmenuFlag(false) : setDropmenuFlag(true) }}>
-                                {equipableTypesDictionary[dropmenuSelection]}
-                            </button>
-                            {dropmenuFlag && <div className="add-item-equipable-dropmenu">
-                                {equipableTypes.map(type =>
-                                    <h1 className="add-item-dropmenu-item"
-                                    onClick={() => {setDropmenuSelection(type.name); setDropmenuFlag(false)}}
-                                    key={type.name}>
-                                        {type.display}
-                                    </h1>)
-                                }
-                            </div>}
-                            {dropmenuSelection === "armor" ? 
-                            <div className="add-item-armor-type-container">
-                                {armorTypes.map(type =>
-                                    <h1 className={`add-item-armor-type ${armorType === type.name ? "selected" : null}`}
-                                    onClick={()=>setArmorType(type.name)}
-                                    key={type.name}>
-                                        {type.display}
-                                    </h1>
-                                )}
-                            </div>
-                            : null}
-                            {dropmenuSelection === "hand" ? 
-                            <div className="add-item-armor-type-container">
-                                {handTagsList.map(tag =>
-                                    <h1 className={`add-item-armor-type ${handTags.some(_tag => tag.name === _tag) ? "selected" : null}`}
-                                    onClick={()=>handleTagClick(tag.name)}
-                                    key={tag.name}>
-                                        {tag.display}
-                                    </h1>
-                                )}
-                            </div>
-                            : null}
-                        </>
-                    }
-                </div>
-            </div>
             <button className="add-item-button" onClick={handleClick}>{item?.name ? "Modificar":"Agregar"}</button>
             {infoPopupFlag && <InfoPopup flagSetter={setInfoPopupFlag} content={infoPopupContent}/>}
         </>
