@@ -34,11 +34,6 @@ export function StatsProvider({ children }) {
         extraStats:[0,0,0,0,0,0]
     });
 
-    const [charEquipment, setCharEquipment] = useState({
-        ACA: 0,
-        ACS: 0
-    });
-
     const [charChoices, setCharChoices] = useState({
         skillChoice: 0,
         toolChoice: 0,
@@ -198,8 +193,7 @@ export function StatsProvider({ children }) {
     return (
         <StatsContext.Provider value={{
                 charIdentity,
-                charAbilityScores, 
-                charEquipment,
+                charAbilityScores,
                 charResources,
                 charChoices,
                 inventory,
@@ -219,7 +213,6 @@ export function StatsProvider({ children }) {
                 setCharChoices,
                 addSpell,
                 setCharAbilityScores,
-                setCharEquipment,
                 getProffBonus,
                 addItem,
                 removeItem,}}>

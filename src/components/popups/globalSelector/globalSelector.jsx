@@ -7,7 +7,7 @@ import AbilitiesAndSpells from "../../content/abilitiesAndSpells/abilitiesAndSpe
 import Skills from "../../content/skills/skills"
 import ToolsAndLang from "../../content/toolsAndLang/toolsAndLang"
 import Choices from "../../content/choices/choices"
-import SaveLoad from "../../content/saveLoad/saveLoad"
+import {SaveLoad} from "../../content/saveLoad/saveLoad"
 import RaceContainer from "../../content/race/raceContainer"
 import MainStats from "../../content/SPECIAL/mainStats"
 import CalculatedStats from "../../content/calculatedStats/calculatedStats"
