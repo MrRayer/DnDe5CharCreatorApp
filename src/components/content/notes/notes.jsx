@@ -34,12 +34,12 @@ export default function Notes() {
                 {notes.map((note, index) => (
                     <div key={index} className="note-item">
                         <h2 className="note-title">{note.title}</h2>
-                        <button className="collapse-button" onClick={() => setShowNoteContent(showNoteContent === index ? "" : index)}>∨</button>
-                        {showNoteContent === index &&
-                            <p className="note-content" onClick={()=>{handleAddNote(index, note)}}>
-                                {note.content}
-                            </p>
-                        }
+                        <button className="collapse-button" onClick={() => setShowNoteContent(showNoteContent === index ? "" : index)}>
+                            {showNoteContent === index ? "∧" : "∨"}
+                        </button>
+                        <p className={showNoteContent === index ? "note-content" : "note-content-hidden"} onClick={()=>{handleAddNote(index, note)}}>
+                            {note.content}
+                        </p>
                     </div>
                 ))}
             </div>
