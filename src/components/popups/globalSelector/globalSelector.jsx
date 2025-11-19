@@ -12,6 +12,7 @@ import RaceContainer from "../../content/race/raceContainer"
 import MainStats from "../../content/SPECIAL/mainStats"
 import CalculatedStats from "../../content/calculatedStats/calculatedStats"
 import Resources from "../../content/resources/resources"
+import Notes from "../../content/notes/notes"
 
 export default function GlobalSelector(){
     const { setContentFlag, setShaderFlag } = useContext(GlobalsContext)
@@ -48,6 +49,9 @@ export default function GlobalSelector(){
             </div>
             <div className="global-item-container" onClick={()=>handleClick(<Choices/>)}>
                 Elecciones
+            </div>
+            <div className="global-item-container" onClick={()=>handleClick(<Notes/>)}>
+                Notas
             </div>
             <div className="global-item-container" onClick={()=>handleClick(<SaveLoad/>)}>
                 Save/Load

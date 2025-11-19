@@ -61,6 +61,8 @@ export function StatsProvider({ children }) {
 
     const [ inventory, setInventory ] = useState([])
 
+    const [ notes, setNotes ] = useState([])
+
     const addItem = (item) => {
         setInventory(prevInventory => {
             const prevItem = prevInventory.find(_item => _item.name === item.name)
@@ -202,6 +204,8 @@ export function StatsProvider({ children }) {
                 charChoices,
                 inventory,
                 equipment,
+                notes,
+                setNotes,
                 setEquipment,
                 setCharIdentity,
                 setRaceSubrace,
