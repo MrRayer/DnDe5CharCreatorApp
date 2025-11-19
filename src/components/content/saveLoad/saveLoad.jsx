@@ -8,10 +8,10 @@ export function SaveLoad(){
     const [ infoPopupContent, setInfoPopupContent ] = useState("");
     const fileInputRef = useRef();
     const { charIdentity, charResources, charAbilityScores,
-            charEquipment, charChoices, inventory, equipment, notes,
+            charChoices, inventory, equipment, notes,
             setCharIdentity, setCharResources,
-            setCharAbilityScores, setCharEquipment,
-            setCharChoices, setInventory, setEquipment, setNotes } = useContext(StatsContext);
+            setCharAbilityScores, setCharChoices, setInventory, setEquipment,
+            setNotes } = useContext(StatsContext);
     const [ savedSlots, setSavedSlots ] = useState({
         slot1: null,
         slot2: null,
@@ -46,7 +46,6 @@ export function SaveLoad(){
         setCharIdentity(savedStats.identity);
         setCharResources(savedStats.resources);
         setCharAbilityScores(savedStats.abilityScores);
-        setCharEquipment(savedStats.equipment);
         setCharChoices(savedStats.choices);
         setInventory(savedStats.inventory);
         setEquipment(savedStats.equipment);
@@ -154,6 +153,9 @@ export function useAutosave() {
     const ctx = useContext(StatsContext);
 
     return useCallback(() => {
+        if (!ctx.charIdentity.Name || ctx.charIdentity.Name === "Nombre del personaje") {
+            return;
+        }
         const savedStats = {
             identity: ctx.charIdentity,
             resources: ctx.charResources,
